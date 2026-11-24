@@ -1,0 +1,39 @@
+%% ============================================================================
+%% AeroTray -- manuscrito con formato HardwareX, version final en espanol
+%% (MT5001 Diseno de Sistemas Mecatronicos, UTEC, 2026-2)
+%% Compilar con pdfLaTeX + BibTeX (opcion por defecto de Overleaf). Cada seccion
+%% vive en sections/*.tex para que cada autor edite su parte sin conflictos.
+%% Antes de entregar, buscar "TODO" y \tocheck{...}.
+%% ============================================================================
+\documentclass[preprint,12pt,a4paper]{elsarticle}
+\input{preamble}
+\journal{HardwareX}
+\abstracttitle{Resumen}
+\keywordtitle{Palabras clave}
+
+\begin{document}
+
+\input{sections/00_frontmatter}         % titulo, autores, resumen, palabras clave
+
+\input{sections/01_specifications}      % tabla de especificaciones HardwareX
+\input{sections/02_context}             % 1. El hardware en contexto
+\input{sections/03_description}         % 2. Descripcion del hardware (incluye alimentacion y pines)
+\input{sections/04a_kinematics}         % 3. Modelo: supuestos, marcos, cinematica
+\input{sections/04b_dynamics}           % 3. Modelo: dinamica de la base, del octocoptero y de la bola
+\input{sections/04d_dron_rampa_bateria} % 3. Modelo: por que un dron en la rampa; margen de bateria
+\input{sections/04c_coupling_control}   % 3. Modelo: acoplamiento, control y limites
+\input{sections/05_design_files}        % 4. Archivos de diseno
+\input{sections/06_bom}                 % 5. Lista de materiales
+\input{sections/07_build}               % 6. Instrucciones de construccion
+\input{sections/08_operation}           % 7. Instrucciones de operacion
+\input{sections/09_validation}          % 8. Validacion y caracterizacion
+\input{sections/10_conclusions}         % 9. Conclusiones
+\input{sections/11_declarations}        % etica, CRediT, IA, agradecimientos, biografias
+
+\appendix
+\input{sections/A_derivations}          % Apendice A: deducciones y verificacion
+
+\bibliographystyle{elsarticle-num}
+\bibliography{references}
+
+\end{document}

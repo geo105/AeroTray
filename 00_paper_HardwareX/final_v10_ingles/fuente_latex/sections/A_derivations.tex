@@ -1,0 +1,54 @@
+%% ======================================================================
+%% A_derivations.tex -- Appendix A: derivations and symbolic verification
+%% ======================================================================
+\section{Derivations and verification}
+\label{app:derivations}
+
+\subsection{Ball on an accelerating and rotating plate}
+All vectors are expressed in $\{P\}$, which rotates at $\vect\Omega$ and whose origin $G$ has absolute acceleration $\vect a_G$. With $\vect\rho=[x_b,y_b,\varepsilon]\T$ and relative velocity $\dot{\vect\rho}=[\dot x_b,\dot y_b,0]\T$, the absolute acceleration of the ball center is
+\begin{equation}
+  \vect a_b=\vect a_G+\dot{\vect\Omega}\times\vect\rho+\vect\Omega\times(\vect\Omega\times\vect\rho)+2\,\vect\Omega\times\dot{\vect\rho}+\ddot{\vect\rho}.
+  \tag{A.1}
+\end{equation}
+The ball contact point is $\vect\rho-r_b\ez$. Equating its velocity, $\vect v_G+\vect\Omega\times\vect\rho+\dot{\vect\rho}+\vect\omega_b\times(-r_b\ez)$, to that of the coinciding plate point, $\vect v_G+\vect\Omega\times(\vect\rho-r_b\ez)$, yields the no-slip rolling constraint $\dot{\vect\rho}=r_b\,\vect w\times\ez$ with $\vect w=\vect\omega_b-\vect\Omega$; hence $w_x=-\dot y_b/r_b$, $w_y=\dot x_b/r_b$, and $w_z$ is free. The absolute angular acceleration of the ball is $\dot{\vect\omega}_b=\dot{\vect\Omega}+\dot{\vect w}+\vect\Omega\times\vect w$. With contact force $\vect F=[F_x,F_y,N]\T$, the Newton--Euler equations are
+\begin{equation}
+  m_b\vect a_b=m_b\vect g_P+\vect F,\qquad I_b\dot{\vect\omega}_b=(-r_b\ez)\times\vect F=[\,r_bF_y,\ -r_bF_x,\ 0\,]\T .
+  \tag{A.2}
+\end{equation}
+The first two components of the rotational equation give $F_x$ and $F_y$; substituting them into the first two components of the translational equation and dividing by $m_b(1+\iota)$ yields \eqref{eq:ballx}--\eqref{eq:bally}, while the third rotational component gives \eqref{eq:spin}. The term $-\kappa\dot\Omega_y$ combines $-\varepsilon\dot\Omega_y$ from the transport acceleration~(A.1) and $-(I_b/m_br_b)\dot\Omega_y$ from the rotational equation: because the ball center lies above the rotation axis, angular acceleration of the plate accelerates the contact surface beneath the ball, producing the right-half-plane zero $z_1$ in \eqref{eq:balltf}. The script \fn{scripts_modelo/derive_ball.py} performs this elimination in SymPy for arbitrary $\vect\Omega(t)$, $\vect a_G(t)$, and $\vect g_P$, confirming that the residual against \eqref{eq:ballx}--\eqref{eq:spin} vanishes identically.
+
+\subsection{Rigid body about an accelerating pivot}
+For a rigid body and a point $A$ fixed in it, the angular momentum about $A$ is $\vect H_A=\vect J_A\vect\omega$ (in body-frame components) and, if $A$ accelerates at $\vect a_A$, $\dot{\vect H}_A=\vect M_A-m\,\vect r_{AC}\times\vect a_A$ \cite{ginsberg1998}. Including gravity in $\vect M_A$ and projecting into body axes yields \eqref{eq:euler}. The script \fn{derive_drone.py} constructs $\Rot_{WD}=\Rot_z(\psi)\Rot_y(\theta)\Rot_x(\phi)$, evaluates $m\vect r_c\times\Rot_{WD}\T(\vect g_W-\vect a_J)$, and returns its first-order Taylor expansion,
+\begin{equation}
+  \begin{bmatrix}m(h_ca_y-\delta_yg+gh_c\phi)\\ m(-h_ca_x+\delta_xg+gh_c\theta)\\ 0\end{bmatrix},
+  \tag{A.3}
+\end{equation}
+which is the gravitational and inertial part of \eqref{eq:rolllin}--\eqref{eq:pitchlin}. The same script inverts the mapping between body angular rates and $z$--$y$--$x$ Euler-angle derivatives, recovering \eqref{eq:euler_rates}, the kinematic law integrated by the firmware.
+
+\subsection{Allocation identities}
+For the rotor layout in Table~\ref{tab:params}, with $D=L_r/\sqrt2$, the four diagonal rotors contribute $4D^2=2L_r^2$ and the four axial rotors contribute $2L_r^2$ to both $\sum x_i^2$ and $\sum y_i^2$; all cross sums vanish by symmetry, and $\sum s_i=\sum s_ix_i=\sum s_iy_i=0$ because each spin direction occupies a complete square. Therefore, $\vect B\vect B\T$ in \eqref{eq:alloc} is diagonal and \eqref{eq:alloc_inv} is the Moore--Penrose pseudoinverse; the quantity $\sum y_i^2=4L_r^2$ appears explicitly in the firmware as \texttt{leverNorm}.
+
+\subsection{Discrete-time ball loop}
+With $h=1/187$\,s, the plant $K_b(1-s^2/z_1^2)/[s^2(\tau_ss+1)]$ is discretized via zero-order hold as $G(z)=N_G(z)/D_G(z)$; the loop delay is $z^{-n}$ with $n=\operatorname{round}(T/h)$; and the controller acting on $x_b$ is $K(z)=k_p+k_ihz/(z-1)+k_d\sum_{j=0}^{N-1}w_jz^{-j}$ with the weights of \eqref{eq:lsvel}. The closed loop is stable if all roots of $D_G(z)D_K(z)z^{n}+N_G(z)N_K(z)$ lie inside the unit circle. The script \fn{ball_dt.py} sweeps $k_d$, $T$, and $K_b$ to produce Fig.~\ref{fig:ballstab}a.
+
+\subsection{Bus voltage, takeoff collective, and extracted charge}
+In steady state, each branch delivers power $P_b$ at voltage $V_{\mathrm{bus}}=V_{oc}-I_bR_\Sigma$ with $I_b=P_b/V_{\mathrm{bus}}$, giving $V_{\mathrm{bus}}^2-V_{oc}V_{\mathrm{bus}}+R_\Sigma P_b=0$. The physically meaningful root (tending to $V_{oc}$ as $R_\Sigma\to0$) is \eqref{eq:vbus}, which exists whenever $V_{oc}^2\ge4R_\Sigma P_b$, i.e., as long as the battery can supply the requested power. Equating thrust \eqref{eq:tv} to weight at two different voltages yields $V_{\mathrm{bus}}^2x^n=V_{\mathrm{bus,ref}}^2x_{\mathrm{ref}}^n$, from which \eqref{eq:ureq} follows. The charge extracted during a flight is computed from the logged motor commands $u_i(t_k)$ as
+\begin{equation}
+  Q=\sum_k\frac{1}{2V_{\mathrm{bus}}}\sum_{i=1}^{8}P_m\Big(\frac{F_i(t_k)}{F_h}\Big)^{3/2}\Delta t_k,\qquad F_i=k_F'\Big(\frac{u_i-u_0}{860}\Big)^n,
+  \tag{A.4}
+\end{equation}
+where $P_m=\SI{62.5}{\watt}$ is per-motor hover power and $F_h=\SI{4.41}{\newton}$; the factor $1/2$ splits power between the two branches. State of charge is updated with $Q/C_b$, and resting voltage follows a typical LiPo cell discharge curve.
+
+\subsection{Reproducibility}
+All scripts reside in \fn{scripts_modelo/}, read raw logs from \fn{08_datos_y_registros/}, and require Python~3 with NumPy, SciPy, SymPy, pandas, and Matplotlib:
+\begin{itemize}
+  \item \fn{derive_ball.py}, \fn{derive_drone.py}: symbolic checks of \eqref{eq:ballx}--\eqref{eq:spin}, (A.3), and \eqref{eq:euler_rates};
+  \item \fn{params.py}: all parameters in Table~\ref{tab:params};
+  \item \fn{analysis.py}: base limits, torque authority, allocation, attitude-loop poles, and ball-loop margins;
+  \item \fn{ball_dt.py}: discrete-time ball loop and critical gains;
+  \item \fn{chain.py}: disturbance propagation and spectra;
+  \item \fn{rampa.py}: ramp weight relief (Table~\ref{tab:rampa}, Fig.~\ref{fig:rampa});
+  \item \fn{bateria.py}: thrust margin and endurance versus battery state (Table~\ref{tab:bateria}, Fig.~\ref{fig:bateria});
+  \item \fn{exportar_datos_matlab.py}: computes data for all figures and saves them in \fn{figuras_matlab/datos/};
+  \item \fn{figuras_matlab/generar_todas.m} (MATLAB or GNU Octave): renders all figures in a shared style at final print size (\fn{estilo_paper.m} sets the font, sizes, and colors).
+\end{itemize}

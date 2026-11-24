@@ -1,0 +1,38 @@
+%% ======================================================================
+%% 05_design_files.tex -- 4. Design files summary
+%% ======================================================================
+\section{Design files summary}
+\label{sec:designfiles}
+All files are hosted in the repository \repourl. Table~\ref{tab:designfiles} summarizes the main design files.
+
+\begin{small}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.36\textwidth}>{\raggedright\arraybackslash}p{0.13\textwidth}>{\raggedright\arraybackslash}p{0.12\textwidth}>{\raggedright\arraybackslash}p{0.31\textwidth}@{}}
+\caption{Design files summary.}\label{tab:designfiles}\\
+\toprule
+File & Type & License & Location / function \\
+\midrule\endfirsthead
+\toprule File & Type & License & Location / function \\ \midrule\endhead
+\texttt{junta nuevo de 8 motores con camara.step} & STEP (383 parts) & CERN-OHL-S & \fn{02_cad/} (external archive, $>95$\,MB; \fn{.glb} in repo) -- full assembly \\
+\fn{x8_UAV_R350_imprimible_bandeja_v5.stp} & STEP & CERN-OHL-S & \fn{02_cad/} (external archive, $>95$\,MB) -- octocopter frame, towers, and tray (3D printing) \\
+\fn{ball_and_plate_camara.stp} & STEP & CERN-OHL-S & \fn{02_cad/recibidos/} -- plate, servo linkages, camera mount \\
+\fn{aerotray_conjunto_cad.xml} & MuJoCo XML & MIT & \fn{06_simulacion/simulacion/} -- spherical-joint and guide model (Isaac Lab, Section~\ref{sec:flights}) \\
+\fn{derive_ball.py}, \fn{derive_drone.py} & Python 3 (SymPy) & MIT & \fn{00_paper_HardwareX/.../scripts_modelo/} -- symbolic verification of the Section~\ref{sec:model} equations \\
+\fn{analysis.py}, \fn{ball_dt.py}, \fn{chain.py}, \fn{params.py}, \fn{rampa.py}, \fn{bateria.py}, \fn{exportar_datos_matlab.py} & Python 3 & MIT & \fn{00_paper_HardwareX/.../scripts_modelo/} -- all model values in Sections~\ref{sec:model} and \ref{sec:modelval} \\
+\fn{generar_todas.m}, \fn{estilo_paper.m}, \fn{fig_*.m} & MATLAB & MIT & \fn{00_paper_HardwareX/.../figuras_matlab_en/} -- all data and model figures \\
+\fn{Marcadores_ArUco_y_Calibracion_Bandeja_A4.pdf} & PDF & CC BY 4.0 & \fn{01_guias_y_documentacion/imprimibles/} -- plate calibration sheet \\
+\fn{captura_octo_m8_vuelo_guia.ino} (v11) & Arduino C++ & MIT & \fn{03_firmware/firmware/} -- octocopter attitude, base-heading, and guided-flight firmware \\
+\fn{captura_octo_m8_banco_angulo_laser.ino} & Arduino C++ & MIT & \fn{03_firmware/firmware/} -- bench-test firmware (fixed collective) \\
+\fn{ball_plate_esp32s3_platformio/src/main.cpp} & PlatformIO C++ & MIT & \fn{03_firmware/} -- ball PID and servos on the ESP32-S3 \\
+\fn{seguidor.py}, \fn{comunicacion.py}, \fn{myrio_uart.py}, \fn{pagina_dron.py}, \fn{pagina_robot.py} & Python 3 & MIT & \fn{04_raspberry_pi/pi_control/} -- Raspberry Pi supervisor, vision, links, and web UI \\
+\fn{config_pi.json}, \fn{ajustes.json}, \fn{arrancar.sh} & JSON, shell & MIT & \fn{04_raspberry_pi/pi_control/} -- configuration, gains, and startup loop \\
+\fn{prueba_prueba.vi} (main), \fn{AeroTray_Control_Formula.vi}, \fn{CONTROL_TRAYECTORIA.vi}, \fn{Laboratorio2_Ejercicio1_Motores.lvproj} & LabVIEW 2019 & MIT & \fn{05_labview_myrio/Control_Robot_Movil/} -- myRIO base control, odometry, sequences, UART \\
+\fn{cargar_vuelo_guia_desde_pi.sh}, \fn{subir_uart_a_pi.sh} & shell & MIT & \fn{03_firmware/firmware/}, \fn{04_raspberry_pi/pi_control/} -- flash the drone and deploy Pi code \\
+\fn{comparar_vuelo_isaac.py}, \fn{make_figures.py}, \fn{bp_metrics.py} & Python 3 & MIT & \fn{07_herramientas/}, \fn{00_paper_HardwareX/scripts_repositorio/} -- metrics and figures for Section~\ref{sec:validation} \\
+\fn{isaaclab_aerotray/} (\fn{env.py}, \fn{agent.py}) & Python & MIT & \fn{06_simulacion/simulacion/} -- Isaac Lab task and PPO agent \\
+\fn{vuelo_*.csv}, \fn{dron_log_*.csv}, \fn{registro_*.csv}, \fn{salida.log} & CSV, text & CC BY 4.0 & \fn{08_datos_y_registros/} -- raw logs used in this article \\
+\fn{GUIA_EQUIPO.md}, \fn{VUELO_GUIA.md}, \fn{UART_MYRIO.md} & Markdown & CC BY 4.0 & \fn{01_guias_y_documentacion/} -- operation and flight procedures \\
+Proteus schematics (\fn{AeroTray_Esquematicos.pdsprj}, \fn{AeroTray_Esquematicos_vista_v2.pdf}, \fn{AeroTray_Fig_Comunicaciones.pdf}) & Proteus, PDF & CERN-OHL-S & \fn{02_cad/esquematicos_proteus/} -- 6-sheet hierarchical electrical and communications schematic (Section~\ref{sec:power}) \\
+\fn{IMG_1867.mov}, \fn{IMG_1868.mov}, \fn{IMG_1869.mov} & 4K HEVC video & CC BY 4.0 & External archive (see README) -- flights 6 and 7 on Nov 20 (Section~\ref{sec:flights}) \\
+\bottomrule
+\end{longtable}
+\end{small}

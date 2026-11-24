@@ -1,0 +1,30 @@
+%% ======================================================================
+%% 00_frontmatter.tex -- titulo, autores, resumen y palabras clave
+%% ======================================================================
+\begin{frontmatter}
+
+% Titulo anterior: AeroTray: robot móvil abierto que transporta un octocóptero montado en una rótula y un \textit{ball and plate} con visión, con un modelo validado de la propagación de perturbaciones a través de etapas de equilibrio apiladas
+\title{AeroTray: sistema \textit{ball and plate} sobre un octocóptero acoplado en una base móvil diferencial}
+
+\author[utec]{Sebastián Rejas Córdova}
+\ead{sebastian.rejas.c@utec.edu.pe}
+\author[utec]{George Henry Ramos Astuhuamán\corref{cor1}}
+\ead{george.ramos@utec.edu.pe}
+\author[utec]{Johan Nireo Naupay Fabián}
+\ead{johan.naupay@utec.edu.pe}
+\author[utec]{Hideky Edu Garnique Pisfil}
+\ead{hideky.garnique@utec.edu.pe}
+\author[utec]{Diego André Miranda Zamora}
+\ead{diego.miranda@utec.edu.pe}
+\cortext[cor1]{Autor de correspondencia.}
+\address[utec]{Departamento de Ingeniería Mecatrónica, Universidad de Ingeniería y Tecnología (UTEC), Jr. Medrano Silva 165, Barranco, Lima, Perú}
+
+\begin{abstract}
+AeroTray es una plataforma mecatrónica de tres niveles: una base diferencial (chasis TETRIX, NI myRIO-1900), un módulo aéreo de ocho rotores (\SI{3.6}{\kilo\gram}) montado sobre una rótula pasiva que desliza por una guía vertical de \SI{140}{\milli\metre}, y un \textit{ball and plate} de dos servos sobre el octocóptero, cuya bola sigue una cámara a \SI{187}{fps}. Cada maniobra de la base se propaga por la rótula al octocóptero y, a través de él, a la bola, de modo que la plataforma hace observable el acoplamiento entre problemas de equilibrio apilados. Publicamos todo el hardware y el software y deducimos un modelo de primeros principios de la cadena completa: la cinemática y la dinámica no holonómicas de la base en pendiente, la dinámica de Newton--Euler del octocóptero alrededor de un pivote acelerado, la asignación de control de los ocho rotores y las ecuaciones exactas de una bola que rueda sobre un plato que se traslada y rota, todas verificadas simbólicamente. A partir de la telemetría de vuelo estacionario identificamos, con un balance estático de momentos, la excentricidad del centro de masa ($9{,}5\pm1{,}8$\,mm) y su altura sobre la rótula ($0{,}14\pm0{,}06$\,m), y con la condición de despegue la ganancia real de empuje, 33--52\% mayor que la del mapa del firmware. El modelo justifica el uso del dron en la rampa: su actuador empuja contra el aire y no contra la base, de modo que, al nivelarse, desacopla la pendiente del plato (en la rampa los servos no trabajaron más que en llano); y al sostener parte de su propio peso baja el centro de masa, lo que eleva la pendiente de vuelco al subir de \SI{21.5}{\degree} (medida) a \SI{27.7}{\degree} (prevista por el modelo) con la mitad del peso del módulo en los rotores. El modelo explica cuantitativamente los hechos experimentales principales: las derivas lentas de actitud de los primeros vuelos (región de atracción por autoridad de par de solo 3--4$^\circ$), el periodo de la oscilación residual en vuelo estacionario (0,2--0,3\,Hz previsto; 0,15--0,23\,Hz medido), el límite de estabilidad del controlador de la bola (ganancia derivativa 4,5 estable, 6 inestable), la velocidad de la base en llano (0,072\,m/s prevista; 0,06--0,08\,m/s medida) y la pérdida de vuelo al descargarse las baterías: el colectivo de despegue sube de 1725--\SI{1775}{\micro\second} con 12,4\,V a 1850--\SI{2000}{\micro\second} con 11,1\,V, por encima del límite sostenido del firmware, lo que deja entre 3 y 7 minutos de vuelo útil por par de LiPo. Experimentalmente, el firmware final mantiene el octocóptero en la guía con 0,55--1,7$^\circ$ de error RMS de actitud, y el controlador de la bola la mantiene a una distancia mediana de 19\,mm del centro con la base quieta y los rotores girando, y de 28--30\,mm mientras el robot avanza en llano y por una rampa de 10$^\circ$. En los ensayos finales sobre el robot completo (23/11) se registraron 13 ensayos de equilibrio de 23--\SI{122}{\second} (\SI{816}{\second} en total; mediana de 29--44\,mm), 10 de ellos con los rotores encendidos y el dron nivelado a 0,71--1,0$^\circ$ RMS; en cuatro ensayos completos la base cruzó la rampa de 10$^\circ$ con la bola en equilibrio durante 18--\SI{30}{\second} (mediana de 30--35\,mm, dron a 0,85--1,15$^\circ$ RMS sin cortes, con la bola saliendo del plato en el tramo final), y el módulo despegó y aterrizó en la guía con la bandeja encima (la bola salió al despegar por el salto de fricción de la guía); el error restante se concentra en un desnivel del eje $x$ del plato. Se publican todos los archivos CAD, el firmware, los VI de LabVIEW, los scripts de análisis y los registros.
+\end{abstract}
+
+\begin{keyword}
+Robot móvil \sep Banco de pruebas de octocóptero \sep \textit{Ball and plate} \sep Dinámica no holonómica \sep Propagación de perturbaciones \sep Identificación de sistemas \sep Visión por computadora \sep Educación
+\end{keyword}
+
+\end{frontmatter}

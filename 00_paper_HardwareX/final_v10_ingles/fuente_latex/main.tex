@@ -1,0 +1,36 @@
+%% ============================================================================
+%% AeroTray -- HardwareX manuscript, final English version
+%% (MT5001 Mechatronic Systems Design, UTEC, 2026-2)
+%% Compile with pdfLaTeX + BibTeX (Overleaf default). Each section lives in
+%% sections/*.tex. Search for "TODO" and \tocheck{...} before submission.
+%% ============================================================================
+\documentclass[preprint,12pt,a4paper]{elsarticle}
+\input{preamble}
+\journal{HardwareX}
+
+\begin{document}
+
+\input{sections/00_frontmatter}         % title, authors, abstract, keywords
+
+\input{sections/01_specifications}      % HardwareX specifications table
+\input{sections/02_context}             % 1. Hardware in context
+\input{sections/03_description}         % 2. Hardware description (incl. power and pins)
+\input{sections/04a_kinematics}         % 3. Model: assumptions, frames, kinematics
+\input{sections/04b_dynamics}           % 3. Model: base, octocopter, and ball dynamics
+\input{sections/04d_dron_rampa_bateria} % 3. Model: why a drone on the ramp; battery margin
+\input{sections/04c_coupling_control}   % 3. Model: coupling, control, and limits
+\input{sections/05_design_files}        % 4. Design files summary
+\input{sections/06_bom}                 % 5. Bill of materials summary
+\input{sections/07_build}               % 6. Build instructions
+\input{sections/08_operation}           % 7. Operation instructions
+\input{sections/09_validation}          % 8. Validation and characterization
+\input{sections/10_conclusions}         % 9. Conclusions
+\input{sections/11_declarations}        % ethics, CRediT, funding, AI, acknowledgments, biographies
+
+\appendix
+\input{sections/A_derivations}          % Appendix A: derivations and verification
+
+\bibliographystyle{elsarticle-num}
+\bibliography{references}
+
+\end{document}

@@ -1,0 +1,106 @@
+# Videos, large CAD (>95 MB) and raw media (hosted separately on Zenodo/Drive)
+10_videos_y_fotos/
+*.mp4
+*.mov
+*.MOV
+*.webm
+*.mkv
+*.avi
+*.wav
+*.mp3
+*.m4a
+*.ogg
+*.f3z
+02_cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/junta nuevo de 8 motores con camara.step
+02_cad/junta_nuevo_de_8_motores_con_camara/junta nuevo de 8 motores con camara - UAV preliminar.step
+02_cad/recibidos/x8_UAV_R350_imprimible_bandeja_v5.stp
+02_cad/recibidos/nuevo+8+camara.stp
+
+# Course lab deliverables, historical backups and internal upload notes
+09_laboratorios/
+11_historial/
+INSTRUCCIONES_SUBIR_REPOSITORIO.md
+ARCHIVOS_GRANDES.txt
+
+# Intermediate CAD geometry & raw per-part mesh dumps (GLB assemblies, STP & simulation meshes are kept)
+*.brep
+02_cad/procesados/carrito_brep/
+02_cad/junta_nuevo_de_8_motores_con_camara/mallas/
+02_cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/
+02_cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/plantillas/
+02_cad/**/*.log
+
+# Compiled firmware artifacts, backups and duplicated libraries
+03_firmware/firmware/bin/
+03_firmware/firmware/backups/
+03_firmware/firmware/arduino-user/
+03_firmware/respaldo_funcional_octo/
+03_firmware/esp32_cam_visor/registros/
+03_firmware/esp32_ejemplo/
+03_firmware/esp32_cam_diag/
+03_firmware/esp32_cam_fps/
+
+# Paper old drafts, Overleaf zips, compiled PDFs (published in GitHub Releases) and internal team notes
+00_paper_HardwareX/AeroTray_HardwareX_manuscript.pdf
+00_paper_HardwareX/AeroTray_HardwareX_Overleaf.zip
+00_paper_HardwareX/main.pdf
+00_paper_HardwareX/main.tex
+00_paper_HardwareX/main.log
+00_paper_HardwareX/figures/
+00_paper_HardwareX/scripts/
+00_paper_HardwareX/paper_espanol/
+00_paper_HardwareX/final_v10_ingles/AeroTray_Paper_EN_v10.pdf
+00_paper_HardwareX/final_v10_ingles/AeroTray_Paper_EN_v10_Overleaf.zip
+00_paper_HardwareX/final_v10_espanol/AeroTray_Paper_ES_v10.pdf
+00_paper_HardwareX/final_v10_espanol/AeroTray_Paper_ES_v10_Overleaf.zip
+**/LEEME_EQUIPO.md
+**/LEEME_OVERLEAF.md
+
+# Internal / superseded working docs & class presentation scripts
+01_guias_y_documentacion/exposicion/
+01_guias_y_documentacion/LAB5_PLAN.md
+01_guias_y_documentacion/BALL_PLATE_PANEL.md
+01_guias_y_documentacion/CAMARA_BALL_PLATE.md
+01_guias_y_documentacion/ENSAYO_HOVER_1600.md
+01_guias_y_documentacion/INSTRUCCIONES_LASER_MOTORES_CONTROL.md
+01_guias_y_documentacion/LEEME.md
+01_guias_y_documentacion/MEJORA_CAMARA_RAPIDA.md
+01_guias_y_documentacion/PREPARACION_VUELO_LIBRE_30CM.md
+01_guias_y_documentacion/PROYECTO.md
+01_guias_y_documentacion/PRUEBA_VUELO_DRON.md
+01_guias_y_documentacion/RESUMEN_COMPLETO_DSM.md
+01_guias_y_documentacion/REVISION_*.md
+
+# Raspberry Pi superseded variants & local captures
+04_raspberry_pi/pi_control/myrio_uart.py.diego
+04_raspberry_pi/pi_webcam_fps/*.png
+
+# LabVIEW duplicate zip
+05_labview_myrio/Control_Robot_Movil.zip
+
+# Simulation training logs & old backups
+06_simulacion/simulacion/logs_noche/
+06_simulacion/respaldo_isaaclab_v1/
+06_simulacion/**/*.log
+
+# Non-paper raw bench dumps, host install logs & internal duplicates
+08_datos_y_registros/registros_banco_y_simulacion/
+08_datos_y_registros/logs_instalacion/
+08_datos_y_registros/diagnostico_sd_20261109/
+08_datos_y_registros/ensayos_finales_20261123/pruebas_20261123/registros/
+08_datos_y_registros/ensayos_finales_20261123/pruebas_20261123/recuperado_video/
+
+# Unrelated utility
+07_herramientas/scripts_raiz/poner_microSD_a_cero.py
+
+# Build, temp & editor artifacts
+__pycache__/
+*.pyc
+.pio/
+build/
+*.antes_*
+*.map
+*.elf
+*.merged.bin
+~$*
+.DS_Store

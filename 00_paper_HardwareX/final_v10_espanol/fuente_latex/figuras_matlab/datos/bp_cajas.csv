@@ -1,0 +1,5 @@
+condicion,n,p5,q1,mediana,q3,p95
+base quieta - dron apagado,13951,4.31045,4.40454,4.41022,4.41022,4.50444
+base quieta - dron en ralenti,85219,5.30094,11.8992,18.8608,27.6045,60.3851
+en movimiento - llano,95851,6.64831,17.0373,27.9158,43.9266,76.2293
+en movimiento - rampa 10 grados,62492,6.65733,17.1625,29.5439,43.9893,87.9442

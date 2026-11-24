@@ -1,0 +1,54 @@
+%% ======================================================================
+%% A_derivations.tex -- Apendice A: deducciones y su verificacion simbolica
+%% ======================================================================
+\section{Deducciones y verificación}
+\label{app:derivations}
+
+\subsection{Bola sobre un plato que acelera y rota}
+Todos los vectores se escriben en $\{P\}$, que rota con $\vect\Omega$ y cuyo origen $G$ tiene aceleración absoluta $\vect a_G$. Con $\vect\rho=[x_b,y_b,\varepsilon]\T$ y la velocidad relativa $\dot{\vect\rho}=[\dot x_b,\dot y_b,0]\T$, la aceleración absoluta del centro de la bola es
+\begin{equation}
+  \vect a_b=\vect a_G+\dot{\vect\Omega}\times\vect\rho+\vect\Omega\times(\vect\Omega\times\vect\rho)+2\,\vect\Omega\times\dot{\vect\rho}+\ddot{\vect\rho}.
+  \tag{A.1}
+\end{equation}
+El punto de contacto de la bola es $\vect\rho-r_b\ez$. Igualando su velocidad, $\vect v_G+\vect\Omega\times\vect\rho+\dot{\vect\rho}+\vect\omega_b\times(-r_b\ez)$, con la del punto del plato que toca, $\vect v_G+\vect\Omega\times(\vect\rho-r_b\ez)$, se obtiene la restricción de rodadura $\dot{\vect\rho}=r_b\,\vect w\times\ez$ con $\vect w=\vect\omega_b-\vect\Omega$; por tanto, $w_x=-\dot y_b/r_b$, $w_y=\dot x_b/r_b$ y $w_z$ es libre. La aceleración angular absoluta de la bola es $\dot{\vect\omega}_b=\dot{\vect\Omega}+\dot{\vect w}+\vect\Omega\times\vect w$. Con la fuerza de contacto $\vect F=[F_x,F_y,N]\T$, las leyes de Newton y de Euler son
+\begin{equation}
+  m_b\vect a_b=m_b\vect g_P+\vect F,\qquad I_b\dot{\vect\omega}_b=(-r_b\ez)\times\vect F=[\,r_bF_y,\ -r_bF_x,\ 0\,]\T .
+  \tag{A.2}
+\end{equation}
+Las dos primeras componentes de la ecuación de rotación dan $F_x$ y $F_y$; al sustituirlas en las dos primeras componentes de la ecuación de traslación y dividir por $m_b(1+\iota)$ se obtienen \eqref{eq:ballx}--\eqref{eq:bally}, y la tercera componente de rotación da \eqref{eq:spin}. El término $-\kappa\dot\Omega_y$ reúne $-\varepsilon\dot\Omega_y$ de la aceleración de arrastre (A.1) y $-(I_b/m_br_b)\dot\Omega_y$ de la ecuación de rotación: como el centro de la bola está por encima del eje de rotación, una aceleración angular del plato acelera la superficie de contacto bajo la bola, que es el origen del cero en el semiplano derecho $z_1$ de \eqref{eq:balltf}. El script \fn{scripts_modelo/derive_ball.py} hace esta eliminación con SymPy para $\vect\Omega(t)$, $\vect a_G(t)$ y $\vect g_P$ arbitrarios y comprueba que el residuo respecto a \eqref{eq:ballx}--\eqref{eq:spin} es idénticamente nulo.
+
+\subsection{Cuerpo rígido alrededor de un pivote acelerado}
+Para un cuerpo rígido y un punto $A$ fijo en él, el momento angular respecto a $A$ es $\vect H_A=\vect J_A\vect\omega$ (componentes en ejes cuerpo) y, si $A$ acelera con $\vect a_A$, $\dot{\vect H}_A=\vect M_A-m\,\vect r_{AC}\times\vect a_A$ \cite{ginsberg1998}. Incluyendo la gravedad en $\vect M_A$ y pasando a componentes en ejes cuerpo se obtiene \eqref{eq:euler}. El script \fn{derive_drone.py} construye $\Rot_{WD}=\Rot_z(\psi)\Rot_y(\theta)\Rot_x(\phi)$, evalúa $m\vect r_c\times\Rot_{WD}\T(\vect g_W-\vect a_J)$ y devuelve su desarrollo de Taylor de primer orden,
+\begin{equation}
+  \begin{bmatrix}m(h_ca_y-\delta_yg+gh_c\phi)\\ m(-h_ca_x+\delta_xg+gh_c\theta)\\ 0\end{bmatrix},
+  \tag{A.3}
+\end{equation}
+que es la parte gravitatoria e inercial de \eqref{eq:rolllin}--\eqref{eq:pitchlin}. El mismo script invierte la relación entre las velocidades angulares en ejes cuerpo y las derivadas de los ángulos de Euler $z$--$y$--$x$ y recupera \eqref{eq:euler_rates}, la ley que integra el firmware.
+
+\subsection{Identidades de la asignación}
+Para la disposición de rotores de la Tabla~\ref{tab:params}, con $D=L_r/\sqrt2$, los cuatro rotores diagonales aportan $4D^2=2L_r^2$ y los cuatro axiales $2L_r^2$ a $\sum x_i^2$ y a $\sum y_i^2$; todas las sumas cruzadas se anulan por simetría, y $\sum s_i=\sum s_ix_i=\sum s_iy_i=0$ porque cada sentido de giro ocupa un cuadrado completo. Por tanto, $\vect B\vect B\T$ en \eqref{eq:alloc} es diagonal y \eqref{eq:alloc_inv} es la solución de Moore--Penrose; el valor $\sum y_i^2=4L_r^2$ aparece explícitamente en el firmware como \texttt{leverNorm}.
+
+\subsection{Lazo de la bola en tiempo discreto}
+Con $h=1/187$\,s, la planta $K_b(1-s^2/z_1^2)/[s^2(\tau_ss+1)]$ se discretiza con retenedor de orden cero como $G(z)=N_G(z)/D_G(z)$; el retardo es $z^{-n}$ con $n=\operatorname{round}(T/h)$; el controlador que actúa sobre $x_b$ es $K(z)=k_p+k_ihz/(z-1)+k_d\sum_{j=0}^{N-1}w_jz^{-j}$ con los pesos de \eqref{eq:lsvel}. El lazo es estable si todas las raíces de $D_G(z)D_K(z)z^{n}+N_G(z)N_K(z)$ están dentro del círculo unitario. El script \fn{ball_dt.py} barre $k_d$, $T$ y $K_b$ para producir la Fig.~\ref{fig:ballstab}a.
+
+\subsection{Tensión del bus, colectivo de despegue y carga extraída}
+En régimen estacionario la rama entrega la potencia $P_b$ a la tensión $V_{\mathrm{bus}}=V_{oc}-I_bR_\Sigma$ con $I_b=P_b/V_{\mathrm{bus}}$, de modo que $V_{\mathrm{bus}}^2-V_{oc}V_{\mathrm{bus}}+R_\Sigma P_b=0$. La raíz con sentido físico (la que tiende a $V_{oc}$ cuando $R_\Sigma\to0$) es \eqref{eq:vbus}, que existe mientras $V_{oc}^2\ge4R_\Sigma P_b$, es decir, mientras la batería pueda entregar la potencia pedida. Igualar el empuje \eqref{eq:tv} con el peso a dos tensiones distintas da $V_{\mathrm{bus}}^2x^n=V_{\mathrm{bus,ref}}^2x_{\mathrm{ref}}^n$, de donde sale \eqref{eq:ureq}. La carga extraída en un vuelo se calcula a partir de las órdenes de motor registradas $u_i(t_k)$ como
+\begin{equation}
+  Q=\sum_k\frac{1}{2V_{\mathrm{bus}}}\sum_{i=1}^{8}P_m\Big(\frac{F_i(t_k)}{F_h}\Big)^{3/2}\Delta t_k,\qquad F_i=k_F'\Big(\frac{u_i-u_0}{860}\Big)^n,
+  \tag{A.4}
+\end{equation}
+con $P_m=\SI{62.5}{\watt}$ la potencia por motor en vuelo estacionario y $F_h=\SI{4.41}{\newton}$; el factor $1/2$ reparte la potencia entre las dos ramas. El estado de carga se actualiza con $Q/C_b$ y la tensión en reposo con la curva típica de la celda LiPo.
+
+\subsection{Reproducibilidad}
+Todos los scripts están en \fn{scripts_modelo/}, leen los registros crudos de \fn{08_datos_y_registros/} y necesitan Python~3 con NumPy, SciPy, SymPy, pandas y Matplotlib:
+\begin{itemize}
+  \item \fn{derive_ball.py}, \fn{derive_drone.py}: comprobaciones simbólicas de \eqref{eq:ballx}--\eqref{eq:spin}, (A.3) y \eqref{eq:euler_rates};
+  \item \fn{params.py}: todos los parámetros de la Tabla~\ref{tab:params};
+  \item \fn{analysis.py}: límites de la base, autoridad, asignación, polos del lazo de actitud y márgenes del lazo de la bola;
+  \item \fn{ball_dt.py}: lazo de la bola en tiempo discreto y ganancias críticas;
+  \item \fn{chain.py}: propagación de perturbaciones y espectros;
+  \item \fn{rampa.py}: descarga de peso en la rampa (Tabla~\ref{tab:rampa}, Fig.~\ref{fig:rampa});
+  \item \fn{bateria.py}: margen de empuje y autonomía frente a la batería (Tabla~\ref{tab:bateria}, Fig.~\ref{fig:bateria});
+  \item \fn{exportar_datos_matlab.py}: calcula los datos de todas las figuras y los guarda en \fn{figuras_matlab/datos/};
+  \item \fn{figuras_matlab/generar_todas.m} (MATLAB o GNU Octave): dibuja todas las figuras con un estilo común, a su tamaño final y con coma decimal (\fn{estilo_paper.m} fija fuente, tamaños y colores).
+\end{itemize}

@@ -1,0 +1,20 @@
+[
+ {
+  "file": "dron_log_20261118_144610.csv",
+  "fs_hz": 187,
+  "roll_rms": 0.38,
+  "pitch_rms": 0.26,
+  "tilt_max": 1.42,
+  "motor_min": 1255,
+  "motor_max": 1338
+ },
+ {
+  "file": "dron_log_20261118_144932.csv",
+  "fs_hz": 187,
+  "roll_rms": 0.26,
+  "pitch_rms": 0.24,
+  "tilt_max": 0.82,
+  "motor_min": 1269,
+  "motor_max": 1328
+ }
+]

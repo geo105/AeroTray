@@ -1,0 +1,29 @@
+%% ======================================================================
+%% 00_frontmatter.tex -- title, authors, abstract, and keywords
+%% ======================================================================
+\begin{frontmatter}
+
+\title{AeroTray: Ball-and-plate system on an octocopter coupled to a differential mobile base}
+
+\author[utec]{Sebastián Rejas Córdova}
+\ead{sebastian.rejas.c@utec.edu.pe}
+\author[utec]{George Henry Ramos Astuhuamán\corref{cor1}}
+\ead{george.ramos@utec.edu.pe}
+\author[utec]{Johan Nireo Naupay Fabián}
+\ead{johan.naupay@utec.edu.pe}
+\author[utec]{Hideky Edu Garnique Pisfil}
+\ead{hideky.garnique@utec.edu.pe}
+\author[utec]{Diego André Miranda Zamora}
+\ead{diego.miranda@utec.edu.pe}
+\cortext[cor1]{Corresponding author.}
+\address[utec]{Department of Mechatronics Engineering, Universidad de Ingeniería y Tecnología (UTEC), Jr. Medrano Silva 165, Barranco, Lima, Peru}
+
+\begin{abstract}
+AeroTray is a three-tier mechatronic platform: a differential mobile base (TETRIX chassis, NI myRIO-1900), an eight-rotor aerial module (\SI{3.6}{\kilo\gram}) mounted on a passive spherical joint that slides along a \SI{140}{\milli\metre} vertical guide, and a two-servo ball-and-plate stage atop the octocopter with a camera tracking the ball at \SI{187}{fps}. Every maneuver of the base propagates through the spherical joint to the octocopter and then to the ball, making the coupling between stacked balancing problems directly observable. We release all hardware and software and derive a symbolically verified first-principles model of the full chain: nonholonomic kinematics and dynamics of the base on a slope, Newton--Euler octocopter dynamics about an accelerating pivot, eight-rotor control allocation, and exact equations of a ball rolling on a translating and rotating plate. From hover telemetry, a static moment balance identifies the center-of-mass eccentricity ($9.5\pm1.8$\,mm) and its height above the spherical joint ($0.14\pm0.06$\,m), while the liftoff condition yields the actual thrust gain, which is 33--52\% higher than the firmware map. The model explains the role of the drone on a ramp: its rotors push against air rather than the base, so leveling decouples ground slope from the plate (on the ramp, the servos worked no harder than on flat ground). By supporting part of its own weight, the drone lowers the center of mass, raising the uphill tip-over angle from \SI{21.5}{\degree} (measured) to a predicted \SI{27.7}{\degree} when the rotors carry half of the module's weight. The model quantitatively accounts for the main experimental observations: slow attitude drifts in early flights (torque-authority region of attraction of only 3--4$^\circ$), residual hover oscillation frequency (0.2--0.3\,Hz predicted; 0.15--0.23\,Hz measured), the ball-controller stability limit (derivative gain 4.5 stable, 6 unstable), flat-ground base speed (0.072\,m/s predicted; 0.06--0.08\,m/s measured), and loss of flight as batteries discharge. As voltage drops from 12.4\,V to 11.1\,V, the liftoff collective rises from 1725--\SI{1775}{\micro\second} to 1850--\SI{2000}{\micro\second}, exceeding the firmware's sustained limit and leaving 3 to 7 minutes of usable flight per LiPo pair. Experimentally, the final firmware holds the octocopter on the guide within 0.55--1.7$^\circ$ RMS attitude error, and the ball controller keeps the ball at a median distance of 19\,mm from center with the base stationary and rotors spinning, and 28--30\,mm while the robot drives on flat ground and across a 10$^\circ$ ramp. In the final full-robot trials (23 Nov), we recorded 13 balancing runs lasting 23--\SI{122}{\second} (\SI{816}{\second} total; median 29--44\,mm), 10 of them with rotors running and the drone leveled to 0.71--1.0$^\circ$ RMS. In four full-system trials, the base crossed the 10$^\circ$ ramp with the ball balanced for 18--\SI{30}{\second} (median 30--35\,mm, drone at 0.85--1.15$^\circ$ RMS without cutoffs, before the ball exited the plate on the final stretch). The aerial module also took off and landed on the guide with the tray mounted (the ball exited at liftoff due to the guide's breakaway friction jump); residual error concentrates in an $x$-axis tilt offset of the plate. All CAD files, firmware, LabVIEW VIs, analysis scripts, and logs are publicly released.
+\end{abstract}
+
+\begin{keyword}
+Mobile robot \sep Octocopter testbed \sep Ball and plate \sep Nonholonomic dynamics \sep Disturbance propagation \sep System identification \sep Computer vision \sep Education
+\end{keyword}
+
+\end{frontmatter}

@@ -1,0 +1,81 @@
+%% ======================================================================
+%% 06_bom.tex -- 5. Lista de materiales
+%% ======================================================================
+\section{Resumen de la lista de materiales}
+\label{sec:bom}
+La Tabla~\ref{tab:bom} reúne los componentes del prototipo final. Los costos son precios unitarios aproximados en USD a noviembre de 2026, de proveedores locales y en línea. Los elementos marcados como ``lab'' los proporcionó el laboratorio de la universidad; su precio de lista se da como referencia.
+
+\begin{small}
+\setlength{\tabcolsep}{4pt}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.27\textwidth}r>{\raggedleft\arraybackslash}p{0.08\textwidth}>{\raggedleft\arraybackslash}p{0.08\textwidth}>{\raggedright\arraybackslash}p{0.15\textwidth}>{\raggedright\arraybackslash}p{0.14\textwidth}@{}}
+\caption{Lista de materiales (costos aproximados).}\label{tab:bom}\\
+\toprule
+Componente & Cant. & Unit. (USD) & Total (USD) & Fuente & Tipo de material \\
+\midrule\endfirsthead
+\toprule Componente & Cant. & Unit. (USD) & Total (USD) & Fuente & Tipo de material \\ \midrule\endhead
+\multicolumn{6}{@{}l}{\emph{N1 -- Base móvil}}\\
+NI myRIO-1900 & 1 & 500 & 500 & lab & Electrónica \\
+Piezas del chasis TETRIX MAX, 2 motores TorqueNADO con encoder, ruedas y ruedas omnidireccionales & 1 juego & 230 & 230 & lab & Metal / electromec. \\
+Puente H MDD10A ($\geq$\SI{10}{\ampere}/canal) & 1 & 15 & 15 & proveedor local & Electrónica \\
+Batería NiMH TETRIX \SI{12}{\volt} \SI{3000}{\milli\ampere\hour} + fusible de \SI{20}{\ampere} & 1 & 45 & 45 & lab & Energía \\
+Power bank \SI{5}{\volt}/\SI{3}{\ampere} + elevador de 5 a \SI{12}{\volt} & 1 & 25 & 25 & proveedor local & Energía \\
+Mástil, guía vertical y carro (perfil de aluminio, piezas impresas) & 1 & 30 & 30 & local / impreso & Metal, PLA \\
+\multicolumn{6}{@{}l}{\emph{N2 -- Módulo aéreo (octocóptero)}}\\
+Marco (placa central y torres impresas, 8 brazos R350) & 1 & 60 & 60 & impreso / en línea & PLA, compuesto \\
+Rótula esférica & 1 & 10 & 10 & proveedor local & Metal \\
+Motor sin escobillas A2212 920\,KV & 8 & 18 & 144 & en línea & Electromec. \\
+Hélice 9450 (par horaria/antihoraria) & 4 & 3 & 12 & en línea & Polímero \\
+ESC 30\,A sin BEC & 8 & 10 & 80 & en línea & Electrónica \\
+LiPo 3S \SI{3300}{\milli\ampere\hour} 25C & 2 & 35 & 70 & en línea & Energía \\
+Portafusible ATO + fusible de \SI{30}{\ampere}, relé, condensador de \SI{1000}{\micro\farad}/\SI{25}{\volt}, cable 14 AWG, XT60 & 2 & 12 & 24 & proveedor local & Eléctrico \\
+NodeMCU-32S (ESP32) & 1 & 8 & 8 & proveedor local & Electrónica \\
+IMU MPU-6050 & 1 & 3 & 3 & proveedor local & Electrónica \\
+Sensor de tiempo de vuelo VL53L0X & 1 & 5 & 5 & proveedor local & Electrónica \\
+Reductor XL4015 & 2 & 4 & 8 & proveedor local & Electrónica \\
+\multicolumn{6}{@{}l}{\emph{N3 -- Bandeja del \textit{ball and plate}}}\\
+Cámara USB PS3 Eye & 1 & 10 & 10 & en línea & Electrónica \\
+Placa de desarrollo ESP32-S3 & 1 & 12 & 12 & proveedor local & Electrónica \\
+Servo Futaba S3003 & 2 & 10 & 20 & proveedor local & Electromec. \\
+Plato ($250\times220$~mm), mecanismos, torres de cámara & 1 & 15 & 15 & impreso & PLA \\
+Bola azul, \SI{27}{\milli\metre} & 1 & 1 & 1 & local & Polímero \\
+\multicolumn{6}{@{}l}{\emph{N4 -- Supervisor, distribución electrónica y paro}}\\
+Raspberry Pi 3B+ + \SI{32}{GB} microSD & 1 & 55 & 55 & en línea & Electrónica \\
+Pack 3S 18650 con BMS (lógica BT5 y servos BT6) & 2 & 20 & 40 & proveedor local & Energía \\
+Hongo de emergencia NC enclavable, cable mellizo \SI{4}{\metre}, relés K3--K4, diodos 1N4007, borneras Wago & 1 & 15 & 15 & proveedor local & Eléctrico \\
+Cables USB, hub, conectores, tornillos, precintos & 1 & 20 & 20 & proveedor local & Varios \\
+\midrule
+\multicolumn{3}{@{}l}{\textbf{Total (todos los elementos)}} & \textbf{1457} & & \\
+\multicolumn{3}{@{}l}{\textbf{Total sin los elementos del laboratorio}} & \textbf{682} & & \\
+\bottomrule
+\end{longtable}
+\end{small}
+
+\subsection{Viabilidad económica}
+\label{sec:costos}
+La Tabla~\ref{tab:costos} compara el módulo aéreo con alternativas que cumplen la misma función: nivelar el plato mientras la base sube una rampa. Los precios de las alternativas son referencias de mercado aproximadas.
+
+\begin{table}[!htbp]
+\centering
+\small
+\caption{Comparación de costo y funciones de las alternativas para la etapa de nivelación.}
+\label{tab:costos}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{0.26\textwidth}c>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}p{0.13\textwidth}>{\raggedright\arraybackslash}p{0.12\textwidth}@{}}
+\toprule
+Alternativa & USD & Nivelación en 10° y 20° & Par contra la base & Lastre ajustable \\
+\midrule
+Solo servos en la base (2 S3003) & $\sim$20 & en 10° consume el \SI{93}{\percent} del recorrido; en 20° no es posible & sí & no \\
+Cardán de servos + IMU (2 MG996R, MPU-6050) & $\sim$30--50 & sí & sí & no \\
+Cardán \emph{brushless} (Storm32 + 2 motores) & $\sim$80--150 & sí, con carga útil limitada & sí & no \\
+\textbf{Módulo octocóptero (Tabla~\ref{tab:bom})} & $\sim$\textbf{425} & sí, referida a la gravedad & \textbf{no} (rótula) & \textbf{sí} ($f=0$--1) \\
+Equipos comerciales de laboratorio de un solo problema (\emph{ball balancer}, dron de 3 GDL) & miles & no son móviles & --- & --- \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Solo para nivelar, un cardán de servos es entre 8 y 14 veces más barato. El octocóptero se justifica por tres funciones que el cardán no tiene:
+\begin{itemize}
+  \item no le transmite a la bola la reacción de la base;
+  \item deja libre el recorrido de los servos para controlar la bola;
+  \item su empuje es un lastre ajustable que baja el centro de masa y sube la pendiente de vuelco (Sección~\ref{sec:porquedron}).
+\end{itemize}
+Además, convierte el robot en una plataforma de investigación de equilibrios apilados. El costo total sigue siendo muy inferior al del equipo comercial de laboratorio, que resuelve un solo problema sobre una base fija.

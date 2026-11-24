@@ -1,0 +1,81 @@
+%% ======================================================================
+%% 06_bom.tex -- 5. Bill of materials summary
+%% ======================================================================
+\section{Bill of materials summary}
+\label{sec:bom}
+Table~\ref{tab:bom} lists the components of the final prototype. Costs are approximate unit prices in USD as of November 2026 from local and online suppliers. Items marked ``lab'' were provided by the university laboratory; their list prices are shown for reference.
+
+\begin{small}
+\setlength{\tabcolsep}{4pt}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.27\textwidth}r>{\raggedleft\arraybackslash}p{0.08\textwidth}>{\raggedleft\arraybackslash}p{0.08\textwidth}>{\raggedright\arraybackslash}p{0.13\textwidth}>{\raggedright\arraybackslash}p{0.16\textwidth}@{}}
+\caption{Bill of materials (approximate costs).}\label{tab:bom}\\
+\toprule
+Component & Qty. & Unit (USD) & Total (USD) & Source & Material type \\
+\midrule\endfirsthead
+\toprule Component & Qty. & Unit (USD) & Total (USD) & Source & Material type \\ \midrule\endhead
+\multicolumn{6}{@{}l}{\emph{N1 -- Mobile base}}\\
+NI myRIO-1900 & 1 & 500 & 500 & lab & Electronics \\
+TETRIX MAX chassis parts, 2 TorqueNADO motors with encoders, drive wheels, and omni wheels & 1 set & 230 & 230 & lab & Metal / electromech. \\
+MDD10A H-bridge ($\geq$\SI{10}{\ampere}/channel) & 1 & 15 & 15 & local supplier & Electronics \\
+TETRIX NiMH battery \SI{12}{\volt} \SI{3000}{\milli\ampere\hour} + \SI{20}{\ampere} fuse & 1 & 45 & 45 & lab & Power \\
+Power bank \SI{5}{\volt}/\SI{3}{\ampere} + 5-to-\SI{12}{\volt} boost converter & 1 & 25 & 25 & local supplier & Power \\
+Mast, vertical guide, and carriage (aluminum profile, 3D-printed parts) & 1 & 30 & 30 & local / printed & Metal, PLA \\
+\multicolumn{6}{@{}l}{\emph{N2 -- Aerial module (octocopter)}}\\
+Frame (3D-printed center plate and towers, 8 R350 arms) & 1 & 60 & 60 & printed / online & PLA, composite \\
+Spherical joint & 1 & 10 & 10 & local supplier & Metal \\
+A2212 920\,KV brushless motor & 8 & 18 & 144 & online & Electromech. \\
+9450 propeller (CW/CCW pair) & 4 & 3 & 12 & online & Polymer \\
+30\,A ESC without BEC & 8 & 10 & 80 & online & Electronics \\
+3S \SI{3300}{\milli\ampere\hour} 25C LiPo battery & 2 & 35 & 70 & online & Power \\
+ATO fuse holder + \SI{30}{\ampere} fuse, relay, \SI{1000}{\micro\farad}/\SI{25}{\volt} capacitor, 14\,AWG wire, XT60 & 2 & 12 & 24 & local supplier & Electrical \\
+NodeMCU-32S (ESP32) & 1 & 8 & 8 & local supplier & Electronics \\
+MPU-6050 IMU & 1 & 3 & 3 & local supplier & Electronics \\
+VL53L0X time-of-flight sensor & 1 & 5 & 5 & local supplier & Electronics \\
+XL4015 buck converter & 2 & 4 & 8 & local supplier & Electronics \\
+\multicolumn{6}{@{}l}{\emph{N3 -- Ball-and-plate tray}}\\
+PS3 Eye USB camera & 1 & 10 & 10 & online & Electronics \\
+ESP32-S3 development board & 1 & 12 & 12 & local supplier & Electronics \\
+Futaba S3003 servo & 2 & 10 & 20 & local supplier & Electromech. \\
+Plate ($250\times220$~mm), linkages, camera towers & 1 & 15 & 15 & printed & PLA \\
+Blue ball, \SI{27}{\milli\metre} & 1 & 1 & 1 & local & Polymer \\
+\multicolumn{6}{@{}l}{\emph{N4 -- Supervisor, electronics distribution, and emergency stop}}\\
+Raspberry Pi 3B+ + \SI{32}{GB} microSD & 1 & 55 & 55 & online & Electronics \\
+3S 18650 pack with BMS (BT5 logic and BT6 servos) & 2 & 20 & 40 & local supplier & Power \\
+Latching NC emergency-stop mushroom button, \SI{4}{\metre} twin-core cable, relays K3--K4, 1N4007 diodes, Wago terminals & 1 & 15 & 15 & local supplier & Electrical \\
+USB cables, hub, connectors, fasteners, zip ties & 1 & 20 & 20 & local supplier & Misc. \\
+\midrule
+\multicolumn{3}{@{}l}{\textbf{Total (all items)}} & \textbf{1,457} & & \\
+\multicolumn{3}{@{}l}{\textbf{Total excluding lab-supplied items}} & \textbf{682} & & \\
+\bottomrule
+\end{longtable}
+\end{small}
+
+\subsection{Economic viability}
+\label{sec:costos}
+Table~\ref{tab:costos} compares the aerial module against alternatives that perform the same function: leveling the plate while the base climbs a ramp. Alternative prices are approximate market references.
+
+\begin{table}[!htbp]
+\centering
+\small
+\caption{Cost and capability comparison of alternatives for the leveling stage.}
+\label{tab:costos}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{0.26\textwidth}c>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}p{0.13\textwidth}>{\raggedright\arraybackslash}p{0.14\textwidth}@{}}
+\toprule
+Alternative & USD & Leveling at \SI{10}{\degree} and \SI{20}{\degree} & Torque on base & Adjustable ballast \\
+\midrule
+Servos only on the base (2 S3003) & $\sim$20 & at \SI{10}{\degree} uses \SI{93}{\percent} of stroke; not feasible at \SI{20}{\degree} & yes & no \\
+Servo gimbal + IMU (2 MG996R, MPU-6050) & $\sim$30--50 & yes & yes & no \\
+Brushless gimbal (Storm32 + 2 motors) & $\sim$80--150 & yes, with limited payload & yes & no \\
+\textbf{Octocopter module (Table~\ref{tab:bom})} & $\sim$\textbf{425} & yes, gravity-referenced & \textbf{no} (spherical joint) & \textbf{yes} ($f=0$--1) \\
+Commercial single-problem lab equipment (ball balancer, 3-DOF drone) & thousands & not mobile & --- & --- \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+For leveling alone, a servo gimbal is 8 to 14 times cheaper. The octocopter is justified by three capabilities that a gimbal lacks:
+\begin{itemize}
+  \item it does not transmit the base reaction to the ball;
+  \item it leaves the servo stroke free to control the ball;
+  \item its thrust acts as an adjustable ballast (weight relief) that lowers the center of mass and increases the tip-over angle (Section~\ref{sec:porquedron}).
+\end{itemize}
+It also turns the robot into a research platform for stacked equilibria. The total cost remains well below that of commercial laboratory equipment, which solves a single problem on a fixed base.

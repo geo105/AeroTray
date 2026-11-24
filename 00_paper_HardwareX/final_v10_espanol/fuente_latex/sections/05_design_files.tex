@@ -1,0 +1,39 @@
+%% ======================================================================
+%% 05_design_files.tex -- 4. Resumen de archivos de diseno
+%% ======================================================================
+\section{Resumen de archivos de diseño}
+\label{sec:designfiles}
+Todos los archivos están en el repositorio \repourl. La Tabla~\ref{tab:designfiles} reúne los principales.
+
+\begin{small}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.36\textwidth}>{\raggedright\arraybackslash}p{0.13\textwidth}>{\raggedright\arraybackslash}p{0.12\textwidth}>{\raggedright\arraybackslash}p{0.31\textwidth}@{}}
+\caption{Resumen de archivos de diseño.}\label{tab:designfiles}\\
+\toprule
+Archivo & Tipo & Licencia & Ubicación / función \\
+\midrule\endfirsthead
+\toprule Archivo & Tipo & Licencia & Ubicación / función \\ \midrule\endhead
+\texttt{junta nuevo de 8 motores con camara.step} & STEP (383 piezas) & CERN-OHL-S & \fn{02_cad/} (archivo externo, $>95$\,MB; \fn{.glb} en el repo) -- ensamble completo \\
+\fn{x8_UAV_R350_imprimible_bandeja_v5.stp} & STEP & CERN-OHL-S & \fn{02_cad/} (archivo externo, $>95$\,MB) -- marco del octocóptero, torres y bandeja (impresión 3D) \\
+\fn{ball_and_plate_camara.stp} & STEP & CERN-OHL-S & \fn{02_cad/recibidos/} -- plato, mecanismos de los servos, soporte de cámara \\
+\fn{aerotray_conjunto_cad.xml} & MuJoCo XML & MIT & \fn{06_simulacion/simulacion/} -- modelo de rótula y guía (Isaac Lab, Sección~\ref{sec:flights}) \\
+\fn{derive_ball.py}, \fn{derive_drone.py} & Python 3 (SymPy) & MIT & \fn{00_paper_HardwareX/.../scripts_modelo/} -- verificación simbólica de las ecuaciones de la Sección~\ref{sec:model} \\
+\fn{analysis.py}, \fn{ball_dt.py}, \fn{chain.py}, \fn{params.py}, \fn{rampa.py}, \fn{bateria.py}, \fn{exportar_datos_matlab.py} & Python 3 & MIT & \fn{00_paper_HardwareX/.../scripts_modelo/} -- todas las cifras del modelo de las Secciones~\ref{sec:model} y \ref{sec:modelval} \\
+\fn{generar_todas.m}, \fn{estilo_paper.m}, \fn{fig_*.m} & MATLAB & MIT & \fn{00_paper_HardwareX/.../figuras_matlab/} -- todas las figuras de datos y del modelo \\
+\fn{Marcadores_ArUco_y_Calibracion_Bandeja_A4.pdf} & PDF & CC BY 4.0 & \fn{01_guias_y_documentacion/imprimibles/} -- hoja de calibración del plato \\
+\fn{captura_octo_m8_vuelo_guia.ino} (v11) & Arduino C++ & MIT & \fn{03_firmware/firmware/} -- firmware de actitud, rumbo en base y vuelo en guía del octocóptero \\
+\fn{captura_octo_m8_banco_angulo_laser.ino} & Arduino C++ & MIT & \fn{03_firmware/firmware/} -- firmware de banco (colectivo fijo) \\
+\fn{ball_plate_esp32s3_platformio/src/main.cpp} & PlatformIO C++ & MIT & \fn{03_firmware/} -- PID de la bola y servos en la ESP32-S3 \\
+\fn{seguidor.py}, \fn{comunicacion.py}, \fn{myrio_uart.py}, \fn{pagina_dron.py}, \fn{pagina_robot.py} & Python 3 & MIT & \fn{04_raspberry_pi/pi_control/} -- supervisor en la Raspberry Pi, visión, enlaces e interfaz web \\
+\fn{config_pi.json}, \fn{ajustes.json}, \fn{arrancar.sh} & JSON, shell & MIT & \fn{04_raspberry_pi/pi_control/} -- configuración, ganancias y lazo de arranque \\
+\fn{prueba_prueba.vi} (principal), \fn{AeroTray_Control_Formula.vi}, \fn{CONTROL_TRAYECTORIA.vi}, \fn{Laboratorio2_Ejercicio1_Motores.lvproj} & LabVIEW 2019 & MIT & \fn{05_labview_myrio/Control_Robot_Movil/} -- control de la base en la myRIO, odometría, secuencias, UART \\
+\fn{cargar_vuelo_guia_desde_pi.sh}, \fn{subir_uart_a_pi.sh} & shell & MIT & \fn{03_firmware/firmware/}, \fn{04_raspberry_pi/pi_control/} -- grabar el dron y desplegar el código de la Pi \\
+\fn{comparar_vuelo_isaac.py}, \fn{make_figures.py}, \fn{bp_metrics.py} & Python 3 & MIT & \fn{07_herramientas/}, \fn{00_paper_HardwareX/scripts_repositorio/} -- métricas y figuras de la Sección~\ref{sec:validation} \\
+\fn{isaaclab_aerotray/} (\fn{env.py}, \fn{agent.py}) & Python & MIT & \fn{06_simulacion/simulacion/} -- tarea de Isaac Lab y agente PPO \\
+\fn{vuelo_*.csv}, \fn{dron_log_*.csv}, \fn{registro_*.csv}, \fn{salida.log} & CSV, texto & CC BY 4.0 & \fn{08_datos_y_registros/} -- registros crudos usados en este artículo \\
+\fn{GUIA_EQUIPO.md}, \fn{VUELO_GUIA.md}, \fn{UART_MYRIO.md} & Markdown & CC BY 4.0 & \fn{01_guias_y_documentacion/} -- procedimientos de operación y vuelo \\
+Esquemáticos Proteus (\fn{AeroTray_Esquematicos.pdsprj}, \fn{AeroTray_Esquematicos_vista_v2.pdf}, \fn{AeroTray_Fig_Comunicaciones.pdf}) & Proteus, PDF & CERN-OHL-S & \fn{02_cad/esquematicos_proteus/} -- esquemático jerárquico de 6 hojas y comunicaciones (Sección~\ref{sec:power}) \\
+\fn{IMG_1867.mov}, \fn{IMG_1868.mov}, \fn{IMG_1869.mov} & video HEVC 4K & CC BY 4.0 & Archivo externo (ver README) -- vuelos 6 y 7 del 20/11 (Sección~\ref{sec:flights}) \\
+\bottomrule
+\end{longtable}
+\end{small}
+

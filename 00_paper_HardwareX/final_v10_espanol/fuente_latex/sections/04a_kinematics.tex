@@ -1,0 +1,223 @@
+%% ======================================================================
+%% 04a_kinematics.tex -- 3. Modelo (parte 1): supuestos, marcos, parametros, cinematica
+%% Verificacion simbolica: scripts_modelo/derive_*.py ; cifras: scripts_modelo/analysis.py
+%% ======================================================================
+\section{Modelo cinemático y dinámico}
+\label{sec:model}
+
+Esta sección deduce el modelo de la cadena completa, base $\to$ rótula $\to$ octocóptero $\to$ plato $\to$ bola, que se usó para dimensionar el prototipo, para diseñar y diagnosticar sus tres controladores y para interpretar los experimentos de la Sección~\ref{sec:validation}. La deducción va de abajo hacia arriba: supuestos, marcos y parámetros (Sección~\ref{sec:assumptions}); cinemática de la base, de la cadena y del accionamiento del plato (Secciones~\ref{sec:basekin}--\ref{sec:linkage}); dinámica de la base, del octocóptero y de la bola (Secciones~\ref{sec:basedyn}--\ref{sec:ball}); la justificación del dron en la rampa y su margen de empuje frente a la batería (Secciones~\ref{sec:porquedron}--\ref{sec:bateria}); y, por último, el modelo lineal acoplado, los controladores y las limitaciones fundamentales que se siguen de él (Secciones~\ref{sec:coupling}--\ref{sec:limits_fund}). Cada ecuación de la dinámica de la bola y del octocóptero se verificó simbólicamente con SymPy, y cada cifra de esta sección la calculan los scripts de \fn{scripts_modelo/} del repositorio (\ref{app:derivations}).
+
+\subsection{Supuestos, marcos y parámetros}
+\label{sec:assumptions}
+
+\paragraph{Supuestos de modelado}
+\begin{enumerate}[label=\textbf{A\arabic*.}, leftmargin=*]
+  \item Todos los eslabones son rígidos. Se desprecia la flexibilidad de las placas y torres de PLA.
+  \item Las ruedas motrices ruedan sin deslizamiento longitudinal ni lateral; las ruedas omnidireccionales son apoyos pasivos con resistencia lateral despreciable.
+  \item La rótula esférica es ideal en alabeo y cabeceo; su par de fricción $\vect{\tau}_f$ se trata como una perturbación no modelada. Su guiñada queda bloqueada por fricción y por los topes, de modo que el rumbo del octocóptero sigue al de la base (lo confirman los cortes por guiñada de la Sección~\ref{sec:integrated}).
+  \item La guía vertical es una articulación prismática con fricción de Coulomb y viscosa $F_g(\dot d)$ y topes rígidos en $d=0$ y $d=d_{\max}$.
+  \item Cada rotor produce un empuje $F_i$ según $+\vect{z}_D$ y un par de reacción proporcional a él; el conjunto ESC--motor--hélice responde a su orden con un retardo puro seguido de un retraso de primer orden $\tau_m$. El empuje a orden fija escala con el cuadrado de la tensión que llega a los ESC (Sección~\ref{sec:bateria}).
+  \item La bola es una esfera homogénea que rueda sin deslizar; se desprecia su resistencia a la rodadura. El factor de inercia $\gamma_b=1/(1+I_b/m_br_b^2)$ se mantiene general ($\gamma_b=5/7$ para una esfera maciza, $3/5$ para un cascarón delgado).
+  \item Los servos son servos de posición con un retardo puro y un retraso de primer orden; el juego del mecanismo se trata como una no linealidad fuera del modelo lineal.
+  \item Para el análisis lineal, los ángulos, las velocidades angulares y las aceleraciones son pequeños y la base se mueve con inclinación constante salvo en las transiciones de la rampa.
+\end{enumerate}
+
+\paragraph{Marcos y notación}
+Los marcos se muestran en la Fig.~\ref{fig:frames}. $\{W\}$ es un marco inercial con $\vect z_W$ hacia arriba. $\{B\}$ está unido a la base, con origen en el suelo bajo el punto medio del eje motriz (trasero), $\vect x_B$ hacia adelante (hacia las ruedas omnidireccionales) y $\vect z_B$ normal al suelo. $\{J\}$ tiene su origen en el centro de la rótula esférica, a una altura $h_{J0}+d$ sobre el suelo y a una distancia $\ell_J$ por delante del eje motriz, donde $d\in[0,d_{\max}]$ es el desplazamiento en la guía. $\{D\}$ está fijo al octocóptero con origen en el centro de la rótula, $\vect x_D$ hacia el motor M8, $\vect y_D$ hacia el motor M7 y $\vect z_D$ hacia arriba (convención FLU del firmware). $\{G\}$ está fijo al octocóptero en el centro de la junta universal del plato, a una altura $h_P$ según $\vect z_D$. $\{P\}$ es el marco del plato, con origen en el centro de la junta universal; el centro de la bola tiene coordenadas $\vect\rho=[x_b,\,y_b,\,\varepsilon]\T$ en $\{P\}$, donde $\varepsilon$ es la altura del centro de la bola sobre el centro de la junta universal. $\Rot_x,\Rot_y,\Rot_z$ son rotaciones elementales, $\skw{\vect a}$ es la matriz antisimétrica de $\vect a$, y las orientaciones usan los ángulos de Euler $z$--$y$--$x$ $(\psi,\theta,\phi)$ que implementa el firmware. Un vector sin superíndice se expresa en el marco que indica el texto; $\vect a^{B}$ denota componentes en $\{B\}$.
+
+La configuración del robot se describe con
+\begin{equation}
+  \vect{q}=\big[\,x,\ y,\ \psi\ \big|\ d\ \big|\ \phi,\ \theta,\ \psi_D\ \big|\ \alpha_x,\ \alpha_y\ \big|\ x_b,\ y_b\,\big]\T\in\mathbb{R}^{11},
+  \label{eq:q}
+\end{equation}
+donde $(x,y,\psi)$ es la pose plana de la base en el plano del suelo, $d$ el desplazamiento en la guía, $(\phi,\theta,\psi_D)$ el alabeo, el cabeceo y el rumbo del octocóptero respecto a $\{W\}$, $(\alpha_x,\alpha_y)$ las inclinaciones del plato que producen los servos respecto a $\{D\}$, y $(x_b,y_b)$ la posición de la bola sobre el plato. El bloqueo de guiñada de A3 elimina $\psi_D$ y deja diez coordenadas de configuración; la base está sujeta a una restricción no holonómica (Sección~\ref{sec:basekin}), así que el robot tiene nueve grados de libertad de velocidad, mientras que las restricciones de rodadura de la bola fijan su velocidad angular en función de $(\dot x_b,\dot y_b)$ (Sección~\ref{sec:ball}). Estos nueve grados de libertad se accionan con siete canales (dos ruedas; los ocho rotores, que actúan como un colectivo y dos pares; dos servos), y dos de ellos, $(x_b,y_b)$, no están actuados.
+
+\begin{figure}[!htbp]
+\centering
+\begin{tikzpicture}[scale=1.32, font=\footnotesize, ax/.style={-{Latex[length=1.8mm]}, thick}]
+  % ground and world frame
+  \fill[pGris!20] (-4.5,-0.32) rectangle (4.5,-0.45);
+  \draw[ax] (-4.3,-0.15) -- (-3.6,-0.15) node[above=1pt]{$x_W$};
+  \draw[ax] (-4.3,-0.15) -- (-4.3,0.55) node[left]{$z_W$};
+  % base: driven (rear) wheel and omni (front) wheel
+  \draw[thick, fill=pAzul!10] (-1.6,0.15) rectangle (1.6,0.8);
+  \draw[thick, fill=pGris!35] (-1.1,0.16) circle (0.48); \draw[thick, fill=pGris!12] (1.1,0.16) circle (0.48);
+  \node at (-1.1,0.16) {motriz}; \node at (1.1,0.16) {omni};
+  \fill (-1.1,-0.32) circle (0.045);
+  \draw[ax, pAzul] (-1.1,-0.32) -- (-0.25,-0.32) node[below right]{$x_B$};
+  \node[pAzul] at (-1.88,-0.10) {$\{B\}$};
+  % mast offset l_J
+  \draw[{Latex}-{Latex}] (-1.1,1.05) -- (-0.4,1.05); \node[above] at (-0.75,1.05) {$\ell_J$};
+  \draw[line width=2pt, pGris!85!black] (-0.4,0.8) -- (-0.4,3.0);
+  \draw[thick, fill=pGris!22] (-0.6,2.4) rectangle (-0.2,3.0);
+  \draw[{Latex}-{Latex}] (-0.85,2.4) -- (-0.85,3.0); \node[left] at (-0.88,2.7) {$d$};
+  \draw[{Latex}-{Latex}] (-3.15,-0.32) -- (-3.15,3.1); \node[left] at (-3.20,1.4) {$h_{J0}+d$};
+  \draw[dotted] (-3.25,3.1) -- (-0.5,3.1);
+  % joint
+  \fill (-0.4,3.1) circle (0.09); \node[below left] at (-0.92,3.18) {$\{J\}$};
+  \draw[dashed, pGris] (-0.4,3.1) -- (-0.4,7.0);
+  % octocopter pitched by theta (all lengths in its own frame)
+  \begin{scope}[shift={(-0.4,3.1)}, rotate=-8]
+    \draw[line width=1.5pt, pRojo] (-3.1,0.3) -- (3.1,0.3);
+    \foreach \xx in {-3.1,-1.7,1.7,3.1} {\draw[thick] (\xx,0.3) -- (\xx,0.5); \draw[thick] (\xx-0.55,0.5) -- (\xx+0.55,0.5);}
+    \draw[ax, pRojo] (0,0) -- (1.25,0); \node[pRojo, below] at (1.15,-0.10) {$x_D$ (hacia M8)};
+    \draw[ax, pRojo] (0,0) -- (0,0.75); \node[pRojo] at (0.36,0.62) {$z_D$};
+    % centre of mass
+    \fill[pRojo!85!black] (0.22,1.05) circle (0.07); \node[right, pRojo!85!black] at (0.30,1.08) {CM};
+    \draw[{Latex}-{Latex}] (-0.45,0) -- (-0.45,1.05); \node[left] at (-0.48,0.6) {$h_c$};
+    % pillar, universal joint G and plate
+    \draw[thick] (0,0.3) -- (0,1.95);
+    \fill[pOcre] (0,2.0) circle (0.07); \node[below left, pOcre] at (-0.14,1.94) {$\{G\}$};
+    \draw[{Latex}-{Latex}] (2.82,0) -- (2.82,2.0); \node[right] at (2.85,1.0) {$h_P$};
+    \draw[dotted] (0.1,2.0) -- (2.88,2.0);
+    \begin{scope}[shift={(0,2.0)}, rotate=7]
+      \draw[very thick, pOcre, fill=pOcre!18] (-1.6,0.06) rectangle (1.6,0.18);
+      \fill[pAzul] (0.75,0.38) circle (0.2);
+      \draw[ax, pOcre] (0,-0.04) -- (1.05,-0.04); \node[pOcre, below] at (0.68,-0.06) {$x_P$};
+      \draw[pGris, dashed] (0.75,0.38) -- (1.95,0.38); \draw[pGris, dashed] (1.6,0) -- (1.95,0);
+      \draw[{Latex}-{Latex}] (1.9,0) -- (1.9,0.38); \node[right] at (1.93,0.19) {$\varepsilon$};
+      \draw[{Latex}-{Latex}] (0,0.68) -- (0.75,0.68); \node[above] at (0.37,0.69) {$x_b$};
+      \node[pOcre, right, align=left] at (2.30,0.22) {giro del servo $\alpha_y$\\[-1pt]resp.\ a $\{D\}$};
+    \end{scope}
+    % camera towers (fixed to the drone)
+    \draw[thick, pGris] (-2.3,0.3) -- (-0.2,3.6); \draw[thick, pGris] (2.3,0.3) -- (0.2,3.6);
+    \draw[thick, fill=pGris!45] (-0.35,3.55) rectangle (0.35,3.85); \node[right] at (0.45,3.75) {cámara, fija a $\{D\}$};
+  \end{scope}
+  \draw[-{Latex}] (-0.4,6.12) arc (90:82:3.02); \node at (-0.06,6.36) {$\theta$};
+\end{tikzpicture}
+\caption{Marcos y longitudes de la cadena cinemática en el plano $x$--$z$ (se muestra el cabeceo $\theta$; el alabeo es análogo alrededor de $x$). $\{D\}$ tiene su origen en el centro de la rótula $\{J\}$. Las torres de la cámara están fijas al octocóptero, así que la cámara mide la bola en un marco que se inclina con el octocóptero pero no con los servos.}
+\label{fig:frames}
+\end{figure}
+
+\paragraph{Parámetros}
+La Tabla~\ref{tab:params} reúne los parámetros de esta sección con su fuente. Las dimensiones vienen del ensamble CAD del prototipo final (383 piezas); las masas, de pesajes; los datos de actuadores, de hojas de datos; las ganancias, del firmware; y tres magnitudes ($\delta_x,\delta_y$, $h_c$ y $k_F$) se identifican a partir de los registros en la Sección~\ref{sec:ident}.
+
+\begin{small}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.16\textwidth}>{\raggedright\arraybackslash}p{0.43\textwidth}>{\raggedleft\arraybackslash}p{0.35\textwidth}@{}}
+\caption{Parámetros del modelo. Fuentes: [CAD] modelo de ensamble; [M] medido; [HD] hoja de datos; [FW] firmware o código LabVIEW; [ID] identificado en este trabajo; [E] estimación de ingeniería.}\label{tab:params}\\
+\toprule
+Símbolo & Descripción & Valor [fuente] \\
+\midrule\endfirsthead
+\toprule Símbolo & Descripción & Valor [fuente] \\ \midrule\endhead
+\multicolumn{3}{@{}l}{\emph{Base móvil}}\\
+$r$, $b$, $L$ & radio de rueda, trocha, distancia entre ejes & \SI{49.3}{\milli\metre}, \SI{0.3794}{\metre}, \SI{0.220}{\metre} [FW, M] \\
+$\kappa_e$ & avance de la rueda por cuenta de encoder (1440 cuentas/vuelta) & \SI{0.2151}{\milli\metre} [FW, HD] \\
+$\tau_s$, $\omega_0$, $i_s$ & par de arranque, velocidad en vacío y corriente de arranque del TorqueNADO (12 V, 60:1) & \SI{4.94}{\newton\metre}, \SI{100}{rpm}, \SI{8.7}{\ampere} [HD] \cite{pitsco_torquenado} \\
+$M$ & masa total del robot con todas las baterías (resto \SI{6.8}{\kilo\gram} + módulo \SI{3.6}{\kilo\gram}) & \SI{10.4}{\kilo\gram} [M] \\
+$x_G$, $h_G$ & CM por delante del eje motriz y sobre el apoyo, de las pendientes de vuelco medidas (\SI{21.5}{\degree} y \SI{30.5}{\degree}, módulo trabado) & \SI{0.088}{\metre}, \SI{0.224}{\metre} [M] \\
+$\ell_J$, $h_{J0}$, $d_{\max}$ & desfase del mástil, altura de la rótula con $d=0$, recorrido de la guía & \SI{0.088}{\metre}, \SI{0.495}{\metre}, \SI{0.140}{\metre} [CAD, M] \\
+$C_{rr}$ & coeficiente de resistencia a la rodadura & 0,02 [E] \\
+\midrule
+\multicolumn{3}{@{}l}{\emph{Módulo aéreo}}\\
+$m$, $m_c$ & conjunto que rota, carro & \SI{3.3}{\kilo\gram}, \SI{0.3}{\kilo\gram} [M] \\
+$\vect J$ & inercia respecto al centro de la rótula & $\diag(0.12;\ 0.12;\ 0.20)$\,\si{\kilo\gram\metre\squared} [CAD] \\
+$h_c$ & altura del CM sobre la rótula & $0.14\pm0.06$\,m [ID]; 0,10\,m [CAD] \\
+$\delta_x$, $\delta_y$ & excentricidad horizontal del CM & $9.5\pm1.8$\,mm, $1.9\pm1.5$\,mm [ID] \\
+$L_r$, $h_r$ & radio de los rotores, plano de rotores sobre la rótula & \SI{0.350}{\metre}, \SI{0.095}{\metre} [CAD] \\
+$(x_i,y_i)$, M1--M4 & posición de los rotores, horarios ($s_i=-1$) & $(D,-D)$, $(-D,-D)$, $(-D,D)$, $(D,D)$, $D=L_r/\sqrt2$ [FW] \\
+$(x_i,y_i)$, M5--M8 & posición de los rotores, antihorarios ($s_i=+1$) & $(0,-L_r)$, $(-L_r,0)$, $(0,L_r)$, $(L_r,0)$ [FW] \\
+$k_F$, $u_0$, $n$ & mapa de empuje $F=k_F((u-u_0)/\SI{860}{\micro\second})^n$ & 5,40\,N [FW], 7,17--8,18\,N [ID] con 12,4\,V; \SI{1140}{\micro\second}; 1,6 \\
+$c_Q$ & par de reacción por unidad de empuje & \SI{0.020}{\metre} [FW] \\
+$\tau_m$, $T_a$ & retraso motor--ESC, retardo de actuación (trama ESC de 50\,Hz, filtro de la IMU) & \SI{0.07}{\second} [E], \SI{0.02}{\second} [FW] \\
+$C_b$, $R_\Sigma$ & capacidad de cada LiPo 3S; resistencia interna + cable + contactos por rama & \SI{3.3}{\ampere\hour} [HD]; 41--\SI{68}{\milli\ohm} [E, auditoría] \\
+\midrule
+\multicolumn{3}{@{}l}{\emph{\textit{Ball and plate}}}\\
+$h_P$ & centro de la junta universal sobre la rótula esférica & \SI{0.104}{\metre} [CAD] \\
+$\varepsilon$, $r_b$ & altura del centro de la bola sobre la junta universal, radio de la bola & \SI{36.9}{\milli\metre}, \SI{13.5}{\milli\metre} [CAD, M] \\
+$r_a$, $\ell_r$, $R_h$ & brazo del servo, biela y radio del horn del mecanismo & 20, 36, \SI{45.85}{\milli\metre} [CAD] \\
+$k_s$ & ganancia del servo (S3003: \SI{45}{\degree} por \SI{400}{\micro\second}) & \SI{0.1125}{\degree\per\micro\second} [HD] \cite{futaba_s3003} \\
+$K_\alpha$ & inclinación del plato por microsegundo de pulso & \SI{0.0491}{\degree\per\micro\second} [CAD, HD] \\
+$H_c$ & altura de la cámara sobre el plato & \SI{0.20}{\metre} [CAD] \\
+\bottomrule
+\end{longtable}
+\end{small}
+
+\subsection{Cinemática de la base diferencial}
+\label{sec:basekin}
+
+Sean $v$ y $\omega$ las velocidades lineal y angular de $\{B\}$, y $\omega_R,\omega_L$ las velocidades angulares de las ruedas derecha e izquierda. Por A2 la velocidad del punto medio del eje no tiene componente lateral, lo que da la restricción pfaffiana (no holonómica)
+\begin{equation}
+  \big[-\sin\psi\ \ \cos\psi\ \ 0\big]\,\big[\dot x\ \ \dot y\ \ \dot\psi\big]\T=0,
+  \label{eq:pfaff}
+\end{equation}
+y el modelo cinemático \cite{siegwart2011,campion1996}
+\begin{equation}
+  \begin{bmatrix}\dot x\\ \dot y\\ \dot\psi\end{bmatrix}=\begin{bmatrix}\cos\psi&0\\ \sin\psi&0\\ 0&1\end{bmatrix}\begin{bmatrix}v\\ \omega\end{bmatrix},\qquad
+  \begin{bmatrix}v\\ \omega\end{bmatrix}=\begin{bmatrix}r/2 & r/2\\ r/b & -r/b\end{bmatrix}\begin{bmatrix}\omega_R\\ \omega_L\end{bmatrix},
+  \label{eq:diff}
+\end{equation}
+cuya inversa, que usa la myRIO, es $v_{R,L}=r\omega_{R,L}=v\pm\tfrac{b}{2}\omega$, con $b/2=\SI{0.1897}{\metre}$. El centro instantáneo de rotación está sobre la línea del eje, a una distancia $R_c=\tfrac{b}{2}\,(\omega_R+\omega_L)/(\omega_R-\omega_L)$ del punto medio. Los dos giros que pide la guía del curso son, por tanto: alrededor del punto medio del eje ($\omega_L=-\omega_R$, $R_c=0$, $\omega=2v_R/b$) y alrededor de una rueda ($\omega_L=0$, $R_c=b/2$, $\omega=v_R/b$). Como la rótula está a una distancia $\ell_J$ por delante del eje, describe una circunferencia de radio $\ell_J=\SI{0.088}{\metre}$ en el primer caso y $\sqrt{(b/2)^2+\ell_J^2}=\SI{0.209}{\metre}$ en el segundo; la Sección~\ref{sec:coupling} muestra que las aceleraciones centrípetas resultantes son despreciables.
+
+\paragraph{Odometría}
+El nodo de LabVIEW integra los incrementos de encoder $\Delta N_{R,L}$ en cada periodo con la regla del punto medio:
+\begin{gather}
+  \Delta s_{R,L}=\kappa_e\,\Delta N_{R,L},\qquad \Delta s=\tfrac12(\Delta s_R+\Delta s_L),\qquad \Delta\psi=\frac{\Delta s_R-\Delta s_L}{b},\\
+  \begin{bmatrix}x\\y\end{bmatrix}_{k+1}=\begin{bmatrix}x\\y\end{bmatrix}_{k}+\Delta s\begin{bmatrix}\cos(\psi_k+\Delta\psi/2)\\ \sin(\psi_k+\Delta\psi/2)\end{bmatrix},\qquad \psi_{k+1}=\psi_k+\Delta\psi .
+  \label{eq:odo}
+\end{gather}
+Con velocidades de rueda constantes dentro de un periodo, la actualización exacta (por arco) multiplica el incremento por $\operatorname{sinc}(\Delta\psi/2)=1-\Delta\psi^2/24+O(\Delta\psi^4)$, de modo que el error de truncamiento de \eqref{eq:odo} es $\Delta s\,\Delta\psi^2/24$ por paso: menos de \SI{1}{\nano\metre} a las velocidades usadas ($|\omega|\le\SI{0.5}{\radian\per\second}$, periodo de \SI{10}{\milli\second}). La resolución es una cuenta: $\kappa_e=\SI{0.2151}{\milli\metre}$ en traslación y $\kappa_e/b=\SI{0.57}{\milli\radian}$ ($0.032^\circ$) en rumbo. Los errores odométricos dominantes son, por tanto, sistemáticos \cite{borenstein1996}: una diferencia relativa $\epsilon_d$ entre los radios de las ruedas produce una deriva de rumbo $\epsilon_d S/b$ y una desviación lateral $\epsilon_d S^2/(2b)$ tras un recorrido recto de longitud $S$ (\SI{1.5}{\degree} y \SI{13}{\milli\metre} por metro para $\epsilon_d=1\%$), y un error relativo $\epsilon_b$ en la trocha produce un error de rumbo $-\epsilon_b\Theta$ tras un giro en el sitio $\Theta$. Ambos se calibran con las pruebas de 1\,m y de 360$^\circ$ de la Sección~\ref{sec:integrated}.
+
+\subsection{Inmersión en la pendiente y cadena cinemática}
+\label{sec:chain}
+
+Sea el suelo un plano de inclinación $\beta$ cuya dirección de máxima subida es $\vect x_W$. Con $(x,y,\psi)$ medidos en ese plano, la pose de la base es
+\begin{equation}
+  \Rot_{WB}=\Rot_y(-\beta)\,\Rot_z(\psi),\qquad \vect p_{B}=\Rot_y(-\beta)\,[x\ \ y\ \ 0]\T ,
+  \label{eq:slope}
+\end{equation}
+y la gravedad, expresada en $\{B\}$, es
+\begin{equation}
+  \vect g^{B}=\Rot_{WB}\T\begin{bmatrix}0\\0\\-g\end{bmatrix}=g\begin{bmatrix}-\sin\beta\cos\psi\\ \sin\beta\sin\psi\\ -\cos\beta\end{bmatrix}.
+  \label{eq:gB}
+\end{equation}
+Las posiciones de la rótula, de la junta universal y de la bola se obtienen de la cadena de transformaciones homogéneas:
+\begin{align}
+  \vect p_J&=\vect p_B+\Rot_{WB}\big[\ell_J\ \ 0\ \ h_{J0}+d\big]\T, \label{eq:pJ}\\
+  \vect p_G&=\vect p_J+\Rot_{WD}\,h_P\ez,\qquad \Rot_{WD}=\Rot_z(\psi_D)\Rot_y(\theta)\Rot_x(\phi), \label{eq:pG}\\
+  \vect p_b&=\vect p_G+\Rot_{WD}\Rot_{DP}\,\vect\rho,\qquad \Rot_{DP}=\Rot_y(\alpha_y)\Rot_x(\alpha_x),\qquad \vect\rho=[x_b\ \ y_b\ \ \varepsilon]\T . \label{eq:pb}
+\end{align}
+Dos propiedades de \eqref{eq:pG}--\eqref{eq:pb} dan forma a todo el diseño. Primero, $(\phi,\theta)$ son ángulos \emph{absolutos}: la IMU del octocóptero los estima respecto a la gravedad y su controlador los lleva a cero. A primer orden, la inclinación absoluta del plato es
+\begin{equation}
+  \Theta_P\simeq\theta+\alpha_y,\qquad \Phi_P\simeq\phi+\alpha_x ,
+  \label{eq:tilt}
+\end{equation}
+que no contiene la pendiente $\beta$: la rótula pasiva y el octocóptero que se nivela solo desacoplan la inclinación del suelo del plato. Si la bandeja estuviera fija a la base, el plato quedaría inclinado $\arcsin(\sin\beta\cos\psi)$, y en la rampa de \SI{10}{\degree} los servos gastarían \SI{10}{\degree} de sus \SI{\pm10.8}{\degree} de recorrido (Sección~\ref{sec:linkage}) solo para nivelarlo; en la de \SI{20}{\degree} no podrían. Segundo, la bola está a una altura $h_P+\varepsilon=\SI{0.141}{\metre}$ sobre la rótula esférica, un brazo de palanca que convierte las aceleraciones angulares del octocóptero en aceleraciones lineales de la bola.
+
+\paragraph{Propagación de velocidades y aceleraciones}
+Con $\vect r_{BJ}=[\ell_J,0,h_{J0}+d]\T$, la velocidad y la aceleración angulares de la base $\vect\omega_B,\vect\alpha_B$ y las velocidades angulares del octocóptero en ejes cuerpo $\vect\omega_D=[p,q,r]\T$, las aceleraciones de la rótula y de la junta universal son
+\begin{align}
+  \vect a_J&=\vect a_B+\vect\alpha_B\times\vect r_{BJ}+\vect\omega_B\times(\vect\omega_B\times\vect r_{BJ})+2\,\vect\omega_B\times\dot d\,\ez+\ddot d\,\ez, \label{eq:aJ}\\
+  \vect a_G&=\vect a_J+\vect\alpha_D\times h_P\ez+\vect\omega_D\times(\vect\omega_D\times h_P\ez). \label{eq:aG}
+\end{align}
+Para movimiento plano en una pendiente constante ($\vect\omega_B=\omega\,\vect z_B$) y $\ddot d=0$, \eqref{eq:aJ} se reduce en $\{B\}$ a
+\begin{equation}
+  \vect a_J^{B}=\big[\dot v-\omega^2\ell_J,\ \ v\omega+\dot\omega\,\ell_J,\ \ 0\big]\T ,
+  \label{eq:aJplanar}
+\end{equation}
+porque la aceleración del punto medio del eje de una base no holonómica es $[\dot v,\ v\omega,\ 0]\T$. Los términos con $\vect\omega_B\times$ y $\vect\alpha_B\times$ en el plano vertical aparecen solo en las transiciones de la rampa, donde la base cabecea y la rótula, a \SI{0.5}{\metre} del suelo, recibe la aceleración tangencial $(h_{J0}+d)\,\ddot\theta_B$. Las derivadas de los ángulos de Euler del octocóptero se relacionan con las velocidades en ejes cuerpo por
+\begin{equation}
+  \dot\phi=p+\tan\theta\,(q\sin\phi+r\cos\phi),\quad \dot\theta=q\cos\phi-r\sin\phi,\quad \dot\psi_D=\frac{q\sin\phi+r\cos\phi}{\cos\theta},
+  \label{eq:euler_rates}
+\end{equation}
+que es la ley de integración del estimador de actitud (\ref{app:derivations}).
+
+\subsection{Accionamiento del plato y medición de la bola}
+\label{sec:linkage}
+
+\paragraph{Mecanismo de cuatro barras}
+Cada eje del plato se acciona con un mecanismo de cuatro barras en un plano vertical (Fig.~\ref{fig:ballstab}b): el eje del servo $S$ es el pivote fijo de una manivela de longitud $r_a$, una biela de longitud $\ell_r$ une la punta de la manivela con un horn de radio $R_h$ en la junta universal, y el centro de la junta universal $G$ es el segundo pivote fijo. Con $\vect d=G-S=(d_x;\,d_z)=(-25.85;\,36.0)$\,mm, la ecuación de cierre $\|S+r_a\vect e(\gamma)-G-R_h\vect e(\alpha)\|=\ell_r$, con $\vect e(\cdot)=[\cos(\cdot),\sin(\cdot)]\T$, se convierte en la ecuación de tipo Freudenstein \cite{freudenstein1955}
+\begin{gather}
+  A(\gamma)\cos\alpha+B(\gamma)\sin\alpha=C(\gamma), \nonumber\\
+  \alpha(\gamma)=\operatorname{atan2}(B,A)+\arccos\frac{C}{\sqrt{A^2+B^2}}, \label{eq:freud}\\
+  A=2R_h(r_a\cos\gamma-d_x),\qquad B=2R_h(r_a\sin\gamma-d_z), \nonumber\\
+  C=r_a^2+d_x^2+d_z^2+R_h^2-\ell_r^2-2r_a(d_x\cos\gamma+d_z\sin\gamma), \nonumber
+\end{gather}
+donde $\gamma$ y $\alpha$ son los ángulos de la manivela y del plato (la rama es la que contiene la posición neutra ensamblada). Como en neutro la biela es vertical y la manivela y el horn son horizontales, la ganancia de pequeña señal es $G_\ell=\dd\alpha/\dd\gamma|_0=r_a/R_h=0.436$. Con la ganancia del servo $k_s=\SI{45}{\degree}/\SI{400}{\micro\second}$ \cite{futaba_s3003}, el plato se inclina $K_\alpha=G_\ell k_s=\SI{0.0491}{\degree\per\micro\second}$ ($8.56\times10^{-4}$\,rad/µs), y el límite del firmware de $\pm\SI{220}{\micro\second}$ corresponde a $\pm\SI{10.8}{\degree}$ de plato. En todo el recorrido de $\pm\SI{60}{\degree}$ del servo, \eqref{eq:freud} da de \SI{-23.0}{\degree} a \SI{21.3}{\degree}, una asimetría del 7\% que el modelo lineal desprecia. El juego medido con escalones del servo (6/12\,µs en $x$, 35/15\,µs en $y$ en los sentidos positivo/negativo) corresponde a 0,3--\SI{1.7}{\degree} de plato; el firmware lo suma a la orden con una rampa de \SI{30}{\micro\second}.
+
+\paragraph{Medición con la cámara}
+La cámara está unida rígidamente al octocóptero, así que mide la bola en el plano del plato \emph{visto desde} $\{D\}$. Una homografía $\vect H$ calculada con las cuatro esquinas del plato en neutro lleva puntos de la imagen a milímetros del plato \cite{hartley2004}. De la geometría se siguen tres efectos sistemáticos. (i) El centro de la bola está $r_b$ por encima de la superficie del plato, así que su imagen se proyecta sobre el plano del plato con un factor de escala constante $H_c/(H_c-r_b)=1.07$, que se absorbe en la ganancia del lazo. (ii) Una inclinación $\alpha$ del servo mueve el plato respecto a la cámara y a la homografía; a segundo orden la lectura pasa a $x_b\cos\alpha+r_b\sin\alpha$, un error menor que \SI{2.5}{\milli\metre} en la inclinación extrema. (iii) La detección se hace en la imagen cruda (unos 1,04\,px/mm en el plato) y el centroide tiene una desviación estándar de \SI{0.1}{\milli\metre} con la bola quieta (registro de 75\,s). La Pi estima la velocidad como la pendiente por mínimos cuadrados de las posiciones en una ventana $W=\SI{60}{\milli\second}$ ($N\approx12$ muestras con $h=\SI{5.35}{\milli\second}$):
+\begin{gather}
+  \hat v_k=\sum_{j=0}^{N-1}w_j\,x_{k-j},\qquad w_j=\frac{t_{k-j}-\bar t}{\sum_i (t_{k-i}-\bar t)^2}, \label{eq:lsvel}\\
+  \sigma_{\hat v}=\sigma_x\sqrt{\frac{12}{N(N^2-1)}}\;\frac1h\approx\SI{1.6}{\milli\metre\per\second}, \nonumber
+\end{gather}
+un derivador FIR insesgado para velocidad constante, cuyo desfase a baja frecuencia es el de un retardo de $W/2=\SI{30}{\milli\second}$ y cuya ganancia cae por encima de $\approx1/W$. La ecuación \eqref{eq:lsvel} se usa exactamente, como filtro FIR, en el análisis en lazo cerrado de la Sección~\ref{sec:ballcontrol}.

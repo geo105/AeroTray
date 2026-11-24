@@ -1,0 +1,62 @@
+{
+ "groups": {
+  "base still, drone off": {
+   "n": 13951,
+   "median": 4.4,
+   "mean": 4.4,
+   "p90": 4.4,
+   "p95": 4.5,
+   "max": 4.5
+  },
+  "base still, drone on": {
+   "n": 85219,
+   "median": 18.9,
+   "mean": 23.1,
+   "p90": 39.9,
+   "p95": 60.4,
+   "max": 157.0
+  },
+  "moving, flat floor": {
+   "n": 95851,
+   "median": 27.9,
+   "mean": 33.1,
+   "p90": 63.2,
+   "p95": 76.2,
+   "max": 179.0
+  },
+  "moving, 10\u00b0 ramp": {
+   "n": 62492,
+   "median": 29.5,
+   "mean": 35.8,
+   "p90": 63.9,
+   "p95": 87.9,
+   "max": 180.1
+  }
+ },
+ "references": {
+  "base still, drone off": {
+   "t0": "19:21:15",
+   "dur_s": 75.2,
+   "seen_pct": 100.0,
+   "mean_mm": 4.4,
+   "median_mm": 4.4,
+   "p90_mm": 4.4,
+   "max_mm": 4.5,
+   "rms_x": 4.4,
+   "rms_y": 0.3,
+   "fs_hz": 186.0
+  },
+  "base still, drone on": {
+   "t0": "19:29:18",
+   "dur_s": 468.9,
+   "seen_pct": 97.6,
+   "mean_mm": 23.1,
+   "median_mm": 18.9,
+   "p90_mm": 39.9,
+   "max_mm": 157.0,
+   "rms_x": 23.1,
+   "rms_y": 19.1,
+   "fs_hz": 182.0
+  }
+ }
+}

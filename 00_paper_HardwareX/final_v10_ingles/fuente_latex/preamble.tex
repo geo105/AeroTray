@@ -1,0 +1,54 @@
+%% ======================================================================
+%% preamble.tex -- paquetes y macros comunes a todas las secciones
+%% ======================================================================
+\usepackage{iftex}
+\ifXeTeX
+  \usepackage{fontspec}
+\else
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \usepackage{textcomp}
+\fi
+%% English typography with standard decimal point.
+\usepackage[english]{babel}
+\usepackage{amsmath,amssymb,bm}
+\usepackage{graphicx}
+\usepackage{booktabs,tabularx,multirow,longtable,array}
+\usepackage{siunitx}
+\usepackage{xcolor}
+%% Shared palette with figuras_matlab_en/estilo_paper.m (adapted Okabe-Ito)
+\definecolor{pAzul}{HTML}{0072B2}
+\definecolor{pRojo}{HTML}{D55E00}
+\definecolor{pVerde}{HTML}{009E73}
+\definecolor{pOcre}{HTML}{B07A00}
+\definecolor{pMorado}{HTML}{A0529A}
+\definecolor{pGris}{HTML}{6E6E6E}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric,fit,calc,backgrounds}
+\usepackage{subcaption}
+\usepackage[section]{placeins}
+\usepackage{enumitem}
+\usepackage[colorlinks=true,linkcolor=blue!50!black,citecolor=blue!50!black,urlcolor=blue!60!black]{hyperref}
+\makeatletter\g@addto@macro{\UrlBreaks}{\do\_\do\-\do\.}\makeatother
+
+\sisetup{detect-all, range-phrase = \text{--}, per-mode = symbol, output-decimal-marker = {.},
+         list-pair-separator = {\text{ and }}, list-final-separator = {\text{ and }}}
+\setlist{itemsep=1pt,topsep=3pt}
+\setlength{\emergencystretch}{3em}
+\renewcommand{\arraystretch}{1.15}
+
+%% ---------------------------------------------------------------- macros
+\newcommand{\fn}[1]{\path{#1}}
+\newcommand{\repourl}{\url{https://github.com/geo105/AeroTray}}
+\newcommand{\us}{\,\si{\micro\second}}
+\newcommand{\Rot}{\mathbf{R}}
+\newcommand{\vect}[1]{\bm{#1}}
+\newcommand{\ez}{\vect{e}_z}
+\newcommand{\skw}[1]{[#1]_\times}
+\newcommand{\T}{^{\!\top}}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\sat}{\operatorname{sat}}
+\newcommand{\diag}{\operatorname{diag}}
+%% editorial marks (remove before submission)
+\newcommand{\tocheck}[1]{\textcolor{red}{#1}}
