@@ -1,0 +1,243 @@
+{
+ "rampa": {
+  "ensayo 05/10 (x=180 mm)": [
+   {
+    "modo": "dron apagado",
+    "f": 0.0,
+    "colectivo_us": 0,
+    "vuelco_subida_deg": 23.5,
+    "vuelco_bajada_deg": 13.9,
+    "mu_subir_10": 0.32,
+    "mu_subir_20": 0.43
+   },
+   {
+    "modo": "ralenti 1300 us",
+    "f": 0.12,
+    "colectivo_us": 1300,
+    "vuelco_subida_deg": 24.7,
+    "vuelco_bajada_deg": 13.9,
+    "mu_subir_10": 0.33,
+    "mu_subir_20": 0.44
+   },
+   {
+    "modo": "modo rampa",
+    "f": 0.5,
+    "colectivo_us": 1537,
+    "vuelco_subida_deg": 30.1,
+    "vuelco_bajada_deg": 13.6,
+    "mu_subir_10": 0.39,
+    "mu_subir_20": 0.52
+   },
+   {
+    "modo": "flotando",
+    "f": 1.0,
+    "colectivo_us": 1752,
+    "vuelco_subida_deg": 47.7,
+    "vuelco_bajada_deg": 12.4,
+    "mu_subir_10": 0.65,
+    "mu_subir_20": 0.87
+   }
+  ],
+  "CAD (x=81 mm)": [
+   {
+    "modo": "dron apagado",
+    "f": 0.0,
+    "colectivo_us": 0,
+    "vuelco_subida_deg": 14.9,
+    "vuelco_bajada_deg": 22.6,
+    "mu_subir_10": 0.23,
+    "mu_subir_20": 0.34
+   },
+   {
+    "modo": "ralenti 1300 us",
+    "f": 0.12,
+    "colectivo_us": 1300,
+    "vuelco_subida_deg": 15.4,
+    "vuelco_bajada_deg": 23.4,
+    "mu_subir_10": 0.23,
+    "mu_subir_20": 0.34
+   },
+   {
+    "modo": "modo rampa",
+    "f": 0.5,
+    "colectivo_us": 1537,
+    "vuelco_subida_deg": 17.6,
+    "vuelco_bajada_deg": 26.8,
+    "mu_subir_10": 0.24,
+    "mu_subir_20": 0.36
+   },
+   {
+    "modo": "flotando",
+    "f": 1.0,
+    "colectivo_us": 1752,
+    "vuelco_subida_deg": 26.3,
+    "vuelco_bajada_deg": 39.5,
+    "mu_subir_10": 0.26,
+    "mu_subir_20": 0.43
+   }
+  ]
+ },
+ "recorrido_plato_deg": 10.8,
+ "nivelacion": [
+  {
+   "pendiente_deg": 0,
+   "solo_servos_pct": 0.0,
+   "con_dron_pct": "5-16",
+   "sesgo_sin_dron_us": 0
+  },
+  {
+   "pendiente_deg": 5,
+   "solo_servos_pct": 46.0,
+   "con_dron_pct": "5-16",
+   "sesgo_sin_dron_us": 102
+  },
+  {
+   "pendiente_deg": 10,
+   "solo_servos_pct": 93.0,
+   "con_dron_pct": "5-16",
+   "sesgo_sin_dron_us": 204
+  },
+  {
+   "pendiente_deg": 15,
+   "solo_servos_pct": 139.0,
+   "con_dron_pct": "5-16",
+   "sesgo_sin_dron_us": 306
+  },
+  {
+   "pendiente_deg": 20,
+   "solo_servos_pct": 185.0,
+   "con_dron_pct": "5-16",
+   "sesgo_sin_dron_us": 408
+  }
+ ],
+ "baterias": {
+  "lipo_por_rama": [
+   {
+    "modo": "ralenti 1300 us (sobre la base)",
+    "I_por_rama_A": 1.2,
+    "autonomia_min": 129.0
+   },
+   {
+    "modo": "modo rampa ~1540 us",
+    "I_por_rama_A": 8.2,
+    "autonomia_min": 19.0
+   },
+   {
+    "modo": "flotando ~1750 us",
+    "I_por_rama_A": 22.6,
+    "autonomia_min": 7.0
+   }
+  ],
+  "base_nimh": [
+   {
+    "tramo": "llano",
+    "I_A": 0.93,
+    "autonomia_min_continuo": 156.0
+   },
+   {
+    "tramo": "rampa 10 grados",
+    "I_A": 2.02,
+    "autonomia_min_continuo": 71.0
+   },
+   {
+    "tramo": "rampa 20 grados",
+    "I_A": 3.07,
+    "autonomia_min_continuo": 47.0
+   }
+  ],
+  "logica": {
+   "cargas": "Raspberry Pi 3B+ + PS3 Eye + ESP32-S3 + NodeMCU",
+   "P_W": 6.0,
+   "bateria": "3S 18650 1,6 Ah (17,8 Wh)",
+   "autonomia_h": 2.5
+  },
+  "servos": {
+   "cargas": "2 S3003 con PID activo",
+   "P_W": 2.5,
+   "bateria": "3S 18650 1,6 Ah",
+   "autonomia_h": 6.1
+  },
+  "myrio": {
+   "cargas": "myRIO-1900 + encoders",
+   "P_W": 6.0,
+   "bateria": "power bank 10 Ah a 3,7 V (37 Wh) [EST]",
+   "autonomia_h": 4.7
+  }
+ },
+ "ciclo_rampa": [
+  {
+   "modo": "dron en ralenti",
+   "tramos": [
+    {
+     "tramo": "subida",
+     "largo_m": 1.0,
+     "pendiente_deg": 10.0,
+     "v_cm_s": 4.1,
+     "t_s": 24.2,
+     "I_base_A": 2.02
+    },
+    {
+     "tramo": "meseta",
+     "largo_m": 0.5,
+     "pendiente_deg": 0.0,
+     "v_cm_s": 7.4,
+     "t_s": 6.8,
+     "I_base_A": 0.93
+    },
+    {
+     "tramo": "bajada",
+     "largo_m": 1.0,
+     "pendiente_deg": -10.0,
+     "v_cm_s": 10.6,
+     "t_s": 9.4,
+     "I_base_A": 0.8
+    }
+   ],
+   "t_total_s": 40.4,
+   "Q_base_mAh": 17.4,
+   "Q_dron_mAh": 27.6,
+   "ciclos_por_carga_NiMH": 137,
+   "ciclos_por_carga_LiPo": 191
+  },
+  {
+   "modo": "modo rampa",
+   "tramos": [
+    {
+     "tramo": "subida",
+     "largo_m": 1.0,
+     "pendiente_deg": 10.0,
+     "v_cm_s": 4.8,
+     "t_s": 20.8,
+     "I_base_A": 1.79
+    },
+    {
+     "tramo": "meseta",
+     "largo_m": 0.5,
+     "pendiente_deg": 0.0,
+     "v_cm_s": 7.4,
+     "t_s": 6.7,
+     "I_base_A": 0.9
+    },
+    {
+     "tramo": "bajada",
+     "largo_m": 1.0,
+     "pendiente_deg": -10.0,
+     "v_cm_s": 10.1,
+     "t_s": 9.9,
+     "I_base_A": 0.8
+    }
+   ],
+   "t_total_s": 37.5,
+   "Q_base_mAh": 14.3,
+   "Q_dron_mAh": 170.6,
+   "ciclos_por_carga_NiMH": 168,
+   "ciclos_por_carga_LiPo": 30
+  }
+ ],
+ "quiebres_rampa": {
+  "altura_m": 0.174,
+  "cambio_de_cabeceo_por_quiebre_deg": 10,
+  "quiebres_por_ciclo": 4,
+  "duracion_quiebre_s_subiendo": 5.3
+ }
+}

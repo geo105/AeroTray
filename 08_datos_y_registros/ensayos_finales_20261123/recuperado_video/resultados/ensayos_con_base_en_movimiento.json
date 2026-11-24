@@ -1,0 +1,42 @@
+{
+ "BP23-10": {
+  "t_mov_s": 22.9,
+  "e_med_mov": 29.6,
+  "e_p95_mov": 53.7,
+  "efect50_mov": 91.4,
+  "e_med_quieto": 55.9,
+  "dron_incl_rms_mov": 1.15,
+  "dron_incl_max_mov": 6.7,
+  "fin": "18:50:01"
+ },
+ "BP23-11": {
+  "t_mov_s": 29.5,
+  "e_med_mov": 34.5,
+  "e_p95_mov": 74.6,
+  "efect50_mov": 80.7,
+  "e_med_quieto": 49.2,
+  "dron_incl_rms_mov": 0.85,
+  "dron_incl_max_mov": 4.4,
+  "fin": "18:52:45"
+ },
+ "BP23-12": {
+  "t_mov_s": 18.2,
+  "e_med_mov": 30.7,
+  "e_p95_mov": 52.9,
+  "efect50_mov": 89.1,
+  "e_med_quieto": 36.0,
+  "dron_incl_rms_mov": 0.99,
+  "dron_incl_max_mov": 2.3,
+  "fin": "18:55:59"
+ },
+ "BP23-13": {
+  "t_mov_s": 19.0,
+  "e_med_mov": 30.6,
+  "e_p95_mov": 74.7,
+  "efect50_mov": 79.9,
+  "e_med_quieto": 34.9,
+  "dron_incl_rms_mov": 0.94,
+  "dron_incl_max_mov": 2.3,
+  "fin": "19:01:36"
+ }
+}

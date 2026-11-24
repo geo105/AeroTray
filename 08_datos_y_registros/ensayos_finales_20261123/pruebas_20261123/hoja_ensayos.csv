@@ -1,0 +1,13 @@
+codigo,inicio,fin,tipo,notas
+E3-OFF-1,,,equilibrio,base quieta dron apagado 60 s
+E3-ON-1,,,equilibrio,base quieta dron ralenti 60 s
+E3-R2-OFF-1,,,recuperacion20_OFF,suelta +x
+E3-R5-OFF-1,,,recuperacion50_OFF,suelta +x
+E3-R2-ON-1,,,recuperacion20_ON,suelta +x
+E3-R5-ON-1,,,recuperacion50_ON,suelta +x
+E4-LL-B-1,,,equilibrio,llano 1 m velocidad baja
+D-A-1,,,equilibrio,rampa ciclo completo dron TRABADO (solo servos)
+D-B-1,,,equilibrio,rampa ciclo completo dron LIBRE ralenti v10
+E5-M-B-1,,,equilibrio,giro 360 punto medio baja
+E5-R-B-1,,,equilibrio,giro 360 sobre una rueda baja
+E2-X-BARRIDO,,,seno,barrido eje x amp 100
