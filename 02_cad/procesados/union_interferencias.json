@@ -1,0 +1,34 @@
+[
+  {
+    "pieza_nueva_indice": 8,
+    "interseccion_rotula_mm3": 0.0
+  },
+  {
+    "pieza_nueva_indice": 9,
+    "interseccion_rotula_mm3": 259.13672463123794
+  },
+  {
+    "pieza_nueva_indice": 10,
+    "interseccion_rotula_mm3": 258.8566326434141
+  },
+  {
+    "pieza_nueva_indice": 11,
+    "interseccion_rotula_mm3": 250.57439358864096
+  },
+  {
+    "pieza_nueva_indice": 12,
+    "interseccion_rotula_mm3": 250.84697854437084
+  },
+  {
+    "pieza_anterior_indice": 78,
+    "interseccion_rotula_mm3": 41066.581991475694
+  },
+  {
+    "pieza_anterior_indice": 81,
+    "interseccion_rotula_mm3": 1019.4147265932615
+  },
+  {
+    "pieza_anterior_indice": 82,
+    "interseccion_rotula_mm3": 6056.932619022228
+  }
+]

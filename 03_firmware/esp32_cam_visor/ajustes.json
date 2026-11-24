@@ -1,0 +1,29 @@
+{
+  "kp": 1.875,
+  "ki": 0.5,
+  "kd": 1.5625,
+  "neutro_x": 1380,
+  "neutro_y": 1380,
+  "limite": 150,
+  "signo_x": -1,
+  "signo_y": 1,
+  "consigna_x": -8,
+  "consigna_y": -4,
+  "factor_x": 1.0,
+  "factor_y": 1.0,
+  "filtro_v": 0.75,
+  "exposicion": 480,
+  "umbral": 0,
+  "reinicio_integral": 0,
+  "friccion": 0,
+  "vel_integral": 25,
+  "autoridad_i": 0.9,
+  "ab_alfa": 0,
+  "ab_beta": 0,
+  "holgura": [
+    12,
+    25,
+    70,
+    30
+  ]
+}

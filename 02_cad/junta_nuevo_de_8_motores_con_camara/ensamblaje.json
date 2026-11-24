@@ -1,0 +1,1558 @@
+{
+  "estado": "geometria_UAV_sustituida_en_copia_neutral_no_ensamblaje_completo",
+  "unidad_step": "mm",
+  "unidad_mallas": "m",
+  "origen_cad_resta_mm": [
+    2.0000574,
+    1081.4999356,
+    1094.9244173
+  ],
+  "verificacion_montaje": [
+    {
+      "pieza": "PISO2 Q1:1",
+      "error_limites_mm": 0.0
+    },
+    {
+      "pieza": "PISO2 Q2:1",
+      "error_limites_mm": 0.0
+    },
+    {
+      "pieza": "PISO2 Q3:1",
+      "error_limites_mm": 0.0
+    },
+    {
+      "pieza": "PISO2 Q4:1",
+      "error_limites_mm": 0.0
+    },
+    {
+      "pieza": "BANDEJA cruceta:1",
+      "error_limites_mm": 0.0
+    }
+  ],
+  "piezas": [
+    {
+      "indice": 0,
+      "grupo": "estructura_uav",
+      "nombre": "M6 - diagonal 135 grados:1",
+      "ruta_origen": [
+        "x8_UAV_R350_imprimible_bandeja_v5 v4",
+        "OCTO - 4 conjuntos diagonales v1:1",
+        "M6 - diagonal 135 grados:1"
+      ],
+      "malla": "mallas/000.stl",
+      "limites_m": [
+        [
+          -0.2739005982875824,
+          0.11058853566646576,
+          -0.012003201059997082
+        ],
+        [
+          -0.11062254756689072,
+          0.2739112377166748,
+          0.08402983099222183
+        ]
+      ],
+      "triangulos": 238999,
+      "caras_sin_triangulacion": 5,
+      "cerrada": false
+    },
+    {
+      "indice": 1,
+      "grupo": "estructura_uav",
+      "nombre": "M7 - diagonal 225 grados:1",
+      "ruta_origen": [
+        "x8_UAV_R350_imprimible_bandeja_v5 v4",
+        "OCTO - 4 conjuntos diagonales v1:1",
+        "M7 - diagonal 225 grados:1"
+      ],
+      "malla": "mallas/001.stl",
+      "limites_m": [
+        [
+          -0.2739112377166748,
+          -0.2739005982875824,
+          -0.012003201059997082
+        ],
+        [
+          -0.11058853566646576,
+          -0.11062254756689072,
+          0.08402983099222183
+        ]
+      ],
+      "triangulos": 239015,
+      "caras_sin_triangulacion": 4,
+      "cerrada": false
+    },
+    {
+      "indice": 2,
+      "grupo": "estructura_uav",
+      "nombre": "M8 - diagonal 315 grados:1",
+      "ruta_origen": [
+        "x8_UAV_R350_imprimible_bandeja_v5 v4",
+        "OCTO - 4 conjuntos diagonales v1:1",
+        "M8 - diagonal 315 grados:1"
+      ],
+      "malla": "mallas/002.stl",
+      "limites_m": [
+        [
+          0.11062254756689072,
+          -0.2739112377166748,
+          -0.012000000104308128
+        ],
+        [
+          0.2739005982875824,
+          -0.11058853566646576,
+          0.08403303474187851
+        ]
+      ],
+      "triangulos": 238972,
+      "caras_sin_triangulacion": 5,
+      "cerrada": false
+    },
+    {
+      "indice": 3,
+      "grupo": "estructura_uav",
+      "nombre": "M5 - diagonal 45 grados:1",
+      "ruta_origen": [
+        "x8_UAV_R350_imprimible_bandeja_v5 v4",
+        "OCTO - 4 conjuntos diagonales v1:1",
+        "M5 - diagonal 45 grados:1"
+      ],
+      "malla": "mallas/003.stl",
+      "limites_m": [
+        [
+          0.11058853566646576,
+          0.11062254756689072,
+          -0.012003201059997082
+        ],
+        [
+          0.2739112377166748,
+          0.2739005982875824,
+          0.08402983099222183
+        ]
+      ],
+      "triangulos": 238965,
+      "caras_sin_triangulacion": 6,
+      "cerrada": false
+    },
+    {
+      "indice": 4,
+      "grupo": "estructura_uav",
+      "nombre": "M6 - diagonal 135 grados (1):1",
+      "ruta_origen": [
+        "x8_UAV_R350_imprimible_bandeja_v5 v4",
+        "OCTO - 4 conjuntos diagonales v1 (1):1",
+        "M6 - diagonal 135 grados (1):1"
+      ],
+      "malla": "mallas/004.stl",
+      "limites_m": [
+        [
+          -0.3789636790752411,
+          -0.020329631865024567,
+          -0.011996394954621792
+        ],
+        [
+          -0.1654110699892044,
+          0.020344682037830353,
+          0.08403664082288742
+        ]
+      ],
+      "triangulos": 238988,
+      "caras_sin_triangulacion": 4,
+      "cerrada": false
+    },
+    {
+      "indice": 5,
+      "grupo": "estructura_uav",
+      "nombre": "M7 - diagonal 225 grados (1):1",
+      "ruta_origen": [
+        "x8_UAV_R350_imprimible_bandeja_v5 v4",
+        "OCTO - 4 conjuntos diagonales v1 (1):1",
+        "M7 - diagonal 225 grados (1):1"
+      ],
+      "malla": "mallas/005.stl",
+      "limites_m": [
+        [
+          -0.020344682037830353,
+          -0.3789636790752411,
+          -0.012000000104308128
+        ],
+        [
+          0.020329631865024567,
+          -0.1654110699892044,
+          0.08403303474187851
+        ]
+      ],
+      "triangulos": 238969,
+      "caras_sin_triangulacion": 4,
+      "cerrada": false
+    },
+    {
+      "indice": 6,
+      "grupo": "estructura_uav",
+      "nombre": "M8 - diagonal 315 grados (1):1",
+      "ruta_origen": [
+        "x8_UAV_R350_imprimible_bandeja_v5 v4",
+        "OCTO - 4 conjuntos diagonales v1 (1):1",
+        "M8 - diagonal 315 grados (1):1"
+      ],
+      "malla": "mallas/006.stl",
+      "limites_m": [
+        [
+          0.1654110699892044,
+          -0.020344682037830353,
+          -0.012001218274235725
+        ],
+        [
+          0.3789636790752411,
+          0.020329631865024567,
+          0.08403182029724121
+        ]
+      ],
+      "triangulos": 238967,
+      "caras_sin_triangulacion": 4,
+      "cerrada": false
+    },
+    {
+      "indice": 7,
+      "grupo": "estructura_uav",
+      "nombre": "M5 - diagonal 45 grados (1):1",
+      "ruta_origen": [
+        "x8_UAV_R350_imprimible_bandeja_v5 v4",
+        "OCTO - 4 conjuntos diagonales v1 (1):1",
+        "M5 - diagonal 45 grados (1):1"
+      ],
+      "malla": "mallas/007.stl",
+      "limites_m": [
+        [
+          -0.020329631865024567,
+          0.1654110699892044,
+          -0.01200094074010849
+        ],
+        [
+          0.020344682037830353,
+          0.3789636790752411,
+          0.0840320959687233
+        ]
+      ],
+      "triangulos": 238979,
+      "caras_sin_triangulacion": 4,
+      "cerrada": false
+    },
+    {
+      "indice": 8,
+      "grupo": "estructura_uav",
+      "nombre": "IMPRIMIBLE tapa_central:1",
+      "ruta_origen": [
+        "x8_UAV_R350_imprimible_bandeja_v5 v4",
+        "IMPRIMIBLE tapa_central:1"
+      ],
+      "malla": "mallas/008.stl",
+      "limites_m": [
+        [
+          -0.11750564724206924,
+          -0.11750564724206924,
+          0.004000000189989805
+        ],
+        [
+          0.11750564724206924,
+          0.11750564724206924,
+          0.007000000216066837
+        ]
+      ],
+      "triangulos": 4152,
+      "caras_sin_triangulacion": 0,
+      "cerrada": true
+    },
+    {
+      "indice": 9,
+      "grupo": "estructura_uav",
+      "nombre": "IMPRIMIBLE base_Q1:1",
+      "ruta_origen": [
+        "x8_UAV_R350_imprimible_bandeja_v5 v4",
+        "IMPRIMIBLE base_Q1:1"
+      ],
+      "malla": "mallas/009.stl",
+      "limites_m": [
+        [
+          -0.00800000037997961,
+          -1.347111500620557e-18,
+          0.0
+        ],
+        [
+          0.21140000224113464,
+          0.21140000224113464,
+          0.004000000189989805
+        ]
+      ],
+      "triangulos": 1800,
+      "caras_sin_triangulacion": 0,
+      "cerrada": true
+    },
+    {
+      "indice": 10,
+      "grupo": "estructura_uav",
+      "nombre": "IMPRIMIBLE base_Q2:1",
+      "ruta_origen": [
+        "x8_UAV_R350_imprimible_bandeja_v5 v4",
+        "IMPRIMIBLE base_Q2:1"
+      ],
+      "malla": "mallas/010.stl",
+      "limites_m": [
+        [
+          -0.21140000224113464,
+          -0.00800000037997961,
+          0.0
+        ],
+        [
+          1.5047264029648053e-17,
+          0.21140000224113464,
+          0.004000000189989805
+        ]
+      ],
+      "triangulos": 1800,
+      "caras_sin_triangulacion": 0,
+      "cerrada": true
+    },
+    {
+      "indice": 11,
+      "grupo": "estructura_uav",
+      "nombre": "IMPRIMIBLE base_Q3:1",
+      "ruta_origen": [
+        "x8_UAV_R350_imprimible_bandeja_v5 v4",
+        "IMPRIMIBLE base_Q3:1"
+      ],
+      "malla": "mallas/011.stl",
+      "limites_m": [
+        [
+          -0.21140000224113464,
+          -0.21140000224113464,
+          0.0
+        ],
+        [
+          0.00800000037997961,
+          2.723614424125379e-17,
+          0.004000000189989805
+        ]
+      ],
+      "triangulos": 1800,
+      "caras_sin_triangulacion": 0,
+      "cerrada": true
+    },
+    {
+      "indice": 12,
+      "grupo": "estructura_uav",
+      "nombre": "IMPRIMIBLE base_Q4:1",
+      "ruta_origen": [
+        "x8_UAV_R350_imprimible_bandeja_v5 v4",
+        "IMPRIMIBLE base_Q4:1"
+      ],
+      "malla": "mallas/012.stl",
+      "limites_m": [
+        [
+          -4.070813543852321e-17,
+          -0.21140000224113464,
+          0.0
+        ],
+        [
+          0.21140000224113464,
+          0.00800000037997961,
+          0.004000000189989805
+        ]
+      ],
+      "triangulos": 1800,
+      "caras_sin_triangulacion": 0,
+      "cerrada": true
+    },
+    {
+      "indice": 13,
+      "grupo": "estructura_uav",
+      "nombre": "SEPARADOR 1:1",
+      "ruta_origen": [
+        "x8_UAV_R350_imprimible_bandeja_v5 v4",
+        "SEPARADOR 1:1"
+      ],
+      "malla": "mallas/013.stl",
+      "limites_m": [
+        [
+          0.07050036638975143,
+          -0.01146665308624506,
+          0.007000000216066837
+        ],
+        [
+          0.07949963212013245,
+          0.01146665308624506,
+          0.04125000163912773
+        ]
+      ],
+      "triangulos": 820,
+      "caras_sin_triangulacion": 0,
+      "cerrada": true
+    },
+    {
+      "indice": 14,
+      "grupo": "estructura_uav",
+      "nombre": "SEPARADOR 2:1",
+      "ruta_origen": [
+        "x8_UAV_R350_imprimible_bandeja_v5 v4",
+        "SEPARADOR 2:1"
+      ],
+      "malla": "mallas/014.stl",
+      "limites_m": [
+        [
+          -0.01146665308624506,
+          0.07050036638975143,
+          0.007000000216066837
+        ],
+        [
+          0.01146665308624506,
+          0.07949963212013245,
+          0.04125000163912773
+        ]
+      ],
+      "triangulos": 820,
+      "caras_sin_triangulacion": 0,
+      "cerrada": true
+    },
+    {
+      "indice": 15,
+      "grupo": "estructura_uav",
+      "nombre": "SEPARADOR 3:1",
+      "ruta_origen": [
+        "x8_UAV_R350_imprimible_bandeja_v5 v4",
+        "SEPARADOR 3:1"
+      ],
+      "malla": "mallas/015.stl",
+      "limites_m": [
+        [
+          -0.07949963212013245,
+          -0.01146665308624506,
+          0.007000000216066837
+        ],
+        [
+          -0.07050036638975143,
+          0.01146665308624506,
+          0.04125000163912773
+        ]
+      ],
+      "triangulos": 820,
+      "caras_sin_triangulacion": 0,
+      "cerrada": true
+    },
+    {
+      "indice": 16,
+      "grupo": "estructura_uav",
+      "nombre": "SEPARADOR 4:1",
+      "ruta_origen": [
+        "x8_UAV_R350_imprimible_bandeja_v5 v4",
+        "SEPARADOR 4:1"
+      ],
+      "malla": "mallas/016.stl",
+      "limites_m": [
+        [
+          -0.01146665308624506,
+          -0.07949963212013245,
+          0.007000000216066837
+        ],
+        [
+          0.01146665308624506,
+          -0.07050036638975143,
+          0.04125000163912773
+        ]
+      ],
+      "triangulos": 820,
+      "caras_sin_triangulacion": 0,
+      "cerrada": true
+    },
+    {
+      "indice": 17,
+      "grupo": "bandeja_camara",
+      "nombre": "PISO2 Q3:1",
+      "ruta_origen": [
+        "ball_and_plate_camara v22",
+        "PISO2 Q3:1"
+      ],
+      "malla": "mallas/017.stl",
+      "limites_m": [
+        [
+          -0.19519999623298645,
+          -0.13802725076675415,
+          0.04125000163912773
+        ],
+        [
+          0.0,
+          0.13802725076675415,
+          0.0442500002682209
+        ]
+      ],
+      "triangulos": 1968,
+      "caras_sin_triangulacion": 0,
+      "cerrada": true
+    },
+    {
+      "indice": 18,
+      "grupo": "bandeja_camara",
+      "nombre": "PISO2 Q4:1",
+      "ruta_origen": [
+        "ball_and_plate_camara v22",
+        "PISO2 Q4:1"
+      ],
+      "malla": "mallas/018.stl",
+      "limites_m": [
+        [
+          -0.13802725076675415,
+          -0.19519999623298645,
+          0.04125000163912773
+        ],
+        [
+          0.13802725076675415,
+          0.0,
+          0.0442500002682209
+        ]
+      ],
+      "triangulos": 1968,
+      "caras_sin_triangulacion": 0,
+      "cerrada": true
+    },
+    {
+      "indice": 19,
+      "grupo": "bandeja_camara",
+      "nombre": "BANDEJA cruceta:1",
+      "ruta_origen": [
+        "ball_and_plate_camara v22",
+        "BANDEJA cruceta:1"
+      ],
+      "malla": "mallas/019.stl",
+      "limites_m": [
+        [
+          -0.008999999612569809,
+          -0.008999999612569809,
+          0.0832500010728836
+        ],
+        [
+          0.008999999612569809,
+          0.008999999612569809,
+          0.10125000029802322
+        ]
+      ],
+      "triangulos": 460,
+      "caras_sin_triangulacion": 0,
+      "cerrada": true
+    },
+    {
+      "indice": 20,
+      "grupo": "bandeja_camara",
+      "nombre": "PISO2 Q1:1",
+      "ruta_origen": [
+        "ball_and_plate_camara v22",
+        "PISO2 Q1:1"
+      ],
+      "malla": "mallas/020.stl",
+      "limites_m": [
+        [
+          0.0,
+          -0.13802725076675415,
+          0.04125000163912773
+        ],
+        [
+          0.19519999623298645,
+          0.13802725076675415,
+          0.0442500002682209
+        ]
+      ],
+      "triangulos": 2316,
+      "caras_sin_triangulacion": 0,
+      "cerrada": true
+    },
+    {
+      "indice": 21,
+      "grupo": "bandeja_camara",
+      "nombre": "PISO2 Q2:1",
+      "ruta_origen": [
+        "ball_and_plate_camara v22",
+        "PISO2 Q2:1"
+      ],
+      "malla": "mallas/021.stl",
+      "limites_m": [
+        [
+          -0.13802725076675415,
+          0.0,
+          0.04125000163912773
+        ],
+        [
+          0.13802725076675415,
+          0.19519999623298645,
+          0.0442500002682209
+        ]
+      ],
+      "triangulos": 2208,
+      "caras_sin_triangulacion": 0,
+      "cerrada": true
+    },
+    {
+      "indice": 22,
+      "grupo": "bandeja_camara",
+      "nombre": "BANDEJA pilar y soportes de servo:1",
+      "ruta_origen": [
+        "ball_and_plate_camara v22",
+        "BANDEJA pilar y soportes de servo:1"
+      ],
+      "malla": "mallas/022.stl",
+      "limites_m": [
+        [
+          -0.054499998688697815,
+          -0.054499998688697815,
+          0.0442500002682209
+        ],
+        [
+          0.07699999958276749,
+          0.07699999958276749,
+          0.09969531744718552
+        ]
+      ],
+      "triangulos": 3678,
+      "caras_sin_triangulacion": 0,
+      "cerrada": false
+    },
+    {
+      "indice": 23,
+      "grupo": "bandeja_camara",
+      "nombre": "BANDEJA yugo superior:1",
+      "ruta_origen": [
+        "ball_and_plate_camara v22",
+        "BANDEJA yugo superior:1"
+      ],
+      "malla": "mallas/023.stl",
+      "limites_m": [
+        [
+          -0.029999999329447746,
+          -0.029999999329447746,
+          0.08480468392372131
+        ],
+        [
+          0.061000000685453415,
+          0.061000000685453415,
+          0.10655000060796738
+        ]
+      ],
+      "triangulos": 3510,
+      "caras_sin_triangulacion": 0,
+      "cerrada": false
+    },
+    {
+      "indice": 24,
+      "grupo": "bandeja_camara",
+      "nombre": "BANDEJA mesa mitad A:1",
+      "ruta_origen": [
+        "ball_and_plate_camara v22",
+        "BANDEJA mesa mitad A:1"
+      ],
+      "malla": "mallas/024.stl",
+      "limites_m": [
+        [
+          0.0,
+          -0.10999999940395355,
+          0.10655000060796738
+        ],
+        [
+          0.12999999523162842,
+          0.10999999940395355,
+          0.11574999988079071
+        ]
+      ],
+      "triangulos": 2924,
+      "caras_sin_triangulacion": 0,
+      "cerrada": true
+    },
+    {
+      "indice": 25,
+      "grupo": "bandeja_camara",
+      "nombre": "BANDEJA mesa mitad B:1",
+      "ruta_origen": [
+        "ball_and_plate_camara v22",
+        "BANDEJA mesa mitad B:1"
+      ],
+      "malla": "mallas/025.stl",
+      "limites_m": [
+        [
+          -0.12999999523162842,
+          -0.10999999940395355,
+          0.10655000060796738
+        ],
+        [
+          0.0,
+          0.10999999940395355,
+          0.11574999988079071
+        ]
+      ],
+      "triangulos": 2632,
+      "caras_sin_triangulacion": 0,
+      "cerrada": true
+    },
+    {
+      "indice": 26,
+      "grupo": "bandeja_camara",
+      "nombre": "Open CASCADE STEP translator 7.9 6.1:1",
+      "ruta_origen": [
+        "ball_and_plate_camara v22",
+        "BANDEJA biela con rotulas X:1",
+        "Open CASCADE STEP translator 7.9 6.1:1"
+      ],
+      "malla": "mallas/026.stl",
+      "limites_m": [
+        [
+          0.03755006939172745,
+          -0.0035000001080334187,
+          0.048010196536779404
+        ],
+        [
+          0.05414992943406105,
+          0.0035000001080334187,
+          0.10048980265855789
+        ]
+      ],
+      "triangulos": 928,
+      "caras_sin_triangulacion": 0,
+      "cerrada": false
+    },
+    {
+      "indice": 27,
+      "grupo": "bandeja_camara",
+      "nombre": "Open CASCADE STEP translator 7.9 6.2:1",
+      "ruta_origen": [
+        "ball_and_plate_camara v22",
+        "BANDEJA biela con rotulas X:1",
+        "Open CASCADE STEP translator 7.9 6.2:1"
+      ],
+      "malla": "mallas/027.stl",
+      "limites_m": [
+        [
+          0.0398937463760376,
+          -0.0035000001080334187,
+          0.05025000125169754
+        ],
+        [
+          0.05175884813070297,
+          0.0035000001080334187,
+          0.06224999949336052
+        ]
+      ],
+      "triangulos": 402,
+      "caras_sin_triangulacion": 0,
+      "cerrada": false
+    },
+    {
+      "indice": 28,
+      "grupo": "bandeja_camara",
+      "nombre": "Open CASCADE STEP translator 7.9 6.3:1",
+      "ruta_origen": [
+        "ball_and_plate_camara v22",
+        "BANDEJA biela con rotulas X:1",
+        "Open CASCADE STEP translator 7.9 6.3:1"
+      ],
+      "malla": "mallas/028.stl",
+      "limites_m": [
+        [
+          0.0398937463760376,
+          -0.0035000001080334187,
+          0.08624999970197678
+        ],
+        [
+          0.05175884813070297,
+          0.0035000001080334187,
+          0.09825000166893005
+        ]
+      ],
+      "triangulos": 402,
+      "caras_sin_triangulacion": 0,
+      "cerrada": false
+    },
+    {
+      "indice": 29,
+      "grupo": "bandeja_camara",
+      "nombre": "Open CASCADE STEP translator 7.9 7.1:1",
+      "ruta_origen": [
+        "ball_and_plate_camara v22",
+        "BANDEJA biela con rotulas Y:1",
+        "Open CASCADE STEP translator 7.9 7.1:1"
+      ],
+      "malla": "mallas/029.stl",
+      "limites_m": [
+        [
+          -0.0035000001080334187,
+          0.03755006939172745,
+          0.048010196536779404
+        ],
+        [
+          0.0035000001080334187,
+          0.05414992943406105,
+          0.10048980265855789
+        ]
+      ],
+      "triangulos": 928,
+      "caras_sin_triangulacion": 0,
+      "cerrada": false
+    },
+    {
+      "indice": 30,
+      "grupo": "bandeja_camara",
+      "nombre": "Open CASCADE STEP translator 7.9 7.2:1",
+      "ruta_origen": [
+        "ball_and_plate_camara v22",
+        "BANDEJA biela con rotulas Y:1",
+        "Open CASCADE STEP translator 7.9 7.2:1"
+      ],
+      "malla": "mallas/030.stl",
+      "limites_m": [
+        [
+          -0.0035000001080334187,
+          0.039941154420375824,
+          0.05025000125169754
+        ],
+        [
+          0.0035000001080334187,
+          0.0518062524497509,
+          0.06224999949336052
+        ]
+      ],
+      "triangulos": 402,
+      "caras_sin_triangulacion": 0,
+      "cerrada": false
+    },
+    {
+      "indice": 31,
+      "grupo": "bandeja_camara",
+      "nombre": "Open CASCADE STEP translator 7.9 7.3:1",
+      "ruta_origen": [
+        "ball_and_plate_camara v22",
+        "BANDEJA biela con rotulas Y:1",
+        "Open CASCADE STEP translator 7.9 7.3:1"
+      ],
+      "malla": "mallas/031.stl",
+      "limites_m": [
+        [
+          -0.0035000001080334187,
+          0.039941154420375824,
+          0.08624999970197678
+        ],
+        [
+          0.0035000001080334187,
+          0.0518062524497509,
+          0.09825000166893005
+        ]
+      ],
+      "triangulos": 402,
+      "caras_sin_triangulacion": 0,
+      "cerrada": false
+    },
+    {
+      "indice": 32,
+      "grupo": "bandeja_camara",
+      "nombre": "Open CASCADE STEP translator 7.9 8.1:1",
+      "ruta_origen": [
+        "ball_and_plate_camara v22",
+        "REF servo X (Futaba S3003):1",
+        "Open CASCADE STEP translator 7.9 8.1:1"
+      ],
+      "malla": "mallas/032.stl",
+      "limites_m": [
+        [
+          0.009134008549153805,
+          -0.052303265780210495,
+          0.046250395476818085
+        ],
+        [
+          0.0636340081691742,
+          -0.012103267014026642,
+          0.06625039875507355
+        ]
+      ],
+      "triangulos": 10666,
+      "caras_sin_triangulacion": 0,
+      "cerrada": false
+    },
+    {
+      "indice": 33,
+      "grupo": "bandeja_camara",
+      "nombre": "Open CASCADE STEP translator 7.9 8.2:1",
+      "ruta_origen": [
+        "ball_and_plate_camara v22",
+        "REF servo X (Futaba S3003):1",
+        "Open CASCADE STEP translator 7.9 8.2:1"
+      ],
+      "malla": "mallas/033.stl",
+      "limites_m": [
+        [
+          0.02299800142645836,
+          -0.012103267014026642,
+          0.053402092307806015
+        ],
+        [
+          0.028697965666651726,
+          -0.007603267207741737,
+          0.05909869819879532
+        ]
+      ],
+      "triangulos": 2472,
+      "caras_sin_triangulacion": 0,
+      "cerrada": true
+    },
+    {
+      "indice": 34,
+      "grupo": "bandeja_camara",
+      "nombre": "Open CASCADE STEP translator 7.9 9.1:1",
+      "ruta_origen": [
+        "ball_and_plate_camara v22",
+        "REF servo Y (Futaba S3003):1",
+        "Open CASCADE STEP translator 7.9 9.1:1"
+      ],
+      "malla": "mallas/034.stl",
+      "limites_m": [
+        [
+          -0.052303265780210495,
+          0.009134008549153805,
+          0.046250395476818085
+        ],
+        [
+          -0.012103267014026642,
+          0.0636340081691742,
+          0.06625039875507355
+        ]
+      ],
+      "triangulos": 10732,
+      "caras_sin_triangulacion": 0,
+      "cerrada": false
+    },
+    {
+      "indice": 35,
+      "grupo": "bandeja_camara",
+      "nombre": "Open CASCADE STEP translator 7.9 9.2:1",
+      "ruta_origen": [
+        "ball_and_plate_camara v22",
+        "REF servo Y (Futaba S3003):1",
+        "Open CASCADE STEP translator 7.9 9.2:1"
+      ],
+      "malla": "mallas/035.stl",
+      "limites_m": [
+        [
+          -0.012103267014026642,
+          0.02299800142645836,
+          0.053402092307806015
+        ],
+        [
+          -0.007603267207741737,
+          0.028697965666651726,
+          0.05909869819879532
+        ]
+      ],
+      "triangulos": 2472,
+      "caras_sin_triangulacion": 0,
+      "cerrada": true
+    },
+    {
+      "indice": 36,
+      "grupo": "bandeja_camara",
+      "nombre": "REF brazo 25T X:1",
+      "ruta_origen": [
+        "ball_and_plate_camara v22",
+        "REF brazo 25T X:1"
+      ],
+      "malla": "mallas/036.stl",
+      "limites_m": [
+        [
+          0.018478602170944214,
+          -0.010900000110268593,
+          0.04886344447731972
+        ],
+        [
+          0.05317557603120804,
+          0.006500000134110451,
+          0.06363655626773834
+        ]
+      ],
+      "triangulos": 15674,
+      "caras_sin_triangulacion": 0,
+      "cerrada": false
+    },
+    {
+      "indice": 37,
+      "grupo": "bandeja_camara",
+      "nombre": "REF brazo 25T Y:1",
+      "ruta_origen": [
+        "ball_and_plate_camara v22",
+        "REF brazo 25T Y:1"
+      ],
+      "malla": "mallas/037.stl",
+      "limites_m": [
+        [
+          -0.010900000110268593,
+          0.018478602170944214,
+          0.04886344447731972
+        ],
+        [
+          0.006500000134110451,
+          0.05317557603120804,
+          0.06363655626773834
+        ]
+      ],
+      "triangulos": 15660,
+      "caras_sin_triangulacion": 0,
+      "cerrada": false
+    },
+    {
+      "indice": 38,
+      "grupo": "bandeja_camara",
+      "nombre": "Open CASCADE STEP translator 7.9 12.1:1",
+      "ruta_origen": [
+        "ball_and_plate_camara v22",
+        "REF horquillas (bolas, separadores, M3 x 25):1",
+        "Open CASCADE STEP translator 7.9 12.1:1"
+      ],
+      "malla": "mallas/038.stl",
+      "limites_m": [
+        [
+          0.0398937463760376,
+          -0.007300000172108412,
+          0.08624999970197678
+        ],
+        [
+          0.05175884813070297,
+          0.007300000172108412,
+          0.09825000166893005
+        ]
+      ],
+      "triangulos": 610,
+      "caras_sin_triangulacion": 0,
+      "cerrada": false
+    },
+    {
+      "indice": 39,
+      "grupo": "bandeja_camara",
+      "nombre": "Open CASCADE STEP translator 7.9 12.2:1",
+      "ruta_origen": [
+        "ball_and_plate_camara v22",
+        "REF horquillas (bolas, separadores, M3 x 25):1",
+        "Open CASCADE STEP translator 7.9 12.2:1"
+      ],
+      "malla": "mallas/039.stl",
+      "limites_m": [
+        [
+          0.04309999942779541,
+          0.010300000198185444,
+          0.08952005207538605
+        ],
+        [
+          0.04859999939799309,
+          0.013299999758601189,
+          0.09497994929552078
+        ]
+      ],
+      "triangulos": 100,
+      "caras_sin_triangulacion": 0,
+      "cerrada": true
+    },
+    {
+      "indice": 40,
+      "grupo": "bandeja_camara",
+      "nombre": "Open CASCADE STEP translator 7.9 12.3:1",
+      "ruta_origen": [
+        "ball_and_plate_camara v22",
+        "REF horquillas (bolas, separadores, M3 x 25):1",
+        "Open CASCADE STEP translator 7.9 12.3:1"
+      ],
+      "malla": "mallas/040.stl",
+      "limites_m": [
+        [
+          0.042649999260902405,
+          -0.014299999922513962,
+          0.08907333016395569
+        ],
+        [
+          0.04904999956488609,
+          -0.010300000198185444,
+          0.09542667120695114
+        ]
+      ],
+      "triangulos": 100,
+      "caras_sin_triangulacion": 0,
+      "cerrada": true
+    },
+    {
+      "indice": 41,
+      "grupo": "bandeja_camara",
+      "nombre": "Open CASCADE STEP translator 7.9 12.4:1",
+      "ruta_origen": [
+        "ball_and_plate_camara v22",
+        "REF horquillas (bolas, separadores, M3 x 25):1",
+        "Open CASCADE STEP translator 7.9 12.4:1"
+      ],
+      "malla": "mallas/041.stl",
+      "limites_m": [
+        [
+          -0.007300000172108412,
+          0.0398937463760376,
+          0.08624999970197678
+        ],
+        [
+          0.007300000172108412,
+          0.05175884813070297,
+          0.09825000166893005
+        ]
+      ],
+      "triangulos": 610,
+      "caras_sin_triangulacion": 0,
+      "cerrada": false
+    },
+    {
+      "indice": 42,
+      "grupo": "bandeja_camara",
+      "nombre": "Open CASCADE STEP translator 7.9 12.5:1",
+      "ruta_origen": [
+        "ball_and_plate_camara v22",
+        "REF horquillas (bolas, separadores, M3 x 25):1",
+        "Open CASCADE STEP translator 7.9 12.5:1"
+      ],
+      "malla": "mallas/042.stl",
+      "limites_m": [
+        [
+          0.010300000198185444,
+          0.04309999942779541,
+          0.08952005207538605
+        ],
+        [
+          0.013299999758601189,
+          0.04859999939799309,
+          0.09497994929552078
+        ]
+      ],
+      "triangulos": 100,
+      "caras_sin_triangulacion": 0,
+      "cerrada": true
+    },
+    {
+      "indice": 43,
+      "grupo": "bandeja_camara",
+      "nombre": "Open CASCADE STEP translator 7.9 12.6:1",
+      "ruta_origen": [
+        "ball_and_plate_camara v22",
+        "REF horquillas (bolas, separadores, M3 x 25):1",
+        "Open CASCADE STEP translator 7.9 12.6:1"
+      ],
+      "malla": "mallas/043.stl",
+      "limites_m": [
+        [
+          -0.014299999922513962,
+          0.042649999260902405,
+          0.08907333016395569
+        ],
+        [
+          -0.010300000198185444,
+          0.04904999956488609,
+          0.09542667120695114
+        ]
+      ],
+      "triangulos": 100,
+      "caras_sin_triangulacion": 0,
+      "cerrada": true
+    },
+    {
+      "indice": 44,
+      "grupo": "bandeja_camara",
+      "nombre": "REF pantalla:1",
+      "ruta_origen": [
+        "ball_and_plate_camara v22",
+        "REF pantalla:1"
+      ],
+      "malla": "mallas/044.stl",
+      "limites_m": [
+        [
+          -0.09350000321865082,
+          -0.07050000131130219,
+          0.11275000125169754
+        ],
+        [
+          0.09350000321865082,
+          0.07050000131130219,
+          0.11574999988079071
+        ]
+      ],
+      "triangulos": 12,
+      "caras_sin_triangulacion": 0,
+      "cerrada": true
+    },
+    {
+      "indice": 45,
+      "grupo": "bandeja_camara",
+      "nombre": "REF bola 25 mm:1",
+      "ruta_origen": [
+        "ball_and_plate_camara v22",
+        "REF bola 25 mm:1"
+      ],
+      "malla": "mallas/045.stl",
+      "limites_m": [
+        [
+          0.017591139301657677,
+          0.007689903024584055,
+          0.11574999988079071
+        ],
+        [
+          0.04231009632349014,
+          0.03231009840965271,
+          0.1407500058412552
+        ]
+      ],
+      "triangulos": 306,
+      "caras_sin_triangulacion": 0,
+      "cerrada": false
+    },
+    {
+      "indice": 46,
+      "grupo": "bandeja_camara",
+      "nombre": "BANDEJA bujes cruceta x4 (PLA):1",
+      "ruta_origen": [
+        "ball_and_plate_camara v22",
+        "BANDEJA bujes cruceta x4 (PLA):1"
+      ],
+      "malla": "mallas/046.stl",
+      "limites_m": [
+        [
+          -0.01830005832016468,
+          -0.01829993538558483,
+          0.08924558013677597
+        ],
+        [
+          0.018299942836165428,
+          0.018300063908100128,
+          0.09524558484554291
+        ]
+      ],
+      "triangulos": 832,
+      "caras_sin_triangulacion": 0,
+      "cerrada": true
+    },
+    {
+      "indice": 47,
+      "grupo": "bandeja_camara",
+      "nombre": "CAM torre +X (1):1",
+      "ruta_origen": [
+        "ball_and_plate_camara v22",
+        "CAM torre +X (1):1"
+      ],
+      "malla": "mallas/047.stl",
+      "limites_m": [
+        [
+          0.11799994111061096,
+          -0.013999935239553452,
+          0.04427558183670044
+        ],
+        [
+          0.16499994695186615,
+          0.014000064693391323,
+          0.19433215260505676
+        ]
+      ],
+      "triangulos": 588,
+      "caras_sin_triangulacion": 0,
+      "cerrada": true
+    },
+    {
+      "indice": 48,
+      "grupo": "bandeja_camara",
+      "nombre": "CAM pata +X:1",
+      "ruta_origen": [
+        "ball_and_plate_camara v22",
+        "CAM pata +X:1"
+      ],
+      "malla": "mallas/048.stl",
+      "limites_m": [
+        [
+          0.041780803352594376,
+          -0.00899993535131216,
+          0.15856261551380157
+        ],
+        [
+          0.15869258344173431,
+          0.009000064805150032,
+          0.3416319787502289
+        ]
+      ],
+      "triangulos": 556,
+      "caras_sin_triangulacion": 0,
+      "cerrada": true
+    },
+    {
+      "indice": 49,
+      "grupo": "bandeja_camara",
+      "nombre": "CAM torre +Y (1):1",
+      "ruta_origen": [
+        "ball_and_plate_camara v22",
+        "CAM torre +Y (1):1"
+      ],
+      "malla": "mallas/049.stl",
+      "limites_m": [
+        [
+          -0.014000057242810726,
+          0.11800006777048111,
+          0.04427558183670044
+        ],
+        [
+          0.013999942690134048,
+          0.1650000661611557,
+          0.19433215260505676
+        ]
+      ],
+      "triangulos": 584,
+      "caras_sin_triangulacion": 0,
+      "cerrada": true
+    },
+    {
+      "indice": 50,
+      "grupo": "bandeja_camara",
+      "nombre": "CAM pata +Y:1",
+      "ruta_origen": [
+        "ball_and_plate_camara v22",
+        "CAM pata +Y:1"
+      ],
+      "malla": "mallas/050.stl",
+      "limites_m": [
+        [
+          -0.009000057354569435,
+          0.041780922561883926,
+          0.15856261551380157
+        ],
+        [
+          0.008999942801892757,
+          0.15869271755218506,
+          0.3416319787502289
+        ]
+      ],
+      "triangulos": 544,
+      "caras_sin_triangulacion": 0,
+      "cerrada": true
+    },
+    {
+      "indice": 51,
+      "grupo": "bandeja_camara",
+      "nombre": "CAM torre -X (1):1",
+      "ruta_origen": [
+        "ball_and_plate_camara v22",
+        "CAM torre -X (1):1"
+      ],
+      "malla": "mallas/051.stl",
+      "limites_m": [
+        [
+          -0.1650000512599945,
+          -0.013999935239553452,
+          0.04427558183670044
+        ],
+        [
+          -0.11800006031990051,
+          0.014000064693391323,
+          0.19433215260505676
+        ]
+      ],
+      "triangulos": 588,
+      "caras_sin_triangulacion": 0,
+      "cerrada": true
+    },
+    {
+      "indice": 52,
+      "grupo": "bandeja_camara",
+      "nombre": "CAM pata -X:1",
+      "ruta_origen": [
+        "ball_and_plate_camara v22",
+        "CAM pata -X:1"
+      ],
+      "malla": "mallas/052.stl",
+      "limites_m": [
+        [
+          -0.15869270265102386,
+          -0.00899993535131216,
+          0.15856261551380157
+        ],
+        [
+          -0.04178091511130333,
+          0.009000064805150032,
+          0.3416319787502289
+        ]
+      ],
+      "triangulos": 556,
+      "caras_sin_triangulacion": 0,
+      "cerrada": true
+    },
+    {
+      "indice": 53,
+      "grupo": "bandeja_camara",
+      "nombre": "CAM torre -Y (1):1",
+      "ruta_origen": [
+        "ball_and_plate_camara v22",
+        "CAM torre -Y (1):1"
+      ],
+      "malla": "mallas/053.stl",
+      "limites_m": [
+        [
+          -0.014000057242810726,
+          -0.16499993205070496,
+          0.04427558183670044
+        ],
+        [
+          0.013999942690134048,
+          -0.11799993366003036,
+          0.19433215260505676
+        ]
+      ],
+      "triangulos": 584,
+      "caras_sin_triangulacion": 0,
+      "cerrada": true
+    },
+    {
+      "indice": 54,
+      "grupo": "bandeja_camara",
+      "nombre": "CAM pata -Y:1",
+      "ruta_origen": [
+        "ball_and_plate_camara v22",
+        "CAM pata -Y:1"
+      ],
+      "malla": "mallas/054.stl",
+      "limites_m": [
+        [
+          -0.009000057354569435,
+          -0.15869258344173431,
+          0.15856261551380157
+        ],
+        [
+          0.008999942801892757,
+          -0.04178079590201378,
+          0.3416319787502289
+        ]
+      ],
+      "triangulos": 544,
+      "caras_sin_triangulacion": 0,
+      "cerrada": true
+    },
+    {
+      "indice": 55,
+      "grupo": "bandeja_camara",
+      "nombre": "CAM contraplaca x4 (1):1",
+      "ruta_origen": [
+        "ball_and_plate_camara v22",
+        "CAM contraplaca x4 (1):1"
+      ],
+      "malla": "mallas/055.stl",
+      "limites_m": [
+        [
+          -0.1480000615119934,
+          -0.14799994230270386,
+          0.03627558425068855
+        ],
+        [
+          0.14799994230270386,
+          0.1480000615119934,
+          0.04127558320760727
+        ]
+      ],
+      "triangulos": 1104,
+      "caras_sin_triangulacion": 0,
+      "cerrada": true
+    },
+    {
+      "indice": 56,
+      "grupo": "bandeja_camara",
+      "nombre": "CAM nucleo v7:1",
+      "ruta_origen": [
+        "ball_and_plate_camara v22",
+        "CAM nucleo v7:1"
+      ],
+      "malla": "mallas/056.stl",
+      "limites_m": [
+        [
+          -0.07128901779651642,
+          -0.07128889858722687,
+          0.31224897503852844
+        ],
+        [
+          0.07128890603780746,
+          0.07128902524709702,
+          0.34077557921409607
+        ]
+      ],
+      "triangulos": 1632,
+      "caras_sin_triangulacion": 0,
+      "cerrada": true
+    },
+    {
+      "indice": 57,
+      "grupo": "bandeja_camara",
+      "nombre": "CAM bandeja camara v5:1",
+      "ruta_origen": [
+        "ball_and_plate_camara v22",
+        "CAM bandeja camara v5:1"
+      ],
+      "malla": "mallas/057.stl",
+      "limites_m": [
+        [
+          -0.037000056356191635,
+          -0.01739993505179882,
+          0.3197755813598633
+        ],
+        [
+          0.03699994087219238,
+          0.017400063574314117,
+          0.3417755961418152
+        ]
+      ],
+      "triangulos": 376,
+      "caras_sin_triangulacion": 0,
+      "cerrada": true
+    }
+  ],
+  "ramas_uav_conservadas": [
+    "IMPRIMIBLE base_Q1:1",
+    "IMPRIMIBLE base_Q2:1",
+    "IMPRIMIBLE base_Q3:1",
+    "IMPRIMIBLE base_Q4:1",
+    "IMPRIMIBLE tapa_central:1",
+    "OCTO - 4 conjuntos diagonales v1 (1):1",
+    "OCTO - 4 conjuntos diagonales v1:1",
+    "SEPARADOR 1:1",
+    "SEPARADOR 2:1",
+    "SEPARADOR 3:1",
+    "SEPARADOR 4:1"
+  ],
+  "ramas_uav_retiradas": [
+    "BANDEJA biela con rotulas X:1",
+    "BANDEJA biela con rotulas Y:1",
+    "BANDEJA cruceta:1",
+    "BANDEJA mesa mitad A:1",
+    "BANDEJA mesa mitad B:1",
+    "BANDEJA pilar y soportes de servo:1",
+    "BANDEJA yugo superior:1",
+    "CAMARA codo 270:1",
+    "CAMARA codo 90:1",
+    "CAMARA inserto negro:1",
+    "CAMARA pie poste 270:1",
+    "CAMARA pie poste 90:1",
+    "CAMARA soporte ESP32-S3-CAM:1",
+    "PISO2 Q1:1",
+    "PISO2 Q2:1",
+    "PISO2 Q3:1",
+    "PISO2 Q4:1",
+    "REF ESP32-S3-CAM:1",
+    "REF bola 25 mm:1",
+    "REF brazo 25T X:1",
+    "REF brazo 25T Y:1",
+    "REF horquillas (bolas, separadores, M3 x 25):1",
+    "REF servo X (Futaba S3003):1",
+    "REF servo Y (Futaba S3003):1",
+    "REF tubos aluminio 1/2\":1",
+    "REF vision de la camara:1"
+  ],
+  "pendiente": [
+    "STEP carrito y rótula",
+    "uniones físicas",
+    "masas e inercias",
+    "curva de empuje",
+    "revisión de interferencias del montaje",
+    "modelo electrónico real de cámara en soporte nuevo"
+  ],
+  "nota": "STEP neutral con nombres, no archivo nativo de Fusion ni simulación validada. REF pantalla se conserva como referencia geométrica de superficie, no como sensor funcional."
+}

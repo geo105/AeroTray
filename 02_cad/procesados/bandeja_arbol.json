@@ -1,0 +1,1871 @@
+{
+  "origen": "/home/george/DSM/cad/recibidos/ball_and_plate_camara.stp",
+  "unidad": "mm",
+  "limites_raices_mm": [
+    [
+      -193.19994259999999,
+      886.2999356,
+      1131.2,
+      197.2000574,
+      1276.6999356000001,
+      1436.7
+    ]
+  ],
+  "nodos": 47,
+  "hojas": 41,
+  "componentes": [
+    {
+      "id": "0:1:1:1",
+      "definicion_id": "0:1:1:1",
+      "nombre": "ball_and_plate_camara v22",
+      "definicion": "ball_and_plate_camara v22",
+      "ruta": [
+        "ball_and_plate_camara v22"
+      ],
+      "nivel": 0,
+      "ensamblaje": true,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "hijos": 30
+    },
+    {
+      "id": "0:1:1:1:1",
+      "definicion_id": "0:1:1:2",
+      "nombre": "PISO2 Q3:1",
+      "definicion": "PISO2 Q3",
+      "ruta": [
+        "ball_and_plate_camara v22",
+        "PISO2 Q3:1"
+      ],
+      "nivel": 1,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.0000574
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          1081.4999356
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1098.9244173
+        ]
+      ],
+      "limites_mundo_mm": [
+        -193.19994259999999,
+        943.4726919124,
+        1136.1744173,
+        2.000057400000017,
+        1219.5271792876101,
+        1139.1744173
+      ]
+    },
+    {
+      "id": "0:1:1:1:2",
+      "definicion_id": "0:1:1:3",
+      "nombre": "PISO2 Q4:1",
+      "definicion": "PISO2 Q4",
+      "ruta": [
+        "ball_and_plate_camara v22",
+        "PISO2 Q4:1"
+      ],
+      "nivel": 1,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.0000574
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          1081.4999356
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1098.9244173
+        ]
+      ],
+      "limites_mundo_mm": [
+        -136.02718628760002,
+        886.2999356,
+        1136.1744173,
+        140.027301087625,
+        1081.49993560002,
+        1139.1744173
+      ]
+    },
+    {
+      "id": "0:1:1:1:3",
+      "definicion_id": "0:1:1:4",
+      "nombre": "BANDEJA cruceta:1",
+      "definicion": "BANDEJA cruceta",
+      "ruta": [
+        "ball_and_plate_camara v22",
+        "BANDEJA cruceta:1"
+      ],
+      "nivel": 1,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.0000574
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          1081.4999356
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1098.9244173
+        ]
+      ],
+      "limites_mundo_mm": [
+        -6.9999426,
+        1072.4999356,
+        1178.1744173,
+        11.0000574,
+        1090.4999356,
+        1196.1744173
+      ]
+    },
+    {
+      "id": "0:1:1:1:4",
+      "definicion_id": "0:1:1:5",
+      "nombre": "PISO2 Q1:1",
+      "definicion": "PISO2 Q1",
+      "ruta": [
+        "ball_and_plate_camara v22",
+        "PISO2 Q1:1"
+      ],
+      "nivel": 1,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.0000574
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          1081.4999356
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1098.9244173
+        ]
+      ],
+      "limites_mundo_mm": [
+        2.0000573999999887,
+        943.472691912395,
+        1136.1744173,
+        197.2000574,
+        1219.5271792876101,
+        1139.1744173
+      ]
+    },
+    {
+      "id": "0:1:1:1:5",
+      "definicion_id": "0:1:1:6",
+      "nombre": "PISO2 Q2:1",
+      "definicion": "PISO2 Q2",
+      "ruta": [
+        "ball_and_plate_camara v22",
+        "PISO2 Q2:1"
+      ],
+      "nivel": 1,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.0000574
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          1081.4999356
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1098.9244173
+        ]
+      ],
+      "limites_mundo_mm": [
+        -136.0271862876,
+        1081.4999356,
+        1136.1744173,
+        140.02730108761003,
+        1276.6999356000001,
+        1139.1744173
+      ]
+    },
+    {
+      "id": "0:1:1:1:6",
+      "definicion_id": "0:1:1:7",
+      "nombre": "BANDEJA pilar y soportes de servo:1",
+      "definicion": "BANDEJA pilar y soportes de servo",
+      "ruta": [
+        "ball_and_plate_camara v22",
+        "BANDEJA pilar y soportes de servo:1"
+      ],
+      "nivel": 1,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.0000574
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          1081.4999356
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1098.9244173
+        ]
+      ],
+      "limites_mundo_mm": [
+        -52.4999426,
+        1026.9999356,
+        1139.1744173,
+        79.0000574,
+        1158.4999356,
+        1194.6744173
+      ]
+    },
+    {
+      "id": "0:1:1:1:7",
+      "definicion_id": "0:1:1:8",
+      "nombre": "BANDEJA yugo superior:1",
+      "definicion": "BANDEJA yugo superior",
+      "ruta": [
+        "ball_and_plate_camara v22",
+        "BANDEJA yugo superior:1"
+      ],
+      "nivel": 1,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.0000574
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          1081.4999356
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1098.9244173
+        ]
+      ],
+      "limites_mundo_mm": [
+        -27.9999426,
+        1051.4999356,
+        1179.6744173,
+        63.0000574,
+        1142.4999356,
+        1201.4744173
+      ]
+    },
+    {
+      "id": "0:1:1:1:8",
+      "definicion_id": "0:1:1:9",
+      "nombre": "BANDEJA mesa mitad A:1",
+      "definicion": "BANDEJA mesa mitad A",
+      "ruta": [
+        "ball_and_plate_camara v22",
+        "BANDEJA mesa mitad A:1"
+      ],
+      "nivel": 1,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.0000574
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          1081.4999356
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1098.9244173
+        ]
+      ],
+      "limites_mundo_mm": [
+        2.0000574,
+        971.4999356000001,
+        1201.4744173,
+        132.0000574,
+        1191.4999356,
+        1210.6744173
+      ]
+    },
+    {
+      "id": "0:1:1:1:9",
+      "definicion_id": "0:1:1:10",
+      "nombre": "BANDEJA mesa mitad B:1",
+      "definicion": "BANDEJA mesa mitad B",
+      "ruta": [
+        "ball_and_plate_camara v22",
+        "BANDEJA mesa mitad B:1"
+      ],
+      "nivel": 1,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.0000574
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          1081.4999356
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1098.9244173
+        ]
+      ],
+      "limites_mundo_mm": [
+        -127.9999426,
+        971.4999356000001,
+        1201.4744173,
+        2.000057400000003,
+        1191.4999356,
+        1210.6744173
+      ]
+    },
+    {
+      "id": "0:1:1:1:10",
+      "definicion_id": "0:1:1:11",
+      "nombre": "BANDEJA biela con rotulas X:1",
+      "definicion": "BANDEJA biela con rotulas X",
+      "ruta": [
+        "ball_and_plate_camara v22",
+        "BANDEJA biela con rotulas X:1"
+      ],
+      "nivel": 1,
+      "ensamblaje": true,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.0000574
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          1081.4999356
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1098.9244173
+        ]
+      ],
+      "hijos": 3
+    },
+    {
+      "id": "0:1:1:11:1",
+      "definicion_id": "0:1:1:12",
+      "nombre": "Open CASCADE STEP translator 7.9 6.1:1",
+      "definicion": "Open CASCADE STEP translator 7.9 6.1",
+      "ruta": [
+        "ball_and_plate_camara v22",
+        "BANDEJA biela con rotulas X:1",
+        "Open CASCADE STEP translator 7.9 6.1:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.0000574
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          1081.4999356
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1098.9244173
+        ]
+      ],
+      "limites_mundo_mm": [
+        39.5500574,
+        1077.9999355999998,
+        1142.8744173,
+        56.15005740000001,
+        1084.9999356000003,
+        1195.4744173
+      ]
+    },
+    {
+      "id": "0:1:1:11:2",
+      "definicion_id": "0:1:1:13",
+      "nombre": "Open CASCADE STEP translator 7.9 6.2:1",
+      "definicion": "Open CASCADE STEP translator 7.9 6.2",
+      "ruta": [
+        "ball_and_plate_camara v22",
+        "BANDEJA biela con rotulas X:1",
+        "Open CASCADE STEP translator 7.9 6.2:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.0000574
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          1081.4999356
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1098.9244173
+        ]
+      ],
+      "limites_mundo_mm": [
+        41.850057400000004,
+        1077.9999356,
+        1145.1744173,
+        53.850057400000004,
+        1084.9999356,
+        1157.1744173
+      ]
+    },
+    {
+      "id": "0:1:1:11:3",
+      "definicion_id": "0:1:1:14",
+      "nombre": "Open CASCADE STEP translator 7.9 6.3:1",
+      "definicion": "Open CASCADE STEP translator 7.9 6.3",
+      "ruta": [
+        "ball_and_plate_camara v22",
+        "BANDEJA biela con rotulas X:1",
+        "Open CASCADE STEP translator 7.9 6.3:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.0000574
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          1081.4999356
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1098.9244173
+        ]
+      ],
+      "limites_mundo_mm": [
+        41.850057400000004,
+        1077.9999356,
+        1181.1744173,
+        53.850057400000004,
+        1084.9999356,
+        1193.1744173
+      ]
+    },
+    {
+      "id": "0:1:1:1:11",
+      "definicion_id": "0:1:1:15",
+      "nombre": "BANDEJA biela con rotulas Y:1",
+      "definicion": "BANDEJA biela con rotulas Y",
+      "ruta": [
+        "ball_and_plate_camara v22",
+        "BANDEJA biela con rotulas Y:1"
+      ],
+      "nivel": 1,
+      "ensamblaje": true,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.0000574
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          1081.4999356
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1098.9244173
+        ]
+      ],
+      "hijos": 3
+    },
+    {
+      "id": "0:1:1:15:1",
+      "definicion_id": "0:1:1:16",
+      "nombre": "Open CASCADE STEP translator 7.9 7.1:1",
+      "definicion": "Open CASCADE STEP translator 7.9 7.1",
+      "ruta": [
+        "ball_and_plate_camara v22",
+        "BANDEJA biela con rotulas Y:1",
+        "Open CASCADE STEP translator 7.9 7.1:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.0000574
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          1081.4999356
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1098.9244173
+        ]
+      ],
+      "limites_mundo_mm": [
+        -1.499942600000213,
+        1119.0499356,
+        1142.8744173,
+        5.500057400000213,
+        1135.6499356,
+        1195.4744173
+      ]
+    },
+    {
+      "id": "0:1:1:15:2",
+      "definicion_id": "0:1:1:17",
+      "nombre": "Open CASCADE STEP translator 7.9 7.2:1",
+      "definicion": "Open CASCADE STEP translator 7.9 7.2",
+      "ruta": [
+        "ball_and_plate_camara v22",
+        "BANDEJA biela con rotulas Y:1",
+        "Open CASCADE STEP translator 7.9 7.2:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.0000574
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          1081.4999356
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1098.9244173
+        ]
+      ],
+      "limites_mundo_mm": [
+        -1.4999425999999998,
+        1121.3499356,
+        1145.1744173,
+        5.5000574,
+        1133.3499356,
+        1157.1744173
+      ]
+    },
+    {
+      "id": "0:1:1:15:3",
+      "definicion_id": "0:1:1:18",
+      "nombre": "Open CASCADE STEP translator 7.9 7.3:1",
+      "definicion": "Open CASCADE STEP translator 7.9 7.3",
+      "ruta": [
+        "ball_and_plate_camara v22",
+        "BANDEJA biela con rotulas Y:1",
+        "Open CASCADE STEP translator 7.9 7.3:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.0000574
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          1081.4999356
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1098.9244173
+        ]
+      ],
+      "limites_mundo_mm": [
+        -1.4999425999999998,
+        1121.3499356,
+        1181.1744173,
+        5.5000574,
+        1133.3499356,
+        1193.1744173
+      ]
+    },
+    {
+      "id": "0:1:1:1:12",
+      "definicion_id": "0:1:1:19",
+      "nombre": "REF servo X (Futaba S3003):1",
+      "definicion": "REF servo X (Futaba S3003)",
+      "ruta": [
+        "ball_and_plate_camara v22",
+        "REF servo X (Futaba S3003):1"
+      ],
+      "nivel": 1,
+      "ensamblaje": true,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.0000574
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          1081.4999356
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1098.9244173
+        ]
+      ],
+      "hijos": 2
+    },
+    {
+      "id": "0:1:1:19:1",
+      "definicion_id": "0:1:1:20",
+      "nombre": "Open CASCADE STEP translator 7.9 8.1:1",
+      "definicion": "Open CASCADE STEP translator 7.9 8.1",
+      "ruta": [
+        "ball_and_plate_camara v22",
+        "REF servo X (Futaba S3003):1",
+        "Open CASCADE STEP translator 7.9 8.1:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.0000574
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          1081.4999356
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1098.9244173
+        ]
+      ],
+      "limites_mundo_mm": [
+        11.13406594094082,
+        1029.1966683553455,
+        1141.1748123411598,
+        65.634065940941,
+        1069.3966683553501,
+        1161.17481234116
+      ]
+    },
+    {
+      "id": "0:1:1:19:2",
+      "definicion_id": "0:1:1:21",
+      "nombre": "Open CASCADE STEP translator 7.9 8.2:1",
+      "definicion": "Open CASCADE STEP translator 7.9 8.2",
+      "ruta": [
+        "ball_and_plate_camara v22",
+        "REF servo X (Futaba S3003):1",
+        "Open CASCADE STEP translator 7.9 8.2:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          1077.296048987
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          2081.4566683553403
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2185.234022259
+        ]
+      ],
+      "limites_mundo_mm": [
+        24.99804085199994,
+        1069.3966683553404,
+        1148.3265082311916,
+        30.69804085199994,
+        1073.8966683553404,
+        1154.0231164510003
+      ]
+    },
+    {
+      "id": "0:1:1:1:13",
+      "definicion_id": "0:1:1:22",
+      "nombre": "REF servo Y (Futaba S3003):1",
+      "definicion": "REF servo Y (Futaba S3003)",
+      "ruta": [
+        "ball_and_plate_camara v22",
+        "REF servo Y (Futaba S3003):1"
+      ],
+      "nivel": 1,
+      "ensamblaje": true,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.0000574
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          1081.4999356
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1098.9244173
+        ]
+      ],
+      "hijos": 2
+    },
+    {
+      "id": "0:1:1:22:1",
+      "definicion_id": "0:1:1:23",
+      "nombre": "Open CASCADE STEP translator 7.9 9.1:1",
+      "definicion": "Open CASCADE STEP translator 7.9 9.1",
+      "ruta": [
+        "ball_and_plate_camara v22",
+        "REF servo Y (Futaba S3003):1",
+        "Open CASCADE STEP translator 7.9 9.1:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.0000574
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          1081.4999356
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1098.9244173
+        ]
+      ],
+      "limites_mundo_mm": [
+        -50.303209844659996,
+        1090.6339441409407,
+        1141.1748123411598,
+        -10.10320984465,
+        1145.1339442409412,
+        1161.17481234116
+      ]
+    },
+    {
+      "id": "0:1:1:22:2",
+      "definicion_id": "0:1:1:24",
+      "nombre": "Open CASCADE STEP translator 7.9 9.2:1",
+      "definicion": "Open CASCADE STEP translator 7.9 9.2",
+      "ruta": [
+        "ball_and_plate_camara v22",
+        "REF servo Y (Futaba S3003):1",
+        "Open CASCADE STEP translator 7.9 9.2:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          1077.296048987
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          2081.4566683553403
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2185.234022259
+        ]
+      ],
+      "limites_mundo_mm": [
+        -10.103209845000038,
+        1104.4979190525405,
+        1148.3265082311848,
+        -5.603209745000037,
+        1110.1979190525403,
+        1154.023116451
+      ]
+    },
+    {
+      "id": "0:1:1:1:14",
+      "definicion_id": "0:1:1:25",
+      "nombre": "REF brazo 25T X:1",
+      "definicion": "REF brazo 25T X",
+      "ruta": [
+        "ball_and_plate_camara v22",
+        "REF brazo 25T X:1"
+      ],
+      "nivel": 1,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.0000574
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          1081.4999356
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1098.9244173
+        ]
+      ],
+      "limites_mundo_mm": [
+        20.478659874816596,
+        1070.5999354999365,
+        1143.7744171999998,
+        55.20005750000001,
+        1087.9999356,
+        1158.5744174000001
+      ]
+    },
+    {
+      "id": "0:1:1:1:15",
+      "definicion_id": "0:1:1:26",
+      "nombre": "REF brazo 25T Y:1",
+      "definicion": "REF brazo 25T Y",
+      "ruta": [
+        "ball_and_plate_camara v22",
+        "REF brazo 25T Y:1"
+      ],
+      "nivel": 1,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.0000574
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          1081.4999356
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1098.9244173
+        ]
+      ],
+      "limites_mundo_mm": [
+        -8.899942700063473,
+        1099.9785380748165,
+        1143.7744171999998,
+        8.5000574,
+        1134.6999357,
+        1158.5744174000001
+      ]
+    },
+    {
+      "id": "0:1:1:1:16",
+      "definicion_id": "0:1:1:27",
+      "nombre": "REF horquillas (bolas, separadores, M3 x 25):1",
+      "definicion": "REF horquillas (bolas, separadores, M3 x 25)",
+      "ruta": [
+        "ball_and_plate_camara v22",
+        "REF horquillas (bolas, separadores, M3 x 25):1"
+      ],
+      "nivel": 1,
+      "ensamblaje": true,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.0000574
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          1081.4999356
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1098.9244173
+        ]
+      ],
+      "hijos": 6
+    },
+    {
+      "id": "0:1:1:27:1",
+      "definicion_id": "0:1:1:28",
+      "nombre": "Open CASCADE STEP translator 7.9 12.1:1",
+      "definicion": "Open CASCADE STEP translator 7.9 12.1",
+      "ruta": [
+        "ball_and_plate_camara v22",
+        "REF horquillas (bolas, separadores, M3 x 25):1",
+        "Open CASCADE STEP translator 7.9 12.1:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.0000574
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          1081.4999356
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1098.9244173
+        ]
+      ],
+      "limites_mundo_mm": [
+        41.850057400000004,
+        1074.1999356000001,
+        1181.1744173,
+        53.850057400000004,
+        1088.7999356,
+        1193.1744173
+      ]
+    },
+    {
+      "id": "0:1:1:27:2",
+      "definicion_id": "0:1:1:29",
+      "nombre": "Open CASCADE STEP translator 7.9 12.2:1",
+      "definicion": "Open CASCADE STEP translator 7.9 12.2",
+      "ruta": [
+        "ball_and_plate_camara v22",
+        "REF horquillas (bolas, separadores, M3 x 25):1",
+        "Open CASCADE STEP translator 7.9 12.2:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.0000574
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          1081.4999356
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1098.9244173
+        ]
+      ],
+      "limites_mundo_mm": [
+        45.100057400000004,
+        1091.7999356,
+        1184.4244173,
+        50.600057400000004,
+        1094.7999356,
+        1189.9244173
+      ]
+    },
+    {
+      "id": "0:1:1:27:3",
+      "definicion_id": "0:1:1:30",
+      "nombre": "Open CASCADE STEP translator 7.9 12.3:1",
+      "definicion": "Open CASCADE STEP translator 7.9 12.3",
+      "ruta": [
+        "ball_and_plate_camara v22",
+        "REF horquillas (bolas, separadores, M3 x 25):1",
+        "Open CASCADE STEP translator 7.9 12.3:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.0000574
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          1081.4999356
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1098.9244173
+        ]
+      ],
+      "limites_mundo_mm": [
+        44.6500574,
+        1067.1999356000001,
+        1183.9744173,
+        51.05005740000001,
+        1071.1999356000001,
+        1190.3744173
+      ]
+    },
+    {
+      "id": "0:1:1:27:4",
+      "definicion_id": "0:1:1:31",
+      "nombre": "Open CASCADE STEP translator 7.9 12.4:1",
+      "definicion": "Open CASCADE STEP translator 7.9 12.4",
+      "ruta": [
+        "ball_and_plate_camara v22",
+        "REF horquillas (bolas, separadores, M3 x 25):1",
+        "Open CASCADE STEP translator 7.9 12.4:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.0000574
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          1081.4999356
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1098.9244173
+        ]
+      ],
+      "limites_mundo_mm": [
+        -5.2999426000000005,
+        1121.3499356,
+        1181.1744173,
+        9.3000574,
+        1133.3499356,
+        1193.1744173
+      ]
+    },
+    {
+      "id": "0:1:1:27:5",
+      "definicion_id": "0:1:1:32",
+      "nombre": "Open CASCADE STEP translator 7.9 12.5:1",
+      "definicion": "Open CASCADE STEP translator 7.9 12.5",
+      "ruta": [
+        "ball_and_plate_camara v22",
+        "REF horquillas (bolas, separadores, M3 x 25):1",
+        "Open CASCADE STEP translator 7.9 12.5:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.0000574
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          1081.4999356
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1098.9244173
+        ]
+      ],
+      "limites_mundo_mm": [
+        12.3000574,
+        1124.5999356,
+        1184.4244173,
+        15.3000574,
+        1130.0999356,
+        1189.9244173
+      ]
+    },
+    {
+      "id": "0:1:1:27:6",
+      "definicion_id": "0:1:1:33",
+      "nombre": "Open CASCADE STEP translator 7.9 12.6:1",
+      "definicion": "Open CASCADE STEP translator 7.9 12.6",
+      "ruta": [
+        "ball_and_plate_camara v22",
+        "REF horquillas (bolas, separadores, M3 x 25):1",
+        "Open CASCADE STEP translator 7.9 12.6:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.0000574
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          1081.4999356
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1098.9244173
+        ]
+      ],
+      "limites_mundo_mm": [
+        -12.299942600000001,
+        1124.1499356,
+        1183.9744173,
+        -8.299942600000001,
+        1130.5499356,
+        1190.3744173
+      ]
+    },
+    {
+      "id": "0:1:1:1:17",
+      "definicion_id": "0:1:1:34",
+      "nombre": "REF pantalla:1",
+      "definicion": "REF pantalla",
+      "ruta": [
+        "ball_and_plate_camara v22",
+        "REF pantalla:1"
+      ],
+      "nivel": 1,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.0000574
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          1081.4999356
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1098.9244173
+        ]
+      ],
+      "limites_mundo_mm": [
+        -91.4999426,
+        1010.9999356000001,
+        1207.6744173,
+        95.5000574,
+        1151.9999356,
+        1210.6744173
+      ]
+    },
+    {
+      "id": "0:1:1:1:18",
+      "definicion_id": "0:1:1:35",
+      "nombre": "REF bola 25 mm:1",
+      "definicion": "REF bola 25 mm",
+      "ruta": [
+        "ball_and_plate_camara v22",
+        "REF bola 25 mm:1"
+      ],
+      "nivel": 1,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.0000574
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          1081.4999356
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1098.9244173
+        ]
+      ],
+      "limites_mundo_mm": [
+        19.500057400000003,
+        1088.9999356,
+        1210.6744173,
+        44.5000574,
+        1113.9999356,
+        1235.6744173
+      ]
+    },
+    {
+      "id": "0:1:1:1:19",
+      "definicion_id": "0:1:1:36",
+      "nombre": "BANDEJA bujes cruceta x4 (PLA):1",
+      "definicion": "BANDEJA bujes cruceta x4 (PLA)",
+      "ruta": [
+        "ball_and_plate_camara v22",
+        "BANDEJA bujes cruceta x4 (PLA):1"
+      ],
+      "nivel": 1,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          1081.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1098.92
+        ]
+      ],
+      "limites_mundo_mm": [
+        -16.3,
+        1063.1999999999998,
+        1184.17,
+        20.3,
+        1099.8000000000002,
+        1190.17
+      ]
+    },
+    {
+      "id": "0:1:1:1:20",
+      "definicion_id": "0:1:1:37",
+      "nombre": "CAM torre +X (1):1",
+      "definicion": "CAM torre +X (1)",
+      "ruta": [
+        "ball_and_plate_camara v22",
+        "CAM torre +X (1):1"
+      ],
+      "nivel": 1,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "limites_mundo_mm": [
+        120.0,
+        1067.4999999999964,
+        1139.2,
+        167.0000000000001,
+        1095.5000000000036,
+        1289.2565666400558
+      ]
+    },
+    {
+      "id": "0:1:1:1:21",
+      "definicion_id": "0:1:1:38",
+      "nombre": "CAM pata +X:1",
+      "definicion": "CAM pata +X",
+      "ruta": [
+        "ball_and_plate_camara v22",
+        "CAM pata +X:1"
+      ],
+      "nivel": 1,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "limites_mundo_mm": [
+        43.780859190709535,
+        1072.4999999999995,
+        1253.4870282163995,
+        160.6926462746459,
+        1090.5000000000005,
+        1436.5564068313106
+      ]
+    },
+    {
+      "id": "0:1:1:1:22",
+      "definicion_id": "0:1:1:39",
+      "nombre": "CAM torre +Y (1):1",
+      "definicion": "CAM torre +Y (1)",
+      "ruta": [
+        "ball_and_plate_camara v22",
+        "CAM torre +Y (1):1"
+      ],
+      "nivel": 1,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "limites_mundo_mm": [
+        -12.000000000002677,
+        1199.5,
+        1139.2,
+        16.00000000000269,
+        1246.5,
+        1289.2565666400583
+      ]
+    },
+    {
+      "id": "0:1:1:1:23",
+      "definicion_id": "0:1:1:40",
+      "nombre": "CAM pata +Y:1",
+      "definicion": "CAM pata +Y",
+      "ruta": [
+        "ball_and_plate_camara v22",
+        "CAM pata +Y:1"
+      ],
+      "nivel": 1,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "limites_mundo_mm": [
+        -7.000000000002763,
+        1123.280859190708,
+        1253.487028216399,
+        11.000000000002775,
+        1240.192646274648,
+        1436.5564068313122
+      ]
+    },
+    {
+      "id": "0:1:1:1:24",
+      "definicion_id": "0:1:1:41",
+      "nombre": "CAM torre -X (1):1",
+      "definicion": "CAM torre -X (1)",
+      "ruta": [
+        "ball_and_plate_camara v22",
+        "CAM torre -X (1):1"
+      ],
+      "nivel": 1,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "limites_mundo_mm": [
+        -163.0000000000001,
+        1067.4999999999964,
+        1139.2,
+        -116.0,
+        1095.5000000000036,
+        1289.2565666400558
+      ]
+    },
+    {
+      "id": "0:1:1:1:25",
+      "definicion_id": "0:1:1:42",
+      "nombre": "CAM pata -X:1",
+      "definicion": "CAM pata -X",
+      "ruta": [
+        "ball_and_plate_camara v22",
+        "CAM pata -X:1"
+      ],
+      "nivel": 1,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "limites_mundo_mm": [
+        -156.6926462746459,
+        1072.4999999999995,
+        1253.4870282163995,
+        -39.780859190709535,
+        1090.5000000000005,
+        1436.5564068313106
+      ]
+    },
+    {
+      "id": "0:1:1:1:26",
+      "definicion_id": "0:1:1:43",
+      "nombre": "CAM torre -Y (1):1",
+      "definicion": "CAM torre -Y (1)",
+      "ruta": [
+        "ball_and_plate_camara v22",
+        "CAM torre -Y (1):1"
+      ],
+      "nivel": 1,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "limites_mundo_mm": [
+        -12.000000000002695,
+        916.4999999999999,
+        1139.2,
+        16.000000000002668,
+        963.5,
+        1289.256566640055
+      ]
+    },
+    {
+      "id": "0:1:1:1:27",
+      "definicion_id": "0:1:1:44",
+      "nombre": "CAM pata -Y:1",
+      "definicion": "CAM pata -Y",
+      "ruta": [
+        "ball_and_plate_camara v22",
+        "CAM pata -Y:1"
+      ],
+      "nivel": 1,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "limites_mundo_mm": [
+        -7.000000000000558,
+        922.807353725354,
+        1253.4870282163995,
+        11.00000000000051,
+        1039.719140809292,
+        1436.5564068313104
+      ]
+    },
+    {
+      "id": "0:1:1:1:28",
+      "definicion_id": "0:1:1:45",
+      "nombre": "CAM contraplaca x4 (1):1",
+      "definicion": "CAM contraplaca x4 (1)",
+      "ruta": [
+        "ball_and_plate_camara v22",
+        "CAM contraplaca x4 (1):1"
+      ],
+      "nivel": 1,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "limites_mundo_mm": [
+        -146.0,
+        933.5,
+        1131.2,
+        150.0,
+        1229.5,
+        1136.2
+      ]
+    },
+    {
+      "id": "0:1:1:1:29",
+      "definicion_id": "0:1:1:46",
+      "nombre": "CAM nucleo v7:1",
+      "definicion": "CAM nucleo v7",
+      "ruta": [
+        "ball_and_plate_camara v22",
+        "CAM nucleo v7:1"
+      ],
+      "nivel": 1,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "limites_mundo_mm": [
+        -69.28896175717624,
+        1010.2110382428236,
+        1407.17337792604,
+        73.28896175717621,
+        1152.7889617571764,
+        1435.7000000000035
+      ]
+    },
+    {
+      "id": "0:1:1:1:30",
+      "definicion_id": "0:1:1:47",
+      "nombre": "CAM bandeja camara v5:1",
+      "definicion": "CAM bandeja camara v5",
+      "ruta": [
+        "ball_and_plate_camara v22",
+        "CAM bandeja camara v5:1"
+      ],
+      "nivel": 1,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "limites_mundo_mm": [
+        -35.0,
+        1064.1,
+        1414.7,
+        39.0,
+        1098.9,
+        1436.7
+      ]
+    }
+  ]
+}

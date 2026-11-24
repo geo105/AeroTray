@@ -1,0 +1,68 @@
+{
+  "origen": "/home/george/DSM/simulacion/aerotray_conjunto_cad.xml",
+  "sha256_modelo": "d164c4b6947e08231ccc5398ab44976f88f66d909a784c5c078780d6b3ebdd64",
+  "origen_control": "/home/george/DSM/simulacion/control_simulacion.py",
+  "configuracion": {
+    "tipo": "PI-D de altura y actitud con asignación de ocho fuerzas acotadas",
+    "masa_nominal_kg": 3.5999999999999996,
+    "altura_referencia_m": 0.03831472969,
+    "kp_altura": 320.0,
+    "kd_altura": 60.0,
+    "ki_altura": 160.0,
+    "kp_actitud": [
+      12.0,
+      12.0,
+      0.4
+    ],
+    "kd_actitud": [
+      2.4,
+      2.4,
+      0.45
+    ],
+    "ki_actitud": [
+      3.0,
+      3.0,
+      0.05
+    ],
+    "limites_fuerza_N": [
+      [
+        0.0,
+        6.0
+      ],
+      [
+        0.0,
+        6.0
+      ],
+      [
+        0.0,
+        6.0
+      ],
+      [
+        0.0,
+        6.0
+      ],
+      [
+        0.0,
+        6.0
+      ],
+      [
+        0.0,
+        6.0
+      ],
+      [
+        0.0,
+        6.0
+      ],
+      [
+        0.0,
+        6.0
+      ]
+    ],
+    "limite": "Sólo modelo provisional. Requiere sensores y actuadores identificados antes de aplicarlo al prototipo."
+  },
+  "mapa_motores_fisico_verificado": false,
+  "curva_empuje_pwm_medida": false,
+  "recorrido_simulado_m": 0.07662945938,
+  "objetivo_usuario_m": 0.3,
+  "nota": "El objetivo del usuario esta fuera del recorrido simulado. No habilita motores."
+}

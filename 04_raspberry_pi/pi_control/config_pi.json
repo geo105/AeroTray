@@ -1,0 +1,44 @@
+{
+  "ancho": 320,
+  "alto": 240,
+  "fps": 187,
+  "exposicion": 120,
+  "ganancia": 20,
+  "esquinas": [
+    [
+      25,
+      5
+    ],
+    [
+      286,
+      4
+    ],
+    [
+      286,
+      234
+    ],
+    [
+      19,
+      232
+    ]
+  ],
+  "placa_mm": [
+    250,
+    220
+  ],
+  "px_por_mm": 0.8,
+  "mm_por_unidad": 3.0,
+  "diametro_bola_mm": 27,
+  "diferencia_min": 28,
+  "umbral_fraccion": 0.3,
+  "contraste_min": 40,
+  "ventana_mm": 60,
+  "salto_max_mm": 40,
+  "margen_mm": 40,
+  "metodo": "color",
+  "color_bola": "azul",
+  "color_min": 20,
+  "area_min_fraccion": 0.2,
+  "myrio_uart": "/dev/serial0",
+  "myrio_baudios": 9600
+}

@@ -1,0 +1,7 @@
+{
+  "fecha": "2026-10-30",
+  "pieza": "Base.ipt",
+  "decision_usuario": "Se conserva en el montaje nuevo",
+  "accion": "conservar geometria y posicion heredadas; no retirar ni rediseñar automaticamente",
+  "solapes": "se mantienen registrados para revisión; esta confirmación no equivale a validar las interferencias físicas"
+}

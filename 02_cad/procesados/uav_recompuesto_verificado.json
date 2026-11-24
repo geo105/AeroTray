@@ -1,0 +1,2494 @@
+{
+  "origen": "/home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/junta nuevo de 8 motores con camara - UAV preliminar.step",
+  "unidad": "mm",
+  "limites_raices_mm": [
+    [
+      -378.9636666430004,
+      -378.963666643002,
+      -12.003200822425187,
+      378.9636666429968,
+      378.9636666430645,
+      341.7755827000001
+    ]
+  ],
+  "nodos": 61,
+  "hojas": 58,
+  "componentes": [
+    {
+      "id": "0:1:1:1",
+      "definicion_id": "0:1:1:1",
+      "nombre": "junta nuevo de 8 motores con camara - UAV preliminar",
+      "definicion": "junta nuevo de 8 motores con camara - UAV preliminar",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar"
+      ],
+      "nivel": 0,
+      "ensamblaje": true,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "hijos": 2
+    },
+    {
+      "id": "0:1:1:1:1",
+      "definicion_id": "0:1:1:2",
+      "nombre": "estructura_uav",
+      "definicion": "estructura_uav",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "estructura_uav"
+      ],
+      "nivel": 1,
+      "ensamblaje": true,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "hijos": 17
+    },
+    {
+      "id": "0:1:1:2:1",
+      "definicion_id": "0:1:1:3",
+      "nombre": "M6 - diagonal 135 grados:1",
+      "definicion": "M6 - diagonal 135 grados:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "estructura_uav",
+        "M6 - diagonal 135 grados:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          -4.218847493575996e-15,
+          -1.84535011859e-15,
+          1.235928022089
+        ],
+        [
+          4.218847493576e-15,
+          1.0,
+          2.151244232161e-15,
+          -138.310928022
+        ],
+        [
+          1.845350118589991e-15,
+          -2.1512442321610078e-15,
+          1.0,
+          -409.6679797769
+        ]
+      ],
+      "limites_mundo_mm": [
+        -273.9301573120135,
+        110.56860835753042,
+        -12.003200822425187,
+        -110.60261882611297,
+        273.94079842644993,
+        84.06679966731872
+      ]
+    },
+    {
+      "id": "0:1:1:2:2",
+      "definicion_id": "0:1:1:4",
+      "nombre": "M7 - diagonal 225 grados:1",
+      "definicion": "M7 - diagonal 225 grados:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "estructura_uav",
+        "M7 - diagonal 225 grados:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          -1.2490009027029996e-15,
+          -5.824056448221e-16,
+          1.23592802209
+        ],
+        [
+          1.249000902703e-15,
+          1.0,
+          5.453120627468e-16,
+          -125.6890719779
+        ],
+        [
+          5.824056448220993e-16,
+          -5.453120627468007e-16,
+          1.0,
+          -409.6679797769
+        ]
+      ],
+      "limites_mundo_mm": [
+        -273.9407984263101,
+        -273.93015731200006,
+        -12.003200822423937,
+        -110.56860835741027,
+        -110.60261882618492,
+        84.06679966731997
+      ]
+    },
+    {
+      "id": "0:1:1:2:3",
+      "definicion_id": "0:1:1:5",
+      "nombre": "M8 - diagonal 315 grados:1",
+      "definicion": "M8 - diagonal 315 grados:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "estructura_uav",
+        "M8 - diagonal 315 grados:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          -5.195843755248e-14,
+          2.159929913121e-13,
+          -41.08111092219
+        ],
+        [
+          5.195843755248e-14,
+          1.0,
+          1.111974092802e-30,
+          -95.99393827792
+        ],
+        [
+          -2.159929913121e-13,
+          1.1221546376770302e-26,
+          1.0,
+          -410.1047789682
+        ]
+      ],
+      "limites_mundo_mm": [
+        110.60261882618904,
+        -273.9407984263047,
+        -12.000000113778235,
+        273.9301573120553,
+        -110.56860835744132,
+        84.07000047596773
+      ]
+    },
+    {
+      "id": "0:1:1:2:4",
+      "definicion_id": "0:1:1:6",
+      "nombre": "M5 - diagonal 45 grados:1",
+      "definicion": "M5 - diagonal 45 grados:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "estructura_uav",
+        "M5 - diagonal 45 grados:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          -1.9984014443249998e-15,
+          -6.896053389846e-16,
+          -11.38592802208
+        ],
+        [
+          1.998401444325e-15,
+          1.0,
+          6.456947155248e-16,
+          -138.310928022
+        ],
+        [
+          6.896053389845987e-16,
+          -6.456947155248013e-16,
+          1.0,
+          -409.6679797769
+        ]
+      ],
+      "limites_mundo_mm": [
+        110.56860835744918,
+        110.60261882628055,
+        -12.003200822423938,
+        273.94079842636893,
+        273.9301573121508,
+        84.06679966731997
+      ]
+    },
+    {
+      "id": "0:1:1:2:5",
+      "definicion_id": "0:1:1:7",
+      "nombre": "M6 - diagonal 135 grados (1):1",
+      "definicion": "M6 - diagonal 135 grados (1):1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "estructura_uav",
+        "M6 - diagonal 135 grados (1):1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          0.7071067811865476,
+          -0.7071067811865476,
+          6.07182406814e-16,
+          98.674528202098
+        ],
+        [
+          0.7071067811865476,
+          0.7071067811865476,
+          -1.04300296231e-15,
+          -96.92666203114
+        ],
+        [
+          3.0817167017170966e-16,
+          1.1668572647224064e-15,
+          1.0,
+          -410.901173478
+        ]
+      ],
+      "limites_mundo_mm": [
+        -378.9636666430004,
+        -20.36747569587815,
+        -11.996394523523467,
+        -165.41106547501118,
+        20.382524504121854,
+        84.07360596622044
+      ]
+    },
+    {
+      "id": "0:1:1:2:6",
+      "definicion_id": "0:1:1:8",
+      "nombre": "M7 - diagonal 225 grados (1):1",
+      "definicion": "M7 - diagonal 225 grados (1):1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "estructura_uav",
+        "M7 - diagonal 225 grados (1):1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          0.7071067811865476,
+          -0.7071067811865476,
+          1.318202916009e-13,
+          89.74949350204
+        ],
+        [
+          0.7071067811865476,
+          0.7071067811865476,
+          8.409353645129e-14,
+          -36.00636643118
+        ],
+        [
+          -1.5267413196764977e-13,
+          3.374791221031922e-14,
+          1.0,
+          -410.1047789683
+        ]
+      ],
+      "limites_mundo_mm": [
+        -20.38252450409218,
+        -378.963666643002,
+        -12.000000013785929,
+        20.367475695908304,
+        -165.4110654750043,
+        84.07000047595824
+      ]
+    },
+    {
+      "id": "0:1:1:2:7",
+      "definicion_id": "0:1:1:9",
+      "nombre": "M8 - diagonal 315 grados (1):1",
+      "definicion": "M8 - diagonal 315 grados (1):1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "estructura_uav",
+        "M8 - diagonal 315 grados (1):1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          0.7071067811865476,
+          -0.7071067811865476,
+          6.831086285514e-16,
+          80.824528202103
+        ],
+        [
+          0.7071067811865476,
+          0.7071067811865476,
+          -9.136652888967e-16,
+          -96.92666203114
+        ],
+        [
+          1.6302817797788527e-16,
+          1.1290896650493602e-15,
+          1.0,
+          -409.0159973674
+        ]
+      ],
+      "limites_mundo_mm": [
+        165.41106547507198,
+        -20.382524504039928,
+        -12.001218412924006,
+        378.9636666429968,
+        20.367475695960074,
+        84.06878207681984
+      ]
+    },
+    {
+      "id": "0:1:1:2:8",
+      "definicion_id": "0:1:1:10",
+      "nombre": "M5 - diagonal 45 grados (1):1",
+      "definicion": "M5 - diagonal 45 grados (1):1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "estructura_uav",
+        "M5 - diagonal 45 grados (1):1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          0.7071067811865476,
+          -0.7071067811865476,
+          -1.838186590955e-16,
+          89.749528202102
+        ],
+        [
+          0.7071067811865476,
+          0.7071067811865476,
+          1.539203928176e-16,
+          -105.8516620311
+        ],
+        [
+          2.1141266830824162e-17,
+          -2.388175738792684e-16,
+          1.0,
+          -413.515719393
+        ]
+      ],
+      "limites_mundo_mm": [
+        -20.3674756959197,
+        165.4110654751166,
+        -12.000940438523973,
+        20.3825245040803,
+        378.9636666430645,
+        84.06906005121988
+      ]
+    },
+    {
+      "id": "0:1:1:2:9",
+      "definicion_id": "0:1:1:11",
+      "nombre": "IMPRIMIBLE tapa_central:1",
+      "definicion": "IMPRIMIBLE tapa_central:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "estructura_uav",
+        "IMPRIMIBLE tapa_central:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          3.900014000635e-08
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -4.980165613233e-09
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.383000380883e-08
+        ]
+      ],
+      "limites_mundo_mm": [
+        -117.50564675919986,
+        -117.50564680318017,
+        3.999999986169996,
+        117.50564683724014,
+        117.50564679325983,
+        6.999999986169996
+      ]
+    },
+    {
+      "id": "0:1:1:2:10",
+      "definicion_id": "0:1:1:12",
+      "nombre": "IMPRIMIBLE base_Q1:1",
+      "definicion": "IMPRIMIBLE base_Q1:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "estructura_uav",
+        "IMPRIMIBLE base_Q1:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "limites_mundo_mm": [
+        -8.000000000005144,
+        -9.237055564881302e-14,
+        0.0,
+        211.4,
+        211.4,
+        4.0
+      ]
+    },
+    {
+      "id": "0:1:1:2:11",
+      "definicion_id": "0:1:1:13",
+      "nombre": "IMPRIMIBLE base_Q2:1",
+      "definicion": "IMPRIMIBLE base_Q2:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "estructura_uav",
+        "IMPRIMIBLE base_Q2:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "limites_mundo_mm": [
+        -211.4,
+        -8.000000000020833,
+        0.0,
+        3.161915174132446e-13,
+        211.4,
+        4.0
+      ]
+    },
+    {
+      "id": "0:1:1:2:12",
+      "definicion_id": "0:1:1:14",
+      "nombre": "IMPRIMIBLE base_Q3:1",
+      "definicion": "IMPRIMIBLE base_Q3:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "estructura_uav",
+        "IMPRIMIBLE base_Q3:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "limites_mundo_mm": [
+        -211.4,
+        -211.4,
+        0.0,
+        8.000000000020894,
+        2.7782220968219917e-12,
+        4.0
+      ]
+    },
+    {
+      "id": "0:1:1:2:13",
+      "definicion_id": "0:1:1:15",
+      "nombre": "IMPRIMIBLE base_Q4:1",
+      "definicion": "IMPRIMIBLE base_Q4:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "estructura_uav",
+        "IMPRIMIBLE base_Q4:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "limites_mundo_mm": [
+        -4.070813669373722e-14,
+        -211.4,
+        0.0,
+        211.4,
+        8.000000000003041,
+        4.0
+      ]
+    },
+    {
+      "id": "0:1:1:2:14",
+      "definicion_id": "0:1:1:16",
+      "nombre": "SEPARADOR 1:1",
+      "definicion": "SEPARADOR 1:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "estructura_uav",
+        "SEPARADOR 1:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.0
+        ]
+      ],
+      "limites_mundo_mm": [
+        70.5,
+        -11.5,
+        7.0,
+        79.5,
+        11.5,
+        41.25
+      ]
+    },
+    {
+      "id": "0:1:1:2:15",
+      "definicion_id": "0:1:1:17",
+      "nombre": "SEPARADOR 2:1",
+      "definicion": "SEPARADOR 2:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "estructura_uav",
+        "SEPARADOR 2:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          -2.22044604925e-16,
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          -2.22044604925e-16,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.0
+        ]
+      ],
+      "limites_mundo_mm": [
+        -11.500000000000016,
+        70.5,
+        7.0,
+        11.499999999999982,
+        79.5,
+        41.25
+      ]
+    },
+    {
+      "id": "0:1:1:2:16",
+      "definicion_id": "0:1:1:18",
+      "nombre": "SEPARADOR 3:1",
+      "definicion": "SEPARADOR 3:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "estructura_uav",
+        "SEPARADOR 3:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          -1.0,
+          -1.224646799147e-16,
+          0.0,
+          0.0
+        ],
+        [
+          1.224646799147e-16,
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.0
+        ]
+      ],
+      "limites_mundo_mm": [
+        -79.5,
+        -11.49999999999999,
+        7.0,
+        -70.5,
+        11.500000000000007,
+        41.25
+      ]
+    },
+    {
+      "id": "0:1:1:2:17",
+      "definicion_id": "0:1:1:19",
+      "nombre": "SEPARADOR 4:1",
+      "definicion": "SEPARADOR 4:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "estructura_uav",
+        "SEPARADOR 4:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          -2.22044604925e-16,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          -1.0,
+          -2.22044604925e-16,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.0
+        ]
+      ],
+      "limites_mundo_mm": [
+        -11.500000000000016,
+        -79.5,
+        7.0,
+        11.499999999999982,
+        -70.5,
+        41.25
+      ]
+    },
+    {
+      "id": "0:1:1:1:2",
+      "definicion_id": "0:1:1:20",
+      "nombre": "bandeja_camara",
+      "definicion": "bandeja_camara",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "bandeja_camara"
+      ],
+      "nivel": 1,
+      "ensamblaje": true,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "hijos": 41
+    },
+    {
+      "id": "0:1:1:20:1",
+      "definicion_id": "0:1:1:21",
+      "nombre": "PISO2 Q3:1",
+      "definicion": "PISO2 Q3:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "bandeja_camara",
+        "PISO2 Q3:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.0
+        ]
+      ],
+      "limites_mundo_mm": [
+        -195.2,
+        -138.0272436876,
+        41.25,
+        1.4210854715202004e-14,
+        138.02724368761,
+        44.25
+      ]
+    },
+    {
+      "id": "0:1:1:20:2",
+      "definicion_id": "0:1:1:22",
+      "nombre": "PISO2 Q4:1",
+      "definicion": "PISO2 Q4:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "bandeja_camara",
+        "PISO2 Q4:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.0
+        ]
+      ],
+      "limites_mundo_mm": [
+        -138.02724368760002,
+        -195.2,
+        41.25,
+        138.027243687625,
+        2.0037305148434825e-11,
+        44.25
+      ]
+    },
+    {
+      "id": "0:1:1:20:3",
+      "definicion_id": "0:1:1:23",
+      "nombre": "BANDEJA cruceta:1",
+      "definicion": "BANDEJA cruceta:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "bandeja_camara",
+        "BANDEJA cruceta:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.0
+        ]
+      ],
+      "limites_mundo_mm": [
+        -9.0,
+        -9.0,
+        83.25,
+        9.0,
+        9.0,
+        101.25
+      ]
+    },
+    {
+      "id": "0:1:1:20:4",
+      "definicion_id": "0:1:1:24",
+      "nombre": "PISO2 Q1:1",
+      "definicion": "PISO2 Q1:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "bandeja_camara",
+        "PISO2 Q1:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.0
+        ]
+      ],
+      "limites_mundo_mm": [
+        -1.4210854715202004e-14,
+        -138.02724368760502,
+        41.25,
+        195.2,
+        138.02724368761,
+        44.25
+      ]
+    },
+    {
+      "id": "0:1:1:20:5",
+      "definicion_id": "0:1:1:25",
+      "nombre": "PISO2 Q2:1",
+      "definicion": "PISO2 Q2:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "bandeja_camara",
+        "PISO2 Q2:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.0
+        ]
+      ],
+      "limites_mundo_mm": [
+        -138.0272436876,
+        -9.860761315262648e-32,
+        41.25,
+        138.02724368761002,
+        195.2,
+        44.25
+      ]
+    },
+    {
+      "id": "0:1:1:20:6",
+      "definicion_id": "0:1:1:26",
+      "nombre": "BANDEJA pilar y soportes de servo:1",
+      "definicion": "BANDEJA pilar y soportes de servo:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "bandeja_camara",
+        "BANDEJA pilar y soportes de servo:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.0
+        ]
+      ],
+      "limites_mundo_mm": [
+        -54.5,
+        -54.5,
+        44.25,
+        77.0,
+        77.0,
+        99.75
+      ]
+    },
+    {
+      "id": "0:1:1:20:7",
+      "definicion_id": "0:1:1:27",
+      "nombre": "BANDEJA yugo superior:1",
+      "definicion": "BANDEJA yugo superior:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "bandeja_camara",
+        "BANDEJA yugo superior:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.0
+        ]
+      ],
+      "limites_mundo_mm": [
+        -30.0,
+        -30.0,
+        84.75,
+        61.0,
+        61.0,
+        106.55
+      ]
+    },
+    {
+      "id": "0:1:1:20:8",
+      "definicion_id": "0:1:1:28",
+      "nombre": "BANDEJA mesa mitad A:1",
+      "definicion": "BANDEJA mesa mitad A:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "bandeja_camara",
+        "BANDEJA mesa mitad A:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.0
+        ]
+      ],
+      "limites_mundo_mm": [
+        0.0,
+        -110.0,
+        106.55,
+        130.0,
+        110.0,
+        115.75
+      ]
+    },
+    {
+      "id": "0:1:1:20:9",
+      "definicion_id": "0:1:1:29",
+      "nombre": "BANDEJA mesa mitad B:1",
+      "definicion": "BANDEJA mesa mitad B:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "bandeja_camara",
+        "BANDEJA mesa mitad B:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.0
+        ]
+      ],
+      "limites_mundo_mm": [
+        -130.0,
+        -110.0,
+        106.55,
+        0.0,
+        110.0,
+        115.75
+      ]
+    },
+    {
+      "id": "0:1:1:20:10",
+      "definicion_id": "0:1:1:30",
+      "nombre": "Open CASCADE STEP translator 7.9 6.1:1",
+      "definicion": "Open CASCADE STEP translator 7.9 6.1:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "bandeja_camara",
+        "Open CASCADE STEP translator 7.9 6.1:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.0
+        ]
+      ],
+      "limites_mundo_mm": [
+        37.55,
+        -6.3,
+        47.95,
+        54.150000000000006,
+        6.3,
+        100.55
+      ]
+    },
+    {
+      "id": "0:1:1:20:11",
+      "definicion_id": "0:1:1:31",
+      "nombre": "Open CASCADE STEP translator 7.9 6.2:1",
+      "definicion": "Open CASCADE STEP translator 7.9 6.2:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "bandeja_camara",
+        "Open CASCADE STEP translator 7.9 6.2:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.0
+        ]
+      ],
+      "limites_mundo_mm": [
+        39.85,
+        -6.0,
+        50.25,
+        51.85,
+        6.0,
+        62.25
+      ]
+    },
+    {
+      "id": "0:1:1:20:12",
+      "definicion_id": "0:1:1:32",
+      "nombre": "Open CASCADE STEP translator 7.9 6.3:1",
+      "definicion": "Open CASCADE STEP translator 7.9 6.3:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "bandeja_camara",
+        "Open CASCADE STEP translator 7.9 6.3:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.0
+        ]
+      ],
+      "limites_mundo_mm": [
+        39.85,
+        -6.0,
+        86.25,
+        51.85,
+        6.0,
+        98.25
+      ]
+    },
+    {
+      "id": "0:1:1:20:13",
+      "definicion_id": "0:1:1:33",
+      "nombre": "Open CASCADE STEP translator 7.9 7.1:1",
+      "definicion": "Open CASCADE STEP translator 7.9 7.1:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "bandeja_camara",
+        "Open CASCADE STEP translator 7.9 7.1:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.0
+        ]
+      ],
+      "limites_mundo_mm": [
+        -6.3,
+        37.55,
+        47.95,
+        6.3,
+        54.150000000000006,
+        100.55
+      ]
+    },
+    {
+      "id": "0:1:1:20:14",
+      "definicion_id": "0:1:1:34",
+      "nombre": "Open CASCADE STEP translator 7.9 7.2:1",
+      "definicion": "Open CASCADE STEP translator 7.9 7.2:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "bandeja_camara",
+        "Open CASCADE STEP translator 7.9 7.2:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.0
+        ]
+      ],
+      "limites_mundo_mm": [
+        -6.0,
+        39.85,
+        50.25,
+        6.0,
+        51.85,
+        62.25
+      ]
+    },
+    {
+      "id": "0:1:1:20:15",
+      "definicion_id": "0:1:1:35",
+      "nombre": "Open CASCADE STEP translator 7.9 7.3:1",
+      "definicion": "Open CASCADE STEP translator 7.9 7.3:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "bandeja_camara",
+        "Open CASCADE STEP translator 7.9 7.3:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.0
+        ]
+      ],
+      "limites_mundo_mm": [
+        -6.0,
+        39.85,
+        86.25,
+        6.0,
+        51.85,
+        98.25
+      ]
+    },
+    {
+      "id": "0:1:1:20:16",
+      "definicion_id": "0:1:1:36",
+      "nombre": "Open CASCADE STEP translator 7.9 8.1:1",
+      "definicion": "Open CASCADE STEP translator 7.9 8.1:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "bandeja_camara",
+        "Open CASCADE STEP translator 7.9 8.1:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.0
+        ]
+      ],
+      "limites_mundo_mm": [
+        9.134008440941,
+        -52.3032672446545,
+        46.250395041159166,
+        63.634008640941,
+        -12.10326724465,
+        66.25039504116
+      ]
+    },
+    {
+      "id": "0:1:1:20:17",
+      "definicion_id": "0:1:1:37",
+      "nombre": "Open CASCADE STEP translator 7.9 8.2:1",
+      "definicion": "Open CASCADE STEP translator 7.9 8.2:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "bandeja_camara",
+        "Open CASCADE STEP translator 7.9 8.2:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          1075.295991587
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          999.95673275534
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1090.309604959
+        ]
+      ],
+      "limites_mundo_mm": [
+        22.99798345199988,
+        -12.103267244659946,
+        53.40209093119139,
+        28.69798345199988,
+        -7.603267244659946,
+        59.098699151000005
+      ]
+    },
+    {
+      "id": "0:1:1:20:18",
+      "definicion_id": "0:1:1:38",
+      "nombre": "Open CASCADE STEP translator 7.9 9.1:1",
+      "definicion": "Open CASCADE STEP translator 7.9 9.1:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "bandeja_camara",
+        "Open CASCADE STEP translator 7.9 9.1:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.0
+        ]
+      ],
+      "limites_mundo_mm": [
+        -52.30326724466,
+        9.134008540940755,
+        46.25039504115968,
+        -12.10326724465,
+        63.634008540941004,
+        66.25039504116009
+      ]
+    },
+    {
+      "id": "0:1:1:20:19",
+      "definicion_id": "0:1:1:39",
+      "nombre": "Open CASCADE STEP translator 7.9 9.2:1",
+      "definicion": "Open CASCADE STEP translator 7.9 9.2:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "bandeja_camara",
+        "Open CASCADE STEP translator 7.9 9.2:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          1075.295991587
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          999.95673275534
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1090.309604959
+        ]
+      ],
+      "limites_mundo_mm": [
+        -12.103267245000097,
+        22.997983452540005,
+        53.40209093118449,
+        -7.603267145000097,
+        28.697983452540008,
+        59.09869915099989
+      ]
+    },
+    {
+      "id": "0:1:1:20:20",
+      "definicion_id": "0:1:1:40",
+      "nombre": "REF brazo 25T X:1",
+      "definicion": "REF brazo 25T X:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "bandeja_camara",
+        "REF brazo 25T X:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.0
+        ]
+      ],
+      "limites_mundo_mm": [
+        18.478602474816633,
+        -10.900000100059788,
+        48.8499999,
+        53.200000100000004,
+        6.5,
+        63.6500001
+      ]
+    },
+    {
+      "id": "0:1:1:20:21",
+      "definicion_id": "0:1:1:41",
+      "nombre": "REF brazo 25T Y:1",
+      "definicion": "REF brazo 25T Y:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "bandeja_camara",
+        "REF brazo 25T Y:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.0
+        ]
+      ],
+      "limites_mundo_mm": [
+        -10.900000100059788,
+        18.478602474816633,
+        48.8499999,
+        6.5,
+        53.200000100000004,
+        63.6500001
+      ]
+    },
+    {
+      "id": "0:1:1:20:22",
+      "definicion_id": "0:1:1:42",
+      "nombre": "Open CASCADE STEP translator 7.9 12.1:1",
+      "definicion": "Open CASCADE STEP translator 7.9 12.1:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "bandeja_camara",
+        "Open CASCADE STEP translator 7.9 12.1:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.0
+        ]
+      ],
+      "limites_mundo_mm": [
+        39.85,
+        -7.300000000000001,
+        86.25,
+        51.85,
+        7.3,
+        98.25
+      ]
+    },
+    {
+      "id": "0:1:1:20:23",
+      "definicion_id": "0:1:1:43",
+      "nombre": "Open CASCADE STEP translator 7.9 12.2:1",
+      "definicion": "Open CASCADE STEP translator 7.9 12.2:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "bandeja_camara",
+        "Open CASCADE STEP translator 7.9 12.2:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.0
+        ]
+      ],
+      "limites_mundo_mm": [
+        43.1,
+        10.3,
+        89.5,
+        48.6,
+        13.3,
+        95.0
+      ]
+    },
+    {
+      "id": "0:1:1:20:24",
+      "definicion_id": "0:1:1:44",
+      "nombre": "Open CASCADE STEP translator 7.9 12.3:1",
+      "definicion": "Open CASCADE STEP translator 7.9 12.3:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "bandeja_camara",
+        "Open CASCADE STEP translator 7.9 12.3:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.0
+        ]
+      ],
+      "limites_mundo_mm": [
+        42.65,
+        -14.3,
+        89.05,
+        49.050000000000004,
+        -10.3,
+        95.45
+      ]
+    },
+    {
+      "id": "0:1:1:20:25",
+      "definicion_id": "0:1:1:45",
+      "nombre": "Open CASCADE STEP translator 7.9 12.4:1",
+      "definicion": "Open CASCADE STEP translator 7.9 12.4:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "bandeja_camara",
+        "Open CASCADE STEP translator 7.9 12.4:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.0
+        ]
+      ],
+      "limites_mundo_mm": [
+        -7.300000000000001,
+        39.85,
+        86.25,
+        7.3,
+        51.85,
+        98.25
+      ]
+    },
+    {
+      "id": "0:1:1:20:26",
+      "definicion_id": "0:1:1:46",
+      "nombre": "Open CASCADE STEP translator 7.9 12.5:1",
+      "definicion": "Open CASCADE STEP translator 7.9 12.5:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "bandeja_camara",
+        "Open CASCADE STEP translator 7.9 12.5:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.0
+        ]
+      ],
+      "limites_mundo_mm": [
+        10.3,
+        43.1,
+        89.5,
+        13.3,
+        48.6,
+        95.0
+      ]
+    },
+    {
+      "id": "0:1:1:20:27",
+      "definicion_id": "0:1:1:47",
+      "nombre": "Open CASCADE STEP translator 7.9 12.6:1",
+      "definicion": "Open CASCADE STEP translator 7.9 12.6:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "bandeja_camara",
+        "Open CASCADE STEP translator 7.9 12.6:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.0
+        ]
+      ],
+      "limites_mundo_mm": [
+        -14.3,
+        42.65,
+        89.05,
+        -10.3,
+        49.050000000000004,
+        95.45
+      ]
+    },
+    {
+      "id": "0:1:1:20:28",
+      "definicion_id": "0:1:1:48",
+      "nombre": "REF pantalla:1",
+      "definicion": "REF pantalla:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "bandeja_camara",
+        "REF pantalla:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.0
+        ]
+      ],
+      "limites_mundo_mm": [
+        -93.5,
+        -70.5,
+        112.75,
+        93.5,
+        70.5,
+        115.75
+      ]
+    },
+    {
+      "id": "0:1:1:20:29",
+      "definicion_id": "0:1:1:49",
+      "nombre": "REF bola 25 mm:1",
+      "definicion": "REF bola 25 mm:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "bandeja_camara",
+        "REF bola 25 mm:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          4.0
+        ]
+      ],
+      "limites_mundo_mm": [
+        17.5,
+        7.5,
+        115.75,
+        42.5,
+        32.5,
+        140.75
+      ]
+    },
+    {
+      "id": "0:1:1:20:30",
+      "definicion_id": "0:1:1:50",
+      "nombre": "BANDEJA bujes cruceta x4 (PLA):1",
+      "definicion": "BANDEJA bujes cruceta x4 (PLA):1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "bandeja_camara",
+        "BANDEJA bujes cruceta x4 (PLA):1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -5.740000000021e-05
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          6.439999992836e-05
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          3.9955827
+        ]
+      ],
+      "limites_mundo_mm": [
+        -18.3000574,
+        -18.299935600000072,
+        89.2455827,
+        18.2999426,
+        18.30006439999993,
+        95.2455827
+      ]
+    },
+    {
+      "id": "0:1:1:20:31",
+      "definicion_id": "0:1:1:51",
+      "nombre": "CAM torre +X (1):1",
+      "definicion": "CAM torre +X (1):1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "bandeja_camara",
+        "CAM torre +X (1):1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -2.0000574
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -1081.4999356
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1094.9244173
+        ]
+      ],
+      "limites_mundo_mm": [
+        117.9999426,
+        -13.999935600153652,
+        44.275582700000086,
+        164.9999426,
+        14.000064400153509,
+        194.3321493402605
+      ]
+    },
+    {
+      "id": "0:1:1:20:32",
+      "definicion_id": "0:1:1:52",
+      "nombre": "CAM pata +X:1",
+      "definicion": "CAM pata +X:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "bandeja_camara",
+        "CAM pata +X:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -2.0000574
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -1081.4999356
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1094.9244173
+        ]
+      ],
+      "limites_mundo_mm": [
+        41.7808017906221,
+        -8.999935600000072,
+        158.5626109159997,
+        158.69258887493083,
+        9.000064399999928,
+        341.6319895310907
+      ]
+    },
+    {
+      "id": "0:1:1:20:33",
+      "definicion_id": "0:1:1:53",
+      "nombre": "CAM torre +Y (1):1",
+      "definicion": "CAM torre +Y (1):1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "bandeja_camara",
+        "CAM torre +Y (1):1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -2.0000574
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -1081.4999356
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1094.9244173
+        ]
+      ],
+      "limites_mundo_mm": [
+        -14.0000574,
+        118.00006439999993,
+        44.275582700000086,
+        13.9999426,
+        165.00006439999993,
+        194.3321493401995
+      ]
+    },
+    {
+      "id": "0:1:1:20:34",
+      "definicion_id": "0:1:1:54",
+      "nombre": "CAM pata +Y:1",
+      "definicion": "CAM pata +Y:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "bandeja_camara",
+        "CAM pata +Y:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -2.0000574
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -1081.4999356
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1094.9244173
+        ]
+      ],
+      "limites_mundo_mm": [
+        -9.000057400000003,
+        41.78092359065122,
+        158.56261091600004,
+        8.999942600000004,
+        158.69271067497107,
+        341.63198953132854
+      ]
+    },
+    {
+      "id": "0:1:1:20:35",
+      "definicion_id": "0:1:1:55",
+      "nombre": "CAM torre -X (1):1",
+      "definicion": "CAM torre -X (1):1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "bandeja_camara",
+        "CAM torre -X (1):1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -2.0000574
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -1081.4999356
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1094.9244173
+        ]
+      ],
+      "limites_mundo_mm": [
+        -165.0000574,
+        -13.999935600139787,
+        44.275582700000086,
+        -118.0000574,
+        14.000064400139644,
+        194.3321493402769
+      ]
+    },
+    {
+      "id": "0:1:1:20:36",
+      "definicion_id": "0:1:1:56",
+      "nombre": "CAM pata -X:1",
+      "definicion": "CAM pata -X:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "bandeja_camara",
+        "CAM pata -X:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -2.0000574
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -1081.4999356
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1094.9244173
+        ]
+      ],
+      "limites_mundo_mm": [
+        -158.69270367488195,
+        -8.999935600003614,
+        158.56261091599313,
+        -41.78091659061691,
+        9.00006440000347,
+        341.631989531092
+      ]
+    },
+    {
+      "id": "0:1:1:20:37",
+      "definicion_id": "0:1:1:57",
+      "nombre": "CAM torre -Y (1):1",
+      "definicion": "CAM torre -Y (1):1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "bandeja_camara",
+        "CAM torre -Y (1):1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -2.0000574
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -1081.4999356
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1094.9244173
+        ]
+      ],
+      "limites_mundo_mm": [
+        -14.000057400153567,
+        -164.99993560000007,
+        44.275582700000086,
+        13.999942600153567,
+        -117.99993560000007,
+        194.33214934024878
+      ]
+    },
+    {
+      "id": "0:1:1:20:38",
+      "definicion_id": "0:1:1:58",
+      "nombre": "CAM pata -Y:1",
+      "definicion": "CAM pata -Y:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "bandeja_camara",
+        "CAM pata -Y:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -2.0000574
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -1081.4999356
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1094.9244173
+        ]
+      ],
+      "limites_mundo_mm": [
+        -9.000057400000008,
+        -158.6925818749409,
+        158.5626109159997,
+        8.99994260000001,
+        -41.78079479065136,
+        341.63198953132854
+      ]
+    },
+    {
+      "id": "0:1:1:20:39",
+      "definicion_id": "0:1:1:59",
+      "nombre": "CAM contraplaca x4 (1):1",
+      "definicion": "CAM contraplaca x4 (1):1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "bandeja_camara",
+        "CAM contraplaca x4 (1):1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -2.0000574
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -1081.4999356
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1094.9244173
+        ]
+      ],
+      "limites_mundo_mm": [
+        -148.0000574,
+        -147.99993560000007,
+        36.275582700000086,
+        147.9999426,
+        148.00006439999993,
+        41.275582700000086
+      ]
+    },
+    {
+      "id": "0:1:1:20:40",
+      "definicion_id": "0:1:1:60",
+      "nombre": "CAM nucleo v7:1",
+      "definicion": "CAM nucleo v7:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "bandeja_camara",
+        "CAM nucleo v7:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -2.0000574
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -1081.4999356
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1094.9244173
+        ]
+      ],
+      "limites_mundo_mm": [
+        -71.28901915726624,
+        -71.2888973575781,
+        312.2489606259038,
+        71.28890435727347,
+        71.28902615757792,
+        340.7755827001378
+      ]
+    },
+    {
+      "id": "0:1:1:20:41",
+      "definicion_id": "0:1:1:61",
+      "nombre": "CAM bandeja camara v5:1",
+      "definicion": "CAM bandeja camara v5:1",
+      "ruta": [
+        "junta nuevo de 8 motores con camara - UAV preliminar",
+        "bandeja_camara",
+        "CAM bandeja camara v5:1"
+      ],
+      "nivel": 2,
+      "ensamblaje": false,
+      "matriz_mundo_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -2.0000574
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -1081.4999356
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1094.9244173
+        ]
+      ],
+      "limites_mundo_mm": [
+        -37.0000574,
+        -17.399935600000163,
+        319.7755827000001,
+        36.9999426,
+        17.40006440000002,
+        341.7755827000001
+      ]
+    }
+  ]
+}

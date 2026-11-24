@@ -1,0 +1,32 @@
+{
+  "checkpoint": "/home/george/DSM/herramientas/IsaacLab/logs/rsl_rl/aerotray_cad/2026-10-31_10-09-28_curriculo_etapa_4/model_24700.pt",
+  "checkpoint_sha256": "f23876bb239f382f512d98a65ea52a69b73da21d0a6f89cffde35f34c04a2920",
+  "normalizer_eps": 0.01,
+  "header_sha256": "8c14cf8a3cf83f95fcc44d05720d8b75df2232716edefe66e48686af5ebc1246",
+  "evaluacion": {
+    "modo": "policy",
+    "checkpoint": "/home/george/DSM/herramientas/IsaacLab/logs/rsl_rl/aerotray_cad/2026-10-31_10-09-28_curriculo_etapa_4/model_24700.pt",
+    "entornos": 64,
+    "duracion_s": 8.0,
+    "supervivencia_episodio": 1.0,
+    "masa_movil_kg": [
+      0.30000001192092896,
+      3.299999952316284
+    ],
+    "joints": [
+      "elevacion",
+      "rotula:0",
+      "rotula:1",
+      "rotula:2"
+    ],
+    "rango_elevacion_m": [
+      0,
+      0.0766294593811
+    ],
+    "rms_altura_ultimos_2s_mm": 5.715418338775635,
+    "rms_inclinacion_ultimos_2s_deg": 3.2089271545410156,
+    "max_error_altura_m": 0.06024773791432381,
+    "nota": "Los RMS solo incluyen muestras aún vivas; se informa supervivencia para evitar ocultar fallos."
+  },
+  "estado": "exportado; no implica carga ni validación física"
+}

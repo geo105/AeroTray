@@ -1,0 +1,74 @@
+[
+  {
+    "indice": 0,
+    "eje_xy_mm": [
+      -247.48737341529585,
+      247.48737341528695
+    ],
+    "cota_cilindro_superior_mm": 80.06679976725148,
+    "radio_eje_mm": 2.5
+  },
+  {
+    "indice": 1,
+    "eje_xy_mm": [
+      -247.48737341529264,
+      -247.48737341529088
+    ],
+    "cota_cilindro_superior_mm": 80.06679976725499,
+    "radio_eje_mm": 2.5
+  },
+  {
+    "indice": 2,
+    "eje_xy_mm": [
+      247.48737341529397,
+      -247.4873734152908
+    ],
+    "cota_cilindro_superior_mm": 80.07000057589784,
+    "radio_eje_mm": 2.5
+  },
+  {
+    "indice": 3,
+    "eje_xy_mm": [
+      247.4873734152917,
+      247.48737341528806
+    ],
+    "cota_cilindro_superior_mm": 80.06679976725586,
+    "radio_eje_mm": 2.5
+  },
+  {
+    "indice": 4,
+    "eje_xy_mm": [
+      -350.0000000000045,
+      -3.538502824085299e-12
+    ],
+    "cota_cilindro_superior_mm": 80.0736060662009,
+    "radio_eje_mm": 2.5
+  },
+  {
+    "indice": 5,
+    "eje_xy_mm": [
+      6.52278231427772e-12,
+      -350.00000000000205
+    ],
+    "cota_cilindro_superior_mm": 80.07000057595795,
+    "radio_eje_mm": 2.5
+  },
+  {
+    "indice": 6,
+    "eje_xy_mm": [
+      350.0000000000015,
+      3.126388037344441e-13
+    ],
+    "cota_cilindro_superior_mm": 80.06878217681341,
+    "radio_eje_mm": 2.5
+  },
+  {
+    "indice": 7,
+    "eje_xy_mm": [
+      -2.2311041902867146e-12,
+      349.99999999999966
+    ],
+    "cota_cilindro_superior_mm": 80.06906015116394,
+    "radio_eje_mm": 2.5
+  }
+]

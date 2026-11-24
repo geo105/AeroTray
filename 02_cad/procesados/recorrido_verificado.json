@@ -1,0 +1,42 @@
+{
+  "contacto_nominal_mm": 78.62945938110286,
+  "pruebas": [
+    {
+      "tope": 68,
+      "rodamiento": 73,
+      "subida_mm": 0,
+      "interseccion_mm3": 0.0
+    },
+    {
+      "tope": 68,
+      "rodamiento": 73,
+      "subida_mm": 78.57945938110286,
+      "interseccion_mm3": 0.0
+    },
+    {
+      "tope": 68,
+      "rodamiento": 73,
+      "subida_mm": 78.67945938110286,
+      "interseccion_mm3": 8.700640854282195
+    },
+    {
+      "tope": 70,
+      "rodamiento": 72,
+      "subida_mm": 0,
+      "interseccion_mm3": 0.0
+    },
+    {
+      "tope": 70,
+      "rodamiento": 72,
+      "subida_mm": 78.57945938110286,
+      "interseccion_mm3": 0.0
+    },
+    {
+      "tope": 70,
+      "rodamiento": 72,
+      "subida_mm": 78.67945938110286,
+      "interseccion_mm3": 8.700640854104318
+    }
+  ],
+  "nota": "Comprobacion geometrica entre topes inferiores y rodamientos, asignados a cuerpos por interpretación del STEP."
+}

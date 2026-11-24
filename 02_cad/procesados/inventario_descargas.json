@@ -1,0 +1,165 @@
+{
+  "fecha": "2026-10-30",
+  "archivos": [
+    {
+      "archivo": "/home/george/DSM/cad/download/Union_LAB3/Componentes/SG90 - Micro Servo 9g - Tower Pro.STEP",
+      "bytes": 5321945,
+      "sha256": "c50923c53a0f72f338702a51e0cfbb4eaa0c62b86aad46ce5ece2c14a56e7510",
+      "formato": ".step",
+      "estado": "STEP_leido_y_malla_generada",
+      "raices_transferidas": 1,
+      "solidos": 19,
+      "limites_mm": [
+        -14.526729369594452,
+        6.1677568018651305,
+        19.43322767817654,
+        22.973270630405544,
+        38.197161427786924,
+        36.13322767817654
+      ],
+      "dimensiones_mm": [
+        37.5,
+        32.02940462592179,
+        16.7
+      ],
+      "volumen_geometrico_mm3": 7812.775231639038,
+      "malla_metros": "/home/george/DSM/cad/procesados/SG90_-_Micro_Servo_9g_-_Tower_Pro_c50923c5_m.stl",
+      "triangulos": 43636,
+      "caras_BRep": 1657,
+      "caras_sin_triangulacion": 0,
+      "malla_cerrada": false,
+      "uso_malla": "visualizacion; no aprobada como colision fisica",
+      "advertencia": "No asigna masa, materiales, articulaciones ni posición en el robot. STL no conserva el árbol del ensamblaje."
+    },
+    {
+      "archivo": "/home/george/DSM/cad/download/Union_LAB3/Componentes/driver MDD10A/2.PNG",
+      "bytes": 214844,
+      "sha256": "ff4949130b28e9a08fa9ec9477707731f8fea7f70d3993a4ac3c1eb4e6f7979b",
+      "formato": ".png",
+      "estado": "original_conservado"
+    },
+    {
+      "archivo": "/home/george/DSM/cad/download/Union_LAB3/Componentes/driver MDD10A/Capture.PNG",
+      "bytes": 83974,
+      "sha256": "9dee1f885b85e1ea927dd149578468970722ff6f6810519afd7089de137903b1",
+      "formato": ".png",
+      "estado": "original_conservado"
+    },
+    {
+      "archivo": "/home/george/DSM/cad/download/Union_LAB3/Componentes/driver MDD10A/Motor Driver.SLDPRT",
+      "bytes": 1095916,
+      "sha256": "a277d6b13e7d5a2a0482d1dfdc41ac99a4d5f947e9dc53837f505b6fdf09ff6f",
+      "formato": ".sldprt",
+      "estado": "original_conservado"
+    },
+    {
+      "archivo": "/home/george/DSM/cad/download/Union_LAB3/Componentes/driver MDD10A/Motor Driver.STL",
+      "bytes": 631684,
+      "sha256": "a93653c0cf4e326809a24c6645677cb989c602a37e913138474af3162c10cb38",
+      "formato": ".stl",
+      "estado": "original_conservado"
+    },
+    {
+      "archivo": "/home/george/DSM/cad/download/Union_LAB3/Componentes/mg996R_v2.step",
+      "bytes": 4428187,
+      "sha256": "4ba6ceb9152bbae2c095c9876599c6024aa5774097b8d870dc44a661c17cfbfb",
+      "formato": ".step",
+      "estado": "STEP_leido_y_malla_generada",
+      "raices_transferidas": 1,
+      "solidos": 11,
+      "limites_mm": [
+        -37.0,
+        -10.249101398559999,
+        -28.261912141146382,
+        22.6,
+        10.249101398564,
+        15.5000001
+      ],
+      "dimensiones_mm": [
+        59.6,
+        20.498202797123998,
+        43.76191224114638
+      ],
+      "volumen_geometrico_mm3": 31472.674212916307,
+      "malla_metros": "/home/george/DSM/cad/procesados/mg996R_v2_4ba6ceb9_m.stl",
+      "triangulos": 18933,
+      "caras_BRep": 789,
+      "caras_sin_triangulacion": 0,
+      "malla_cerrada": false,
+      "uso_malla": "visualizacion; no aprobada como colision fisica",
+      "advertencia": "No asigna masa, materiales, articulaciones ni posición en el robot. STL no conserva el árbol del ensamblaje."
+    },
+    {
+      "archivo": "/home/george/DSM/cad/download/Union_LAB3/Componentes/vl53l0x sensor/VL53L0X.f3d",
+      "bytes": 2230525,
+      "sha256": "be5da61901799d8ffd1f386295ce0d2eb97358aeb630a7243fb7d681db1298d6",
+      "formato": ".f3d",
+      "estado": "respaldo_nativo_Fusion_no_editado",
+      "zip_valido": true
+    },
+    {
+      "archivo": "/home/george/DSM/cad/download/Union_LAB3/Componentes/vl53l0x sensor/VL53L0X.step",
+      "bytes": 3691217,
+      "sha256": "dfaa42e897f8161dd7cad94a7ef9c9f957fc5a8f2421e292574c46a0064b3689",
+      "formato": ".step",
+      "estado": "STEP_leido_y_malla_generada",
+      "raices_transferidas": 1,
+      "solidos": 88,
+      "limites_mm": [
+        -12.6,
+        -5.320000000719055,
+        -1.6000000000000005,
+        12.6,
+        5.3,
+        11.095684175614936
+      ],
+      "dimensiones_mm": [
+        25.2,
+        10.620000000719056,
+        12.695684175614936
+      ],
+      "volumen_geometrico_mm3": 443.26435958957353,
+      "malla_metros": "/home/george/DSM/cad/procesados/VL53L0X_dfaa42e8_m.stl",
+      "triangulos": 21257,
+      "caras_BRep": 1744,
+      "caras_sin_triangulacion": 16,
+      "malla_cerrada": false,
+      "uso_malla": "visualizacion; no aprobada como colision fisica",
+      "advertencia": "No asigna masa, materiales, articulaciones ni posición en el robot. STL no conserva el árbol del ensamblaje."
+    },
+    {
+      "archivo": "/home/george/DSM/cad/download (1)/Modulo_3_UAV/logo-Futaba-v2.jpg",
+      "bytes": 32073,
+      "sha256": "457ab4aca508b8b3e093cb975a7ce3aece5af59354a6530173de94a5e6e970fc",
+      "formato": ".jpg",
+      "estado": "original_conservado"
+    }
+  ],
+  "archivos_zip": [
+    {
+      "archivo": "/home/george/Descargas/download.zip",
+      "miembros": [
+        "Union_LAB3/Componentes/mg996R_v2.step",
+        "Union_LAB3/Componentes/driver MDD10A/Motor Driver.SLDPRT",
+        "Union_LAB3/Componentes/driver MDD10A/Motor Driver.STL",
+        "Union_LAB3/Componentes/driver MDD10A/2.PNG",
+        "Union_LAB3/Componentes/driver MDD10A/Capture.PNG",
+        "Union_LAB3/Componentes/SG90 - Micro Servo 9g - Tower Pro.STEP",
+        "Union_LAB3/Componentes/vl53l0x sensor/VL53L0X.f3d",
+        "Union_LAB3/Componentes/vl53l0x sensor/VL53L0X.step"
+      ]
+    },
+    {
+      "archivo": "/home/george/Descargas/download (1).zip",
+      "miembros": [
+        "Modulo_3_UAV/logo-Futaba-v2.jpg"
+      ]
+    }
+  ],
+  "ensamblajes_necesarios_no_recibidos": [
+    "nuevo 8 camara",
+    "x8_UAV_R350_imprimible_bandeja_v5",
+    "ball_and_plate_camara"
+  ],
+  "nota": "Las mallas de componentes auxiliares no sustituyen los tres ensamblajes. No se modificó el CAD nativo ni el modelo de simulación del dron."
+}

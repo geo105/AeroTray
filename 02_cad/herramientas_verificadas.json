@@ -1,0 +1,12 @@
+{
+  "estado": "lector_STEP_y_kernel_geometrico_disponibles",
+  "entorno": "/home/george/DSM/herramientas/cad-env",
+  "versiones": {
+    "cadquery-ocp": "8.0.1.1.0",
+    "trimesh": "5.2.0",
+    "vtk": "9.6.2",
+    "numpy": "2.5.4"
+  },
+  "prueba_kernel_volumen_unidades3": 6.0,
+  "archivos_del_usuario_procesados": 0
+}

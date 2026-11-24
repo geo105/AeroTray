@@ -1,0 +1,82 @@
+{
+  "limite_inferior_geometrico_mm": -63.8671875,
+  "intervalo_contacto_inferior_mm": [
+    -63.8916015625,
+    -63.8671875
+  ],
+  "tolerancia_contacto_mm": 0.0244140625,
+  "pruebas": [
+    {
+      "q_mm": 0,
+      "volumen_interferencia_mm3": 0.0
+    },
+    {
+      "q_mm": -100.0,
+      "volumen_interferencia_mm3": 42128.06061403835
+    },
+    {
+      "q_mm": -50.0,
+      "volumen_interferencia_mm3": 0.0
+    },
+    {
+      "q_mm": -75.0,
+      "volumen_interferencia_mm3": 14995.936330297183
+    },
+    {
+      "q_mm": -62.5,
+      "volumen_interferencia_mm3": 0.0
+    },
+    {
+      "q_mm": -68.75,
+      "volumen_interferencia_mm3": 7172.344425896429
+    },
+    {
+      "q_mm": -65.625,
+      "volumen_interferencia_mm3": 4109.937491389023
+    },
+    {
+      "q_mm": -64.0625,
+      "volumen_interferencia_mm3": 2853.8878124114563
+    },
+    {
+      "q_mm": -63.28125,
+      "volumen_interferencia_mm3": 0.0
+    },
+    {
+      "q_mm": -63.671875,
+      "volumen_interferencia_mm3": 0.0
+    },
+    {
+      "q_mm": -63.8671875,
+      "volumen_interferencia_mm3": 0.0
+    },
+    {
+      "q_mm": -63.96484375,
+      "volumen_interferencia_mm3": 2776.708755572212
+    },
+    {
+      "q_mm": -63.916015625,
+      "volumen_interferencia_mm3": 2738.312868347771
+    },
+    {
+      "q_mm": -63.8916015625,
+      "volumen_interferencia_mm3": 2719.198588964258
+    }
+  ],
+  "cuerpos_moving": [
+    66,
+    68,
+    69,
+    70,
+    71,
+    75,
+    76
+  ],
+  "cuerpos_fixed": [
+    67,
+    72,
+    73
+  ],
+  "estado": "exploratorio_no_usado_en_simulacion",
+  "limitacion": "El booleano compuesto presenta un salto en el volumen. No se considera verificado el tope inferior ni el recorrido total. El modelo solo permite subida desde la pose CAD, cuyo contacto superior se verificó por pares."
+}

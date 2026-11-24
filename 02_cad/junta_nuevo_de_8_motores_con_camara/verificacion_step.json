@@ -1,0 +1,256 @@
+{
+  "estado": "STEP_nuevo_releido_y_geometria_visual_comprobada",
+  "componentes": 58,
+  "limites_mm": [
+    [
+      -378.9636666430004,
+      -378.963666643002,
+      -12.003200822425187,
+      378.9636666429968,
+      378.9636666430645,
+      341.7755827000001
+    ]
+  ],
+  "comprobaciones": [
+    {
+      "pieza": "M6 - diagonal 135 grados:1",
+      "error_caja_analitica_mm": 0.03696867509689339
+    },
+    {
+      "pieza": "M7 - diagonal 225 grados:1",
+      "error_caja_analitica_mm": 0.03696867509814239
+    },
+    {
+      "pieza": "M8 - diagonal 315 grados:1",
+      "error_caja_analitica_mm": 0.03696573408921988
+    },
+    {
+      "pieza": "M5 - diagonal 45 grados:1",
+      "error_caja_analitica_mm": 0.03696867509814239
+    },
+    {
+      "pieza": "M6 - diagonal 135 grados (1):1",
+      "error_caja_analitica_mm": 0.03784383085358306
+    },
+    {
+      "pieza": "M7 - diagonal 225 grados (1):1",
+      "error_caja_analitica_mm": 0.037843830883736024
+    },
+    {
+      "pieza": "M8 - diagonal 315 grados (1):1",
+      "error_caja_analitica_mm": 0.03784383093550711
+    },
+    {
+      "pieza": "M5 - diagonal 45 grados (1):1",
+      "error_caja_analitica_mm": 0.03784383089513316
+    },
+    {
+      "pieza": "IMPRIMIBLE tapa_central:1",
+      "error_caja_analitica_mm": 4.828693833669462e-07
+    },
+    {
+      "pieza": "IMPRIMIBLE base_Q1:1",
+      "error_caja_analitica_mm": 2.2411346389805686e-06
+    },
+    {
+      "pieza": "IMPRIMIBLE base_Q2:1",
+      "error_caja_analitica_mm": 2.2411346389805686e-06
+    },
+    {
+      "pieza": "IMPRIMIBLE base_Q3:1",
+      "error_caja_analitica_mm": 2.2411346389805686e-06
+    },
+    {
+      "pieza": "IMPRIMIBLE base_Q4:1",
+      "error_caja_analitica_mm": 2.2411346389805686e-06
+    },
+    {
+      "pieza": "SEPARADOR 1:1",
+      "error_caja_analitica_mm": 0.03334691375493984
+    },
+    {
+      "pieza": "SEPARADOR 2:1",
+      "error_caja_analitica_mm": 0.03334691375495545
+    },
+    {
+      "pieza": "SEPARADOR 3:1",
+      "error_caja_analitica_mm": 0.03334691375494678
+    },
+    {
+      "pieza": "SEPARADOR 4:1",
+      "error_caja_analitica_mm": 0.03334691375495545
+    },
+    {
+      "pieza": "PISO2 Q3:1",
+      "error_caja_analitica_mm": 7.0791541517678525e-06
+    },
+    {
+      "pieza": "PISO2 Q4:1",
+      "error_caja_analitica_mm": 7.079154124012277e-06
+    },
+    {
+      "pieza": "BANDEJA cruceta:1",
+      "error_caja_analitica_mm": 1.0728836014051168e-06
+    },
+    {
+      "pieza": "PISO2 Q1:1",
+      "error_caja_analitica_mm": 7.079149128008666e-06
+    },
+    {
+      "pieza": "PISO2 Q2:1",
+      "error_caja_analitica_mm": 7.0791541517678525e-06
+    },
+    {
+      "pieza": "BANDEJA pilar y soportes de servo:1",
+      "error_caja_analitica_mm": 0.05468255281448897
+    },
+    {
+      "pieza": "BANDEJA yugo superior:1",
+      "error_caja_analitica_mm": 0.05468392372130759
+    },
+    {
+      "pieza": "BANDEJA mesa mitad A:1",
+      "error_caja_analitica_mm": 4.768371586472142e-06
+    },
+    {
+      "pieza": "BANDEJA mesa mitad B:1",
+      "error_caja_analitica_mm": 4.768371586472142e-06
+    },
+    {
+      "pieza": "Open CASCADE STEP translator 7.9 6.1:1",
+      "error_caja_analitica_mm": 2.799999891966581,
+      "error_limites_triangulados_mm": 0.0
+    },
+    {
+      "pieza": "Open CASCADE STEP translator 7.9 6.2:1",
+      "error_caja_analitica_mm": 2.4999998919665813,
+      "error_limites_triangulados_mm": 0.07816404104232788
+    },
+    {
+      "pieza": "Open CASCADE STEP translator 7.9 6.3:1",
+      "error_caja_analitica_mm": 2.4999998919665813,
+      "error_limites_triangulados_mm": 0.07816404104232788
+    },
+    {
+      "pieza": "Open CASCADE STEP translator 7.9 7.1:1",
+      "error_caja_analitica_mm": 2.799999891966581,
+      "error_limites_triangulados_mm": 0.0
+    },
+    {
+      "pieza": "Open CASCADE STEP translator 7.9 7.2:1",
+      "error_caja_analitica_mm": 2.4999998919665813,
+      "error_limites_triangulados_mm": 0.07816776633262634
+    },
+    {
+      "pieza": "Open CASCADE STEP translator 7.9 7.3:1",
+      "error_caja_analitica_mm": 2.4999998919665813,
+      "error_limites_triangulados_mm": 0.07816776633262634
+    },
+    {
+      "pieza": "Open CASCADE STEP translator 7.9 8.1:1",
+      "error_caja_analitica_mm": 3.7139135378172483e-06
+    },
+    {
+      "pieza": "Open CASCADE STEP translator 7.9 8.2:1",
+      "error_caja_analitica_mm": 1.797445848064627e-05
+    },
+    {
+      "pieza": "Open CASCADE STEP translator 7.9 9.1:1",
+      "error_caja_analitica_mm": 3.7139134545505215e-06
+    },
+    {
+      "pieza": "Open CASCADE STEP translator 7.9 9.2:1",
+      "error_caja_analitica_mm": 1.7973918353675344e-05
+    },
+    {
+      "pieza": "REF brazo 25T X:1",
+      "error_caja_analitica_mm": 0.024424068791967235
+    },
+    {
+      "pieza": "REF brazo 25T Y:1",
+      "error_caja_analitica_mm": 0.024424068791967235
+    },
+    {
+      "pieza": "Open CASCADE STEP translator 7.9 12.1:1",
+      "error_caja_analitica_mm": 0.09115186929702784
+    },
+    {
+      "pieza": "Open CASCADE STEP translator 7.9 12.2:1",
+      "error_caja_analitica_mm": 0.020052075386051138
+    },
+    {
+      "pieza": "Open CASCADE STEP translator 7.9 12.3:1",
+      "error_caja_analitica_mm": 0.023330163955698202
+    },
+    {
+      "pieza": "Open CASCADE STEP translator 7.9 12.4:1",
+      "error_caja_analitica_mm": 0.09115186929702784
+    },
+    {
+      "pieza": "Open CASCADE STEP translator 7.9 12.5:1",
+      "error_caja_analitica_mm": 0.020052075386051138
+    },
+    {
+      "pieza": "Open CASCADE STEP translator 7.9 12.6:1",
+      "error_caja_analitica_mm": 0.023330163955698202
+    },
+    {
+      "pieza": "REF pantalla:1",
+      "error_caja_analitica_mm": 3.2186508180931384e-06
+    },
+    {
+      "pieza": "REF bola 25 mm:1",
+      "error_caja_analitica_mm": 0.18990367650986023
+    },
+    {
+      "pieza": "BANDEJA bujes cruceta x4 (PLA):1",
+      "error_caja_analitica_mm": 2.563224035800893e-06
+    },
+    {
+      "pieza": "CAM torre +X (1):1",
+      "error_caja_analitica_mm": 4.351866145224648e-06
+    },
+    {
+      "pieza": "CAM pata +X:1",
+      "error_caja_analitica_mm": 1.0780861814385645e-05
+    },
+    {
+      "pieza": "CAM torre +Y (1):1",
+      "error_caja_analitica_mm": 3.3704811858159545e-06
+    },
+    {
+      "pieza": "CAM pata +Y:1",
+      "error_caja_analitica_mm": 1.0781099679668671e-05
+    },
+    {
+      "pieza": "CAM torre -X (1):1",
+      "error_caja_analitica_mm": 6.140005504029489e-06
+    },
+    {
+      "pieza": "CAM pata -X:1",
+      "error_caja_analitica_mm": 1.0780863146653274e-05
+    },
+    {
+      "pieza": "CAM torre -Y (1):1",
+      "error_caja_analitica_mm": 3.5492951078186508e-06
+    },
+    {
+      "pieza": "CAM pata -Y:1",
+      "error_caja_analitica_mm": 1.0781099679668671e-05
+    },
+    {
+      "pieza": "CAM contraplaca x4 (1):1",
+      "error_caja_analitica_mm": 6.702703780891994e-06
+    },
+    {
+      "pieza": "CAM nucleo v7:1",
+      "error_caja_analitica_mm": 1.4412624649295935e-05
+    },
+    {
+      "pieza": "CAM bandeja camara v5:1",
+      "error_caja_analitica_mm": 1.3441815105430521e-05
+    }
+  ],
+  "archivo_nativo_Fusion_modificado": false,
+  "carrito_integrado": false
+}

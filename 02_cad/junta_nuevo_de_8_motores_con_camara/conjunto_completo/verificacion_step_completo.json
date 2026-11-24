@@ -1,0 +1,16 @@
+{
+  "estado": "STEP_completo_releido_con_383_componentes_y_nombres_conservados",
+  "componentes": 383,
+  "limites_mm": [
+    [
+      -378.96762222509136,
+      -469.49861198930006,
+      7.696382802450163e-13,
+      378.9597110609058,
+      469.2613882106701,
+      850.1790923144
+    ]
+  ],
+  "max_error_limites_visual_vs_caja_STEP_mm": 2.799999891967065,
+  "nativo_Fusion_modificado": false
+}
