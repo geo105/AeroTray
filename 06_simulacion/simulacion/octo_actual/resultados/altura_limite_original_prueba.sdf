@@ -1,0 +1,172 @@
+<sdf version="1.9">
+  <world name="octo_actual">
+    <gravity>0 0 -9.81</gravity>
+    <physics name="paso" type="ignored">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>0</real_time_factor>
+    </physics>
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics" />
+    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands" />
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster" />
+    <light name="sol" type="directional">
+      <pose>0 0 5 0 0 0</pose>
+      <direction>-.4 .2 -1</direction>
+      <diffuse>.9 .9 .9 1</diffuse>
+      <cast_shadows>true</cast_shadows>
+    </light>
+    <model name="octo">
+      <self_collide>false</self_collide>
+      <link name="base">
+        <pose>0 0 0.4945153309882569 0 0 0</pose>
+        <inertial>
+          <mass>1.0</mass>
+          <pose>0 0 0 0 0 0</pose>
+          <inertia>
+            <ixx>0.1</ixx>
+            <iyy>0.1</iyy>
+            <izz>0.1</izz>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyz>0</iyz>
+          </inertia>
+        </inertial>
+        <visual name="carrito_fijo">
+          <geometry>
+            <mesh>
+              <uri>file:///home/george/DSM/simulacion/octo_actual/mallas/carrito_fijo.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>.35 .48 .62 1</ambient>
+            <diffuse>.35 .48 .62 1</diffuse>
+          </material>
+        </visual>
+      </link>
+      <joint name="anclaje" type="fixed">
+        <parent>world</parent>
+        <child>base</child>
+      </joint>
+      <link name="carro">
+        <pose>0 0 0.4945153309882569 0 0 0</pose>
+        <inertial>
+          <mass>0.400476</mass>
+          <pose>0 0 -0.1 0 0 0</pose>
+          <inertia>
+            <ixx>0.002</ixx>
+            <iyy>0.002</iyy>
+            <izz>0.002</izz>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyz>0</iyz>
+          </inertia>
+        </inertial>
+        <visual name="carro_vertical">
+          <geometry>
+            <mesh>
+              <uri>file:///home/george/DSM/simulacion/octo_actual/mallas/carro_vertical.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>.35 .48 .62 1</ambient>
+            <diffuse>.35 .48 .62 1</diffuse>
+          </material>
+        </visual>
+      </link>
+      <joint name="elevacion" type="prismatic">
+        <parent>base</parent>
+        <child>carro</child>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>0</lower>
+            <upper>0.07662945938110287</upper>
+          </limit>
+          <dynamics>
+            <damping>0.5</damping>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name="dron">
+        <pose>0 0 0.4945153309882569 0 0 0</pose>
+        <inertial>
+          <mass>2.999524</mass>
+          <pose>-0.0004939 0.0008 0.0691663 0 0 0</pose>
+          <inertia>
+            <ixx>0.096064789</ixx>
+            <iyy>0.095123241</iyy>
+            <izz>0.128105954</izz>
+            <ixy>9.8533e-05</ixy>
+            <ixz>0.00031072</ixz>
+            <iyz>0.003873924</iyz>
+          </inertia>
+        </inertial>
+        <visual name="conjunto_rotatorio">
+          <geometry>
+            <mesh>
+              <uri>file:///home/george/DSM/simulacion/octo_actual/mallas/conjunto_rotatorio.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>.35 .48 .62 1</ambient>
+            <diffuse>.35 .48 .62 1</diffuse>
+          </material>
+        </visual>
+      </link>
+      <joint name="rotula" type="ball">
+        <parent>carro</parent>
+        <child>dron</child>
+      </joint>
+      <plugin filename="gz-sim-python-system-loader-system" name="gz::sim::systems::PythonSystemLoader">
+        <module_name>sistema_gazebo</module_name>
+        <mode>altura</mode>
+      </plugin>
+    </model>
+    <model name="suelo">
+      <static>true</static>
+      <link name="suelo">
+        <visual name="suelo">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>3 3</size>
+            </plane>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+    <model name="placa_visual">
+      <static>true</static>
+      <pose>0 0 0.620515330988257 0 0 0</pose>
+      <link name="placa">
+        <visual name="placa_movil">
+          <geometry>
+            <mesh>
+              <uri>file:///home/george/DSM/simulacion/octo_actual/mallas/placa_movil.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>.35 .48 .62 1</ambient>
+            <diffuse>.35 .48 .62 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="bola_visual">
+      <static>true</static>
+      <pose>0 0 1 0 0 0</pose>
+      <link name="bola">
+        <visual name="bola">
+          <geometry>
+            <sphere>
+              <radius>0.0135</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <ambient>.1 .3 1 1</ambient>
+            <diffuse>.1 .3 1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+  </world>
+</sdf>

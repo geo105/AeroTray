@@ -1,0 +1,298 @@
+{
+  "estado": "completado",
+  "mujoco": "3.12.0",
+  "casos": [
+    {
+      "caso": {
+        "name": "nominal",
+        "duration_s": 60
+      },
+      "duracion_s": 60,
+      "pasa": true,
+      "error_altura_rms_ultimos_2s_mm": 5.689893001203927e-13,
+      "inclinacion_rms_ultimos_2s_deg": 0.0,
+      "guinada_rms_ultimos_2s_deg": 1.0140774530825837e-13,
+      "inclinacion_maxima_deg": 0.0,
+      "altura_min_m": 0.03831472969,
+      "altura_max_m": 0.03831472969000057,
+      "fuerza_solicitada_min_N": 4.410001451923738,
+      "fuerza_solicitada_max_N": 4.415983548076177,
+      "fraccion_pasos_con_limites": 0.0
+    },
+    {
+      "caso": {
+        "name": "inclinacion_inicial",
+        "attitude_deg": [
+          5,
+          -3,
+          0
+        ],
+        "initial_height_error_m": -0.01
+      },
+      "duracion_s": 12,
+      "pasa": true,
+      "error_altura_rms_ultimos_2s_mm": 0.0030709390909777344,
+      "inclinacion_rms_ultimos_2s_deg": 0.011905293219681262,
+      "guinada_rms_ultimos_2s_deg": 2.9950535803811946e-14,
+      "inclinacion_maxima_deg": 5.8296573859237855,
+      "altura_min_m": 0.028318073909327942,
+      "altura_max_m": 0.03917813198580763,
+      "fuerza_solicitada_min_N": 3.9941571782149587,
+      "fuerza_solicitada_max_N": 5.681891973042666,
+      "fraccion_pasos_con_limites": 0.0
+    },
+    {
+      "caso": {
+        "name": "guinada_inicial",
+        "attitude_deg": [
+          0,
+          0,
+          5
+        ]
+      },
+      "duracion_s": 12,
+      "pasa": true,
+      "error_altura_rms_ultimos_2s_mm": 5.273559366969494e-13,
+      "inclinacion_rms_ultimos_2s_deg": 0.0,
+      "guinada_rms_ultimos_2s_deg": 0.23456512895517942,
+      "inclinacion_maxima_deg": 0.0,
+      "altura_min_m": 0.03831472969,
+      "altura_max_m": 0.03831472969000053,
+      "fuerza_solicitada_min_N": 4.119113243253571,
+      "fuerza_solicitada_max_N": 4.706066231996851,
+      "fraccion_pasos_con_limites": 0.0
+    },
+    {
+      "caso": {
+        "name": "impulso",
+        "impulse": true
+      },
+      "duracion_s": 12,
+      "pasa": true,
+      "error_altura_rms_ultimos_2s_mm": 3.141395680294914e-07,
+      "inclinacion_rms_ultimos_2s_deg": 0.011955017304853537,
+      "guinada_rms_ultimos_2s_deg": 0.019032032258558398,
+      "inclinacion_maxima_deg": 1.832555435582653,
+      "altura_min_m": 0.038298748215910186,
+      "altura_max_m": 0.0383320493378686,
+      "fuerza_solicitada_min_N": 3.8624397787647125,
+      "fuerza_solicitada_max_N": 5.03916253376632,
+      "fraccion_pasos_con_limites": 0.0
+    },
+    {
+      "caso": {
+        "name": "escalon_altura",
+        "step": true
+      },
+      "duracion_s": 12,
+      "pasa": true,
+      "error_altura_rms_ultimos_2s_mm": 0.009373358695758281,
+      "inclinacion_rms_ultimos_2s_deg": 0.0,
+      "guinada_rms_ultimos_2s_deg": 7.206644024236577e-14,
+      "inclinacion_maxima_deg": 0.0,
+      "altura_min_m": 0.03831472969,
+      "altura_max_m": 0.04915864667457783,
+      "fuerza_solicitada_min_N": 4.349555119476139,
+      "fuerza_solicitada_max_N": 4.816254660984358,
+      "fraccion_pasos_con_limites": 0.0
+    },
+    {
+      "caso": {
+        "name": "masa_mas_15",
+        "mass_scale": 1.15
+      },
+      "duracion_s": 12,
+      "pasa": true,
+      "error_altura_rms_ultimos_2s_mm": 0.050061801471660644,
+      "inclinacion_rms_ultimos_2s_deg": 0.0,
+      "guinada_rms_ultimos_2s_deg": 4.0095713155862314e-14,
+      "inclinacion_maxima_deg": 0.0,
+      "altura_min_m": 0.022996955723051493,
+      "altura_max_m": 0.03830961441253079,
+      "fuerza_solicitada_min_N": 4.41000145192374,
+      "fuerza_solicitada_max_N": 5.199129561194305,
+      "fraccion_pasos_con_limites": 0.0
+    },
+    {
+      "caso": {
+        "name": "masa_menos_15",
+        "mass_scale": 0.85
+      },
+      "duracion_s": 12,
+      "pasa": true,
+      "error_altura_rms_ultimos_2s_mm": 0.04988520081961737,
+      "inclinacion_rms_ultimos_2s_deg": 0.0,
+      "guinada_rms_ultimos_2s_deg": 3.2743433464312777e-14,
+      "inclinacion_maxima_deg": 0.0,
+      "altura_min_m": 0.038321649769712515,
+      "altura_max_m": 0.05315261782494143,
+      "fuerza_solicitada_min_N": 3.6508864564523513,
+      "fuerza_solicitada_max_N": 4.415983548076177,
+      "fraccion_pasos_con_limites": 0.0
+    },
+    {
+      "caso": {
+        "name": "inercia_mas_30",
+        "inertia_scale": 1.3,
+        "attitude_deg": [
+          5,
+          -3,
+          0
+        ]
+      },
+      "duracion_s": 12,
+      "pasa": true,
+      "error_altura_rms_ultimos_2s_mm": 5.648784008740558e-06,
+      "inclinacion_rms_ultimos_2s_deg": 0.011797349770198137,
+      "guinada_rms_ultimos_2s_deg": 2.8174696597676374e-14,
+      "inclinacion_maxima_deg": 5.829868135781644,
+      "altura_min_m": 0.038234049294612354,
+      "altura_max_m": 0.03836213682040812,
+      "fuerza_solicitada_min_N": 3.591877673727301,
+      "fuerza_solicitada_max_N": 5.280010727123368,
+      "fraccion_pasos_con_limites": 0.0
+    },
+    {
+      "caso": {
+        "name": "centro_masa_desplazado",
+        "com_offset_m": [
+          0.01,
+          -0.005,
+          0
+        ]
+      },
+      "duracion_s": 12,
+      "pasa": true,
+      "error_altura_rms_ultimos_2s_mm": 1.9473969851294647e-05,
+      "inclinacion_rms_ultimos_2s_deg": 0.046852874825251946,
+      "guinada_rms_ultimos_2s_deg": 4.840499679034696e-14,
+      "inclinacion_maxima_deg": 2.09524846289289,
+      "altura_min_m": 0.03828436535564547,
+      "altura_max_m": 0.03836480105305317,
+      "fuerza_solicitada_min_N": 4.080178475882838,
+      "fuerza_solicitada_max_N": 4.754408303479059,
+      "fraccion_pasos_con_limites": 0.0
+    },
+    {
+      "caso": {
+        "name": "motor_1_menos_15",
+        "weak_motor": true
+      },
+      "duracion_s": 12,
+      "pasa": true,
+      "error_altura_rms_ultimos_2s_mm": 0.005433445893280298,
+      "inclinacion_rms_ultimos_2s_deg": 0.030563541929756154,
+      "guinada_rms_ultimos_2s_deg": 0.43440905309220174,
+      "inclinacion_maxima_deg": 1.4662110054558444,
+      "altura_min_m": 0.03626563377440686,
+      "altura_max_m": 0.03831399441211863,
+      "fuerza_solicitada_min_N": 4.2334538626806335,
+      "fuerza_solicitada_max_N": 4.843318876468418,
+      "fraccion_pasos_con_limites": 0.0
+    },
+    {
+      "caso": {
+        "name": "retardo_y_ruido",
+        "lag_s": 0.03,
+        "noise": true,
+        "attitude_deg": [
+          5,
+          -3,
+          0
+        ]
+      },
+      "duracion_s": 12,
+      "pasa": true,
+      "error_altura_rms_ultimos_2s_mm": 0.09000495386500992,
+      "inclinacion_rms_ultimos_2s_deg": 0.029732835870558465,
+      "guinada_rms_ultimos_2s_deg": 0.016327258292871533,
+      "inclinacion_maxima_deg": 5.835899407744848,
+      "altura_min_m": 0.03811622610468066,
+      "altura_max_m": 0.03848686468758611,
+      "fuerza_solicitada_min_N": 3.450871860570305,
+      "fuerza_solicitada_max_N": 5.413607711189041,
+      "fraccion_pasos_con_limites": 0.0
+    },
+    {
+      "caso": {
+        "name": "saturacion_y_recuperacion",
+        "attitude_deg": [
+          10,
+          -6,
+          0
+        ],
+        "initial_height_error_m": -0.015
+      },
+      "duracion_s": 12,
+      "pasa": true,
+      "error_altura_rms_ultimos_2s_mm": 0.004512822441063737,
+      "inclinacion_rms_ultimos_2s_deg": 0.023813893091268235,
+      "guinada_rms_ultimos_2s_deg": 0.024659579907782867,
+      "inclinacion_maxima_deg": 11.659332923211455,
+      "altura_min_m": 0.02331869744884704,
+      "altura_max_m": 0.03964314199674522,
+      "fuerza_solicitada_min_N": 1.1787650092218733,
+      "fuerza_solicitada_max_N": 6.0,
+      "fraccion_pasos_con_limites": 0.003
+    }
+  ],
+  "controlador": {
+    "tipo": "PI-D de altura y actitud con asignación de ocho fuerzas acotadas",
+    "masa_nominal_kg": 3.5999999999999996,
+    "altura_referencia_m": 0.03831472969,
+    "kp_altura": 320.0,
+    "kd_altura": 60.0,
+    "ki_altura": 160.0,
+    "kp_actitud": [
+      12.0,
+      12.0,
+      0.4
+    ],
+    "kd_actitud": [
+      2.4,
+      2.4,
+      0.45
+    ],
+    "ki_actitud": [
+      3.0,
+      3.0,
+      0.05
+    ],
+    "limites_fuerza_N": [
+      [
+        0.0,
+        6.0
+      ],
+      [
+        0.0,
+        6.0
+      ],
+      [
+        0.0,
+        6.0
+      ],
+      [
+        0.0,
+        6.0
+      ],
+      [
+        0.0,
+        6.0
+      ],
+      [
+        0.0,
+        6.0
+      ],
+      [
+        0.0,
+        6.0
+      ],
+      [
+        0.0,
+        6.0
+      ]
+    ],
+    "limite": "Sólo modelo provisional. Requiere sensores y actuadores identificados antes de aplicarlo al prototipo."
+  },
+  "limite": "Variaciones sintéticas de un modelo provisional; no certifica robustez del prototipo ni de firmware."
+}

@@ -1,0 +1,3472 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="junta_nuevo_de_8_motores_con_camara">
+  <link name="cad_mundo" />
+  <link name="cad_carrito_fijo">
+    <visual name="pieza_0000">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0000.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0000">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0001">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0001.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0001">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0002">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0002.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0002">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0003">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0003.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0003">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0004">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0004.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0004">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0005">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0005.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0005">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0006">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0006.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0006">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0007">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0007.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0007">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0008">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0008.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0008">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0009">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0009.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0009">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0010">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0010.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0010">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0011">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0011.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0011">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0012">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0012.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0012">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0013">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0013.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0013">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0014">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0014.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0014">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0015">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0015.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0015">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0016">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0016.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0016">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0017">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0017.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0017">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0018">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0018.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0018">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0019">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0019.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0019">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0020">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0020.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0020">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0021">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0021.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0021">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0022">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0022.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0022">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0023">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0023.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0023">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0024">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0024.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0024">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0025">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0025.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0025">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0026">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0026.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0026">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0027">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0027.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0027">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0028">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0028.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0028">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0029">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0029.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0029">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0030">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0030.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0030">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0031">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0031.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0031">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0032">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0032.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0032">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0033">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0033.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0033">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0034">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0034.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0034">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0035">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0035.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0035">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0036">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0036.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0036">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0037">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0037.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0037">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0038">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0038.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0038">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0039">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0039.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0039">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0040">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0040.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0040">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0041">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0041.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0041">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0042">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0042.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0042">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0043">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0043.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0043">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0044">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0044.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0044">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0045">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0045.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0045">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0046">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0046.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0046">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0047">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0047.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0047">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0048">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0048.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0048">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0049">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0049.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0049">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0050">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0050.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0050">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0051">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0051.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0051">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0052">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0052.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0052">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0053">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0053.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0053">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0054">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0054.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0054">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0055">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0055.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0055">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0056">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0056.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0056">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0057">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0057.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0057">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0058">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0058.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0058">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0059">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0059.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0059">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0060">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0060.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0060">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0061">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0061.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0061">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0062">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0062.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0062">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0064">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0064.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0064">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0069">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0069.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0069">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0070">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0070.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0070">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0082">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0082.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0082">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0083">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0083.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0083">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0084">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0084.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0084">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0085">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0085.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0085">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0086">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0086.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0086">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0087">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0087.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0087">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0088">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0088.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0088">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0089">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0089.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0089">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0090">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0090.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0090">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0091">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0091.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0091">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0092">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0092.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0092">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0093">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0093.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0093">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0094">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0094.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0094">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0095">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0095.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0095">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0096">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0096.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0096">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0097">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0097.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0097">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0098">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0098.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0098">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0099">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0099.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0099">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0100">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0100.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0100">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0101">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0101.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0101">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0102">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0102.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0102">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0103">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0103.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0103">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0104">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0104.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0104">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0105">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0105.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0105">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0106">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0106.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0106">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0157">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0157.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0157">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0158">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0158.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0158">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0159">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0159.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0159">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0160">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0160.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0160">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0161">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0161.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0161">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0162">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0162.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0162">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0163">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0163.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0163">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0164">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0164.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0164">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0165">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0165.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0165">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0166">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0166.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0166">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0167">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0167.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0167">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0168">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0168.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0168">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0169">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0169.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0169">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0170">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0170.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0170">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0171">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0171.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0171">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0172">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0172.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0172">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0173">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0173.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0173">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0174">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0174.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0174">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0175">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0175.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0175">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0176">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0176.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0176">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0177">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0177.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0177">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0178">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0178.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0178">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0179">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0179.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0179">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0180">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0180.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0180">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0181">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0181.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0181">
+        <color rgba="0.48 0.52 0.56 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="cad_fijo_carrito_fijo" type="fixed">
+    <parent link="cad_mundo" />
+    <child link="cad_carrito_fijo" />
+    <origin xyz="0 0 0" rpy="0 0 0" />
+  </joint>
+  <link name="cad_carro_vertical">
+    <visual name="pieza_0063">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0063.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0063">
+        <color rgba="0.22 0.48 0.68 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0065">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0065.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0065">
+        <color rgba="0.22 0.48 0.68 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0066">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0066.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0066">
+        <color rgba="0.22 0.48 0.68 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0067">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0067.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0067">
+        <color rgba="0.22 0.48 0.68 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0068">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0068.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0068">
+        <color rgba="0.22 0.48 0.68 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0071">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0071.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0071">
+        <color rgba="0.22 0.48 0.68 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0072">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0072.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0072">
+        <color rgba="0.22 0.48 0.68 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0073">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0073.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0073">
+        <color rgba="0.22 0.48 0.68 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0077">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0077.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0077">
+        <color rgba="0.22 0.48 0.68 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0078">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0078.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0078">
+        <color rgba="0.22 0.48 0.68 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0079">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0079.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0079">
+        <color rgba="0.22 0.48 0.68 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="cad_fijo_carro_vertical" type="fixed">
+    <parent link="cad_mundo" />
+    <child link="cad_carro_vertical" />
+    <origin xyz="0 0 0" rpy="0 0 0" />
+  </joint>
+  <link name="cad_conjunto_rotatorio">
+    <visual name="pieza_0074">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0074.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0074">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0075">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0075.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0075">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0076">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0076.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0076">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0080">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0080.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0080">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0081">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0081.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0081">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0107">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0107.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0107">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0108">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0108.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0108">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0109">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0109.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0109">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0110">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0110.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0110">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0111">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0111.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0111">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0112">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0112.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0112">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0113">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0113.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0113">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0114">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0114.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0114">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0115">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0115.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0115">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0116">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0116.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0116">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0117">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0117.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0117">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0118">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0118.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0118">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0119">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0119.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0119">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0120">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0120.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0120">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0121">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0121.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0121">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0122">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0122.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0122">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0123">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0123.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0123">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0124">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0124.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0124">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0125">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0125.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0125">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0126">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0126.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0126">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0127">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0127.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0127">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0128">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0128.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0128">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0129">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0129.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0129">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0130">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0130.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0130">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0131">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0131.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0131">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0132">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0132.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0132">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0133">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0133.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0133">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0134">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0134.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0134">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0135">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0135.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0135">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0136">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0136.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0136">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0137">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0137.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0137">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0138">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0138.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0138">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0139">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0139.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0139">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0140">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0140.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0140">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0141">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0141.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0141">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0142">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0142.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0142">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0143">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0143.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0143">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0144">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0144.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0144">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0145">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0145.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0145">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0146">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0146.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0146">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0147">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0147.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0147">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0148">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0148.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0148">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0149">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0149.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0149">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0150">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0150.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0150">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0151">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0151.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0151">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0152">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0152.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0152">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0153">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0153.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0153">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0154">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0154.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0154">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0155">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0155.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0155">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0156">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0156.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0156">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0182">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0182.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0182">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0183">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0183.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0183">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0184">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0184.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0184">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0185">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0185.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0185">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0186">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0186.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0186">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0187">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0187.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0187">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0188">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0188.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0188">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0189">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0189.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0189">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0190">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0190.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0190">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0191">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0191.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0191">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0192">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0192.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0192">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0193">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0193.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0193">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0194">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0194.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0194">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0195">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0195.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0195">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0196">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0196.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0196">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0197">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0197.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0197">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0198">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0198.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0198">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0199">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0199.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0199">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0200">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0200.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0200">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0201">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0201.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0201">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0202">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0202.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0202">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0203">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0203.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0203">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0204">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0204.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0204">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0205">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0205.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0205">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0206">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0206.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0206">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0207">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0207.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0207">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0208">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0208.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0208">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0209">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0209.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0209">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0210">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0210.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0210">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0211">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0211.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0211">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0212">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0212.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0212">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0213">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0213.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0213">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0214">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0214.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0214">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0215">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0215.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0215">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0216">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0216.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0216">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0217">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0217.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0217">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0218">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0218.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0218">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0219">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0219.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0219">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0220">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0220.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0220">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0221">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0221.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0221">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0222">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0222.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0222">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0223">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0223.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0223">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0224">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0224.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0224">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0225">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0225.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0225">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0226">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0226.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0226">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0227">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0227.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0227">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0228">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0228.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0228">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0229">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0229.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0229">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0230">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0230.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0230">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0231">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0231.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0231">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0232">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0232.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0232">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0233">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0233.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0233">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0234">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0234.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0234">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0235">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0235.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0235">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0236">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0236.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0236">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0237">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0237.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0237">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0238">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0238.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0238">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0239">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0239.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0239">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0240">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0240.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0240">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0241">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0241.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0241">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0242">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0242.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0242">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0243">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0243.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0243">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0244">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0244.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0244">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0245">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0245.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0245">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0246">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0246.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0246">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0247">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0247.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0247">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0248">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0248.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0248">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0249">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0249.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0249">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0250">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0250.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0250">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0251">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0251.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0251">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0252">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0252.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0252">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0253">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0253.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0253">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0254">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0254.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0254">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0255">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0255.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0255">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0256">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0256.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0256">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0257">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0257.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0257">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0258">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0258.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0258">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0259">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0259.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0259">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0260">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0260.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0260">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0261">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0261.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0261">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0262">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0262.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0262">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0263">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0263.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0263">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0264">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0264.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0264">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0265">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0265.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0265">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0266">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0266.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0266">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0267">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0267.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0267">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0268">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0268.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0268">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0269">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0269.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0269">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0270">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0270.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0270">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0271">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0271.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0271">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0272">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0272.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0272">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0273">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0273.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0273">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0274">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0274.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0274">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0275">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0275.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0275">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0276">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0276.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0276">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0277">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0277.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0277">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0278">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0278.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0278">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0279">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0279.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0279">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0280">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0280.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0280">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0281">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0281.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0281">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0282">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0282.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0282">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0283">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0283.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0283">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0284">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0284.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0284">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0285">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0285.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0285">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0286">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0286.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0286">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0287">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0287.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0287">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0288">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0288.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0288">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0289">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0289.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0289">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0290">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0290.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0290">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0291">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0291.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0291">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0292">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0292.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0292">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0293">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0293.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0293">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0294">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0294.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0294">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0295">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0295.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0295">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0296">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0296.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0296">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0297">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0297.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0297">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0298">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0298.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0298">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0299">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0299.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0299">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0300">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0300.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0300">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0301">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0301.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0301">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0302">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0302.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0302">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0303">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0303.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0303">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0304">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0304.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0304">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0305">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0305.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0305">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0306">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0306.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0306">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0307">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0307.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0307">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0308">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0308.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0308">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0309">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0309.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0309">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0310">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0310.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0310">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0311">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0311.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0311">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0312">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0312.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0312">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0313">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0313.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0313">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0314">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0314.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0314">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0315">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0315.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0315">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0316">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0316.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0316">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0317">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0317.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0317">
+        <color rgba="0.46 0.56 0.65 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0318">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0318.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0318">
+        <color rgba="0.46 0.56 0.65 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0319">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0319.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0319">
+        <color rgba="0.46 0.56 0.65 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0320">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0320.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0320">
+        <color rgba="0.46 0.56 0.65 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0321">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0321.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0321">
+        <color rgba="0.46 0.56 0.65 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0322">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0322.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0322">
+        <color rgba="0.46 0.56 0.65 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0323">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0323.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0323">
+        <color rgba="0.46 0.56 0.65 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0324">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0324.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0324">
+        <color rgba="0.46 0.56 0.65 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0325">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0325.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0325">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0326">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0326.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0326">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0327">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0327.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0327">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0328">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0328.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0328">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0329">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0329.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0329">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0330">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0330.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0330">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0331">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0331.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0331">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0332">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0332.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0332">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0333">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0333.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0333">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0334">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0334.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0334">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0335">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0335.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0335">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0336">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0336.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0336">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0337">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0337.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0337">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0338">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0338.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0338">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0339">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0339.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0339">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0340">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0340.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0340">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0341">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0341.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0341">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0342">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0342.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0342">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0343">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0343.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0343">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0344">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0344.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0344">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0345">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0345.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0345">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0346">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0346.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0346">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0347">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0347.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0347">
+        <color rgba="0.12 0.35 0.65 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0348">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0348.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0348">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0349">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0349.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0349">
+        <color rgba="0.25 0.58 0.39 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0350">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0350.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0350">
+        <color rgba="0.25 0.58 0.39 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0351">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0351.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0351">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0352">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0352.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0352">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0353">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0353.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0353">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0354">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0354.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0354">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0355">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0355.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0355">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0356">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0356.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0356">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0357">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0357.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0357">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0358">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0358.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0358">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0359">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0359.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0359">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0360">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0360.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0360">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0361">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0361.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0361">
+        <color rgba="0.12 0.35 0.65 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0362">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0362.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0362">
+        <color rgba="0.12 0.35 0.65 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0363">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0363.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0363">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0364">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0364.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0364">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0365">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0365.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0365">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0366">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0366.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0366">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0367">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0367.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0367">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0368">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0368.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0368">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0369">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0369.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0369">
+        <color rgba="0.25 0.58 0.39 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0370">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0370.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0370">
+        <color rgba="0.83 0.12 0.13 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0371">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0371.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0371">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0372">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0372.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0372">
+        <color rgba="0.84 0.42 0.12 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0373">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0373.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0373">
+        <color rgba="0.84 0.42 0.12 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0374">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0374.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0374">
+        <color rgba="0.84 0.42 0.12 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0375">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0375.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0375">
+        <color rgba="0.84 0.42 0.12 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0376">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0376.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0376">
+        <color rgba="0.84 0.42 0.12 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0377">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0377.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0377">
+        <color rgba="0.84 0.42 0.12 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0378">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0378.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0378">
+        <color rgba="0.84 0.42 0.12 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0379">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0379.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0379">
+        <color rgba="0.84 0.42 0.12 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0380">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0380.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0380">
+        <color rgba="0.84 0.42 0.12 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0381">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0381.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0381">
+        <color rgba="0.84 0.42 0.12 1" />
+      </material>
+    </visual>
+    <visual name="pieza_0382">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/mallas/0382.stl" scale="1 1 1" />
+      </geometry>
+      <material name="color_0382">
+        <color rgba="0.84 0.42 0.12 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="cad_fijo_conjunto_rotatorio" type="fixed">
+    <parent link="cad_mundo" />
+    <child link="cad_conjunto_rotatorio" />
+    <origin xyz="0 0 0" rpy="0 0 0" />
+  </joint>
+</robot>

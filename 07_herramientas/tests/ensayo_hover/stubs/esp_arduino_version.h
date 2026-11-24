@@ -1,0 +1,3 @@
+#pragma once
+#define CONFIG_IDF_TARGET_ESP32 1
+#define ESP_ARDUINO_VERSION_MAJOR 3

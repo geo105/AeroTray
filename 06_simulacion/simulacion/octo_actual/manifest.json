@@ -1,0 +1,41 @@
+{
+  "archivos_fuente": {
+    "validar_conjunto.py": "11516ce4152f836cebb57471d1e795ae469af0ebffa626f970b2d65f0e9a4969",
+    "ver_rviz.py": "36def4ad644daf8eda3e0de20aae77120426b36723525f0531baef50297a6473",
+    "evaluar_isaac.py": "f0600e75b8eba33936878fcd067309867a49d0d7a978560d919bb361c7553751",
+    "resumir_resultados.py": "deb7bf75d43065e615238e56e5f5bc49b59bd33681a0777d4b779a79a655b170",
+    "importar_mallas.py": "00875f249897e2cf870ef00f9de963b0b9c8f7243e8b2b0f8841acea966319d9",
+    "control.py": "d462217c72ff4168108dfe8aa8bec3066a6957140ef87a173d4cbcab6f0e328b",
+    "preparar.py": "08f1866090aba4567d8f658de191e20cd74ae0b93573c4e5aa3edbe1ee7d5b48",
+    "sistema_gazebo.py": "5d590a19481aab1474d99c5ff82e4bf6ccd04f33f883788e454736c3361b5702",
+    "isaac_cli.py": "a3dbe56574bda1a65beff6edbf4373fe17e49def67ebd0f40747f06194d273da",
+    "verificar_control.py": "f20ef1869b100d9b1bd42c9b385175400a8d4d0d17439fbfbd7a62ae83d1c9ee",
+    "ball_plate.py": "30dbdbfaf42cf2c8b941062fbf4bb84987082cb1212e8803d28730142463d8e4",
+    "probar_gazebo.py": "dc9358be1b37d3e36e7635cb7601d7f2aa3a1029422a6d2765a9df81c6b658a9",
+    "ajustar_ball_plate.py": "2d4760f79129171cfdc66b4f206b3e795909599b8d33ee3bec10a3e7fdcff95f",
+    "gazebo.sh": "a4b920c8c21e005fe1f9e7240654b4ccc0a005487b67fbf53cb75640fdb61eb4",
+    "iniciar.sh": "868490285d6c68ea2483bb4546df6fde806f2a0e70cc4bb40a0237284085ee40",
+    "isaac.sh": "0d7738225e7c112590cfecc9b23dea83b16a936751a7d46d7b1b46e6e5d1b86e",
+    "rviz.sh": "56c80bd40583c04bcedada97c107355a2fe8a6790ced3a8f6300ef09cd4f68bf",
+    "isaac_task/config.py": "c077c3f8225f30fed7090a7264e6c257c46d4a105137ef2f3ea10ec6e8ee2932",
+    "isaac_task/__init__.py": "e52e7b8eedb124447ad8cafbeb9c513bc33cee51a4eeb9481e98bfa502c0b42b",
+    "isaac_task/env.py": "055fcea4f470a39fca5ac4a6bff9f9748adf50fee78dfe4b8bd65ae13e3d22d8",
+    "config.json": "7b8024ee0d5dbec63f478675f3d8a5092ed54940f13accd009145e79107d6343",
+    "LEEME.md": "a31bad33c168821c548a3b9e4a615d0e9a6a6b99f6a6dbcceb121608aad3a864"
+  },
+  "datos_conservados": {
+    "datos/control_original.ino": "d7ab6dbb87c0688023e6ef5f4c5e72ce4fceea53d4fa696eda8591abfda1a4cc",
+    "datos/ball_plate_ajustes_originales.json": "77e3f064120d66b9f0cfa85f945f108f6b2145839f07e48f5221f0c26edc3340",
+    "datos/parametros_CAD.txt": "6cee8fc39d9617ffd38391cc31c3273b751fae68253d2f509f406390efd4eb5b",
+    "datos/cad.json": "4132f5717590db336856cbbdca0dc8f08abe20f583e8eab805ee5fb529959174",
+    "datos/ball_plate_camara_original.json": "dded61bee99353539f3fa9643450e9e5c398463d6d492ba9d730ea16f70e6991",
+    "datos/ball_plate_firmware_original.cpp": "f936cd9fce913b546004df1e15fa35a2e1753ba4b5962dd46cceb01596dc3db4",
+    "datos/evidencia.txt": "465f19f999edfb300c264e7e1ebfa573eae4a1be98d31dbfb57dfac795c30a37"
+  },
+  "capturas": [
+    "resultados/rviz_vista.png",
+    "resultados/gazebo_vista.png"
+  ],
+  "informe": "resultados/resumen.json",
+  "control_real_modificado": false
+}

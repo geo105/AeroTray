@@ -1,0 +1,5 @@
+{
+  "pi_control/ajustes.json": true,
+  "pi_control/config_pi.json": true,
+  "esp32_cam_visor/src/main.cpp": true
+}

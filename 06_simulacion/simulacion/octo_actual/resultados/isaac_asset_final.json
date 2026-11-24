@@ -1,0 +1,16 @@
+{
+  "motor_fisico": "Isaac Lab / Newton MJWarp CUDA",
+  "modo": "controles_originales",
+  "checkpoint": null,
+  "seed_reserva": 81243,
+  "entornos": 8,
+  "duracion_s": 1.0,
+  "episodios_completos": 8,
+  "supervivencia": 1.0,
+  "rms_tilt_deg": 0.9102606773376465,
+  "rms_bola_mm": 24.91605986915532,
+  "rms_tilt_ultimos_2s_deg": 0.9102606773376465,
+  "rms_bola_ultimos_2s_mm": 24.91605986915532,
+  "rms_residuo_normalizado": 0.0,
+  "nota": "Junta fija vertical. Controles originales + 4 residuos acotados. Pelota reducida, sensores/actuadores provisionales. RMS incluye solo muestras de episodios vivos; supervivencia se informa por separado."
+}

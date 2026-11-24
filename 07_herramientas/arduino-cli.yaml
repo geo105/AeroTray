@@ -1,0 +1,7 @@
+board_manager:
+  additional_urls:
+    - https://espressif.github.io/arduino-esp32/package_esp32_index.json
+directories:
+  data: /home/george/DSM/herramientas/arduino-data
+  downloads: /home/george/DSM/herramientas/arduino-downloads
+  user: /home/george/DSM/firmware/arduino-user

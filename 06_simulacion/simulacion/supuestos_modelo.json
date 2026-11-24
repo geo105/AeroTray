@@ -1,0 +1,92 @@
+{
+  "estado": "PROVISIONAL_NO_EXPORTADO_DE_FUSION_NO_USAR_EN_HARDWARE",
+  "confirmados_usuario": {
+    "masa_total_kg": 3.6,
+    "recorrido_vertical_m": 0.2,
+    "numero_motores": 8
+  },
+  "referencia_pdf_no_verificada": {
+    "radio_motor_m": 0.35
+  },
+  "supuestos_para_demostracion": {
+    "masa_carro_kg": 0.3,
+    "masa_rotatoria_kg": 3.3000000000000003,
+    "centro_masa_rotatorio_m": [
+      0,
+      0,
+      0.1
+    ],
+    "inercia_diagonal_kg_m2": [
+      0.12,
+      0.12,
+      0.2
+    ],
+    "altura_inicial_junta_m": 0.8,
+    "amortiguamiento_vertical_Ns_m": 0.5,
+    "amortiguamiento_rotatorio_Nms_rad": 0.02,
+    "fuerza_maxima_motor_N": 6,
+    "relacion_par_empuje_m": 0.015,
+    "discos_helice_radio_m": 0.12
+  },
+  "motor_sites_provisionales": [
+    {
+      "motor": 1,
+      "x_m": 0.35,
+      "y_m": -0.0,
+      "z_m": 0.04
+    },
+    {
+      "motor": 5,
+      "x_m": 0.24748737341529164,
+      "y_m": -0.2474873734152916,
+      "z_m": 0.04
+    },
+    {
+      "motor": 2,
+      "x_m": 2.143131898507868e-17,
+      "y_m": -0.35,
+      "z_m": 0.04
+    },
+    {
+      "motor": 6,
+      "x_m": -0.2474873734152916,
+      "y_m": -0.24748737341529164,
+      "z_m": 0.04
+    },
+    {
+      "motor": 3,
+      "x_m": -0.35,
+      "y_m": -4.286263797015736e-17,
+      "z_m": 0.04
+    },
+    {
+      "motor": 7,
+      "x_m": -0.24748737341529167,
+      "y_m": 0.2474873734152916,
+      "z_m": 0.04
+    },
+    {
+      "motor": 4,
+      "x_m": -6.429395695523604e-17,
+      "y_m": 0.35,
+      "z_m": 0.04
+    },
+    {
+      "motor": 8,
+      "x_m": 0.24748737341529156,
+      "y_m": 0.24748737341529167,
+      "z_m": 0.04
+    }
+  ],
+  "no_modelado": [
+    "bola libre",
+    "servos y bielas",
+    "vision",
+    "baterias y caidas de tension",
+    "dinamica ESC",
+    "friccion real",
+    "limites angulares reales",
+    "movimiento del carrito"
+  ],
+  "nota": "El dron solo de 2.3 kg no define la masa de todo lo que gira; reparto ficticio conservando 3.6 kg totales."
+}

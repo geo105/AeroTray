@@ -1,0 +1,10 @@
+{
+  "gazebo_window": true,
+  "rviz_window": true,
+  "procesos_activos": [
+    true,
+    true,
+    true
+  ],
+  "ros_estado": "data: 'banco | t=8.8s\n\n  roll 0.12 / pitch -0.06 deg | z 0.0 mm\n\n  RP 1.000 | sin corte\n\n  PID Pi/PS3 Eye | bola 0.6, -34.2 mm'\n---\n"
+}

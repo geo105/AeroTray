@@ -1,0 +1,10 @@
+{
+  "equivalencia_PID_cpp_muestras": 1600,
+  "error_max_us_antes_holgura": 3.02437692489832e-05,
+  "error_max_pulso_us": 0,
+  "error_geometria_tof_m": 3.469446951953614e-17,
+  "imu_fuera_pivote": true,
+  "corte_tilt": true,
+  "corte_tof_invalido": true,
+  "nota": "Equivalencia num\u00e9rica de ley de control, no validaci\u00f3n de la planta f\u00edsica."
+}

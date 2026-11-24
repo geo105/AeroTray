@@ -1,0 +1,28 @@
+{
+  "estado": "conjunto_CAD_importado_y_equilibrio_ideal_verificado",
+  "masa_movil_kg": 3.5999999999999996,
+  "actuadores": 8,
+  "grados_libertad": 4,
+  "mallas_visuales": 13,
+  "recorrido_simulacion_m": 0.07662945938,
+  "duracion_MuJoCo_s": 2.0000000000000013,
+  "altura_final_MuJoCo_m": 0.03831472969001122,
+  "error_equilibrio_m": 1.1220191442617988e-14,
+  "controles_N": [
+    4.412892751352198,
+    4.413092248647893,
+    4.415983548076178,
+    4.41000145192374,
+    4.415178023322724,
+    4.415036957432118,
+    4.41080697667728,
+    4.410948042567886
+  ],
+  "limite": "Prueba de importación, cuerpos y fuerzas ideales; sin identificación ni entrenamiento ni colisiones CAD.",
+  "Newton_GPU": {
+    "dispositivo": "cuda:0",
+    "duracion_s": 0.2,
+    "altura_final_m": 0.03831472992897034,
+    "masa_kg": 3.5999999046325684
+  }
+}

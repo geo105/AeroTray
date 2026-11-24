@@ -1,0 +1,17 @@
+{
+  "estado": "modelo_importado_y_equilibrio_ideal_provisional_verificado",
+  "modelo": "/home/george/DSM/simulacion/aerotray_cad_visual.xml",
+  "backend": "Newton SolverMuJoCo MJWarp",
+  "dispositivo": "cuda:0",
+  "versiones": {
+    "newton": "1.6.1",
+    "warp-lang": "1.17.0",
+    "mujoco": "3.12.0",
+    "mujoco-warp": "3.12.0"
+  },
+  "masa_total_kg": 3.5999999046325684,
+  "actuadores": 8,
+  "duracion_simulada_s": 0.2,
+  "altura_final_m": 0.0999329462647438,
+  "limite": "No es tarea de Isaac Lab ni entrenamiento ni validacion del prototipo real"
+}

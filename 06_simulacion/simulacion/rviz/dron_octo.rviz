@@ -1,0 +1,61 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Piso
+      Enabled: true
+      Cell Size: 0.25
+      Plane Cell Count: 16
+      Reference Frame: mundo
+    - Class: rviz_default_plugins/TF
+      Name: TF
+      Enabled: true
+      Marker Scale: 0.4
+      Show Names: true
+    - Class: rviz_default_plugins/MarkerArray
+      Name: Dron
+      Enabled: true
+      Topic:
+        Value: /dron/marcadores
+        Depth: 5
+        Durability Policy: Volatile
+        Reliability Policy: Reliable
+    - Class: rviz_default_plugins/Axes
+      Name: Ejes del dron
+      Enabled: true
+      Reference Frame: base_link
+      Length: 0.18
+      Radius: 0.008
+    - Class: rviz_default_plugins/InteractiveMarkers
+      Name: Controles del dron (clic derecho)
+      Enabled: true
+      Update Topic: /dron/identificacion/update
+      Show Descriptions: false
+      Show Axes: false
+      Show Visual Aids: true
+      Enable Transparency: true
+  Enabled: true
+  Global Options:
+    Background Color: 40; 40; 48
+    Fixed Frame: mundo
+    Frame Rate: 30
+  Tools:
+    - Class: rviz_default_plugins/Interact
+    - Class: rviz_default_plugins/MoveCamera
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 2.2
+      Focal Point:
+        X: 0
+        Y: 0
+        Z: 0.3
+      Pitch: 0.55
+      Yaw: 3.6
+      Target Frame: mundo
+Window Geometry:
+  Width: 1200
+  Height: 800

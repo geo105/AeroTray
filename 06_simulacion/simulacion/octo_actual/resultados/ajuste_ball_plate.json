@@ -1,0 +1,42 @@
+{
+  "referencia": "PID Pi + PS3 Eye confirmado por usuario",
+  "original": [
+    1.875,
+    0.5,
+    1.5625
+  ],
+  "candidato": [
+    2.8125,
+    0.75,
+    2.34375
+  ],
+  "candidatos_busqueda": 48,
+  "casos_busqueda": 24,
+  "casos_reserva": 24,
+  "segundos_por_caso": 16,
+  "semillas_busqueda": [
+    73001,
+    73002,
+    73003
+  ],
+  "semillas_reserva": [
+    88001,
+    88002,
+    88003
+  ],
+  "score_busqueda_original": 38.08588807119417,
+  "score_busqueda_candidato": 24.025917419593707,
+  "score_reserva_original": 42.3823073174672,
+  "score_reserva_candidato": 27.07684333223226,
+  "rms_reserva_original_mm": 30.832012192619345,
+  "rms_reserva_candidato_mm": 19.898903115717957,
+  "fraccion_perdida_original": 0.0,
+  "fraccion_perdida_candidato": 0.0,
+  "aceptado_solo_simulacion": true,
+  "perfil_simulacion": [
+    2.8125,
+    0.75,
+    2.34375
+  ],
+  "limite": "Rodadura/latencias/servo supuestos, inclinaciones del TXT reproducidas. Reserva no usada para seleccionar. Validar después con Gazebo acoplado. No se modifican ganancias reales."
+}

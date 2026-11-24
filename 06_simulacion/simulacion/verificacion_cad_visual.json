@@ -1,0 +1,12 @@
+{
+  "estado": "importacion_CAD_visual_y_simulacion_basica_correctas",
+  "motor_fisico": "MuJoCo",
+  "version": "3.12.0",
+  "duracion_s": 2.0000000000000013,
+  "masa_total_kg": 3.6,
+  "actuadores": 8,
+  "mallas": 6,
+  "altura_deslizamiento_final_m": 0.10000000000000168,
+  "diferencia_qpos_con_modelo_provisional": 0.0,
+  "limite": "Prueba de importación de geometría; no valida empuje, sensores, control ni ball-and-plate."
+}

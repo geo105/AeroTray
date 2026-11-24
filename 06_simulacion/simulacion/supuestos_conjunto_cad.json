@@ -1,0 +1,81 @@
+{
+  "estado": "geometria_CAD_y_uniones_de_simulacion_reconstruidas_dinamica_provisional",
+  "masa_total_kg": 3.6,
+  "masas_por_cuerpo_provisionales_kg": {
+    "carro_vertical": 0.3,
+    "conjunto_rotatorio": 3.3
+  },
+  "centro_rotula_modelo_m": [
+    0.0,
+    0.0,
+    0.4945153309882569
+  ],
+  "recorrido_cad_contacto_mm": 78.62945938110286,
+  "recorrido_simulacion_m": 0.07662945938110287,
+  "centros_empuje_modelo_m": {
+    "6": [
+      -0.24749132899738682,
+      0.24736876152596243,
+      0.5900159699189538
+    ],
+    "7": [
+      -0.24749132899738363,
+      -0.2476059853046154,
+      0.5900159699189572
+    ],
+    "8": [
+      0.247483417833203,
+      -0.2476059853046153,
+      0.5900191707275996
+    ],
+    "5": [
+      0.24748341783320071,
+      0.24736876152596357,
+      0.590015969918958
+    ],
+    "1": [
+      -0.35000395558209546,
+      -0.00011861188932806499,
+      0.5900227762179031
+    ],
+    "4": [
+      -3.955582084432585e-06,
+      -0.3501186118893265,
+      0.5900191707276599
+    ],
+    "2": [
+      0.34999604441791055,
+      -0.00011861188932419964,
+      0.5900179523285157
+    ],
+    "3": [
+      -3.955582093186472e-06,
+      0.3498813881106752,
+      0.5900182303028662
+    ]
+  },
+  "trim_empuje_ideal_N": [
+    4.412892751690849,
+    4.413092248309151,
+    4.4159835478743235,
+    4.410001452125677,
+    4.415178022940601,
+    4.415036957528975,
+    4.4108069770594,
+    4.410948042471025
+  ],
+  "limite_empuje_ficticio_N": 6,
+  "relacion_par_empuje_ficticia_m": 0.015,
+  "geometrias_visuales": 13,
+  "componentes_CAD": 383,
+  "precedencia": "Usuario pide priorizar CAD para dimensiones y recorrido; se sustituye el dato anterior de 0.20 m.",
+  "limites": [
+    "Interfaz heredada con solapes; no se simulan colisiones de CAD.",
+    "El reparto de masa, inercias, COM y amortiguamiento no se han identificado.",
+    "El STEP no contiene articulaciones Fusion; asignación de sólidos interpretada de geometría.",
+    "Bola y servos rígidos; sin visión ni entrenamiento.",
+    "No hay límites angulares identificados; rótula esférica ideal.",
+    "Cart fijo; la etapa móvil la trabaja el compañero."
+  ],
+  "referencia_elevacion": "q=0 es la posición guardada en CAD, no un tope inferior identificado. Solo se usa subida desde esa pose."
+}

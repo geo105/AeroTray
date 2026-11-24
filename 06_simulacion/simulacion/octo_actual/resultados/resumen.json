@@ -1,0 +1,314 @@
+{
+  "evidencia_real": {
+    "muestras": 260,
+    "duracion_s": 25.9,
+    "roll_media_deg": 0.0030769230769230795,
+    "pitch_media_deg": 1.077346153846154,
+    "inclinacion_max_deg": 2.4613004692641653,
+    "nota": "Ángulos de la IMU, sin referencia externa ni medidas de altura/pelota."
+  },
+  "ball_plate": {
+    "semillas": [
+      81243,
+      91357,
+      104729
+    ],
+    "segundos_por_caso": 12,
+    "rms_bola_original_mm": 26.262985164512134,
+    "rms_bola_candidato_mm": 14.966755821624659,
+    "reduccion_error_porcentaje": 43.01197777833538,
+    "aceptado_en_gazebo_solo_simulacion": true,
+    "nota": "Reserva distinta de la búsqueda; misma semilla/perturbación por pareja. Planta de pelota reducida y dinámica provisional. No acredita mejora física."
+  },
+  "isaac": {
+    "original": {
+      "motor_fisico": "Isaac Lab / Newton MJWarp CUDA",
+      "modo": "controles_originales",
+      "checkpoint": null,
+      "seed_reserva": 81243,
+      "entornos": 8,
+      "duracion_s": 6.0,
+      "episodios_completos": 8,
+      "supervivencia": 1.0,
+      "rms_tilt_deg": 0.5983449816703796,
+      "rms_bola_mm": 24.19259920116574,
+      "rms_tilt_ultimos_2s_deg": 0.36602145433425903,
+      "rms_bola_ultimos_2s_mm": 19.275544806728043,
+      "rms_residuo_normalizado": 0.0,
+      "nota": "Junta fija vertical. Controles originales + 4 residuos acotados. Pelota reducida, sensores/actuadores provisionales. RMS incluye solo muestras de episodios vivos; supervivencia se informa por separado."
+    },
+    "residual": {
+      "motor_fisico": "Isaac Lab / Newton MJWarp CUDA",
+      "modo": "residual",
+      "checkpoint": "/home/george/DSM/simulacion/octo_actual/modelos/residual_100_iteraciones.pt",
+      "seed_reserva": 81243,
+      "entornos": 8,
+      "duracion_s": 6.0,
+      "episodios_completos": 8,
+      "supervivencia": 1.0,
+      "rms_tilt_deg": 0.6841010451316833,
+      "rms_bola_mm": 26.53175108502874,
+      "rms_tilt_ultimos_2s_deg": 0.4854687452316284,
+      "rms_bola_ultimos_2s_mm": 23.94213202371123,
+      "rms_residuo_normalizado": 0.2695465087890625,
+      "nota": "Junta fija vertical. Controles originales + 4 residuos acotados. Pelota reducida, sensores/actuadores provisionales. RMS incluye solo muestras de episodios vivos; supervivencia se informa por separado."
+    },
+    "politica_seleccionada": false,
+    "iteraciones": 100,
+    "entornos_entrenamiento": 8,
+    "transiciones_entrenamiento": 25600,
+    "criterio": "No reducir supervivencia; reducir RMS pelota sin empeorar RMS inclinación."
+  },
+  "altura": {
+    "original": {
+      "motor_fisico": "Gazebo Harmonic 8 / DART",
+      "pasos_ejecutados": true,
+      "modo": "altura",
+      "control_activo": true,
+      "ganancia_angulo_factor": 1,
+      "seed": 73021,
+      "duracion_s": 7.981,
+      "muestras": 400,
+      "inclinacion_max_deg": 179.7335055844329,
+      "rms_tilt_ultimos_2s_deg": 148.30451011793315,
+      "altura_final_m": -9.936496070395151e-15,
+      "altura_objetivo_m": 0.03831472969,
+      "cortes": [
+        "INCLINACION"
+      ],
+      "escala_RP_min": 0.0,
+      "ball_plate_pid": [
+        1.875,
+        0.5,
+        1.5625
+      ],
+      "ball_plate_activo": true,
+      "bola_fuera_placa": true,
+      "rms_bola_mm": 112.42699223292574,
+      "rms_bola_ultimos_2s_mm": 120.5767618573771,
+      "empuje_max_1500us_N": 10.71539445962828,
+      "peso_movil_modelado_N": 33.354,
+      "limite": "Modelo provisional; no es validacion del prototipo ni identificacion desde el TXT."
+    },
+    "ideal": {
+      "motor_fisico": "Gazebo Harmonic 8 / DART",
+      "pasos_ejecutados": true,
+      "modo": "altura_ideal",
+      "control_activo": true,
+      "ganancia_angulo_factor": 1,
+      "seed": 73021,
+      "duracion_s": 13.981,
+      "muestras": 700,
+      "inclinacion_max_deg": 0.9373141074754124,
+      "rms_tilt_ultimos_2s_deg": 0.16715371718546007,
+      "altura_final_m": 0.03977935292153029,
+      "altura_objetivo_m": 0.03831472969,
+      "cortes": [],
+      "escala_RP_min": 1.0,
+      "ball_plate_pid": [
+        1.875,
+        0.5,
+        1.5625
+      ],
+      "ball_plate_activo": true,
+      "bola_fuera_placa": false,
+      "rms_bola_mm": 25.450367302543118,
+      "rms_bola_ultimos_2s_mm": 20.336724960431102,
+      "empuje_max_1500us_N": 10.71539445962828,
+      "peso_movil_modelado_N": 33.354,
+      "limite": "Modelo provisional; no es validacion del prototipo ni identificacion desde el TXT."
+    },
+    "nota": "Ideal comienza a 15 mm con fuerza de trim y referencia en rampa; no demuestra despegue."
+  },
+  "cambios_hardware": false,
+  "configuracion": {
+    "fuentes": {
+      "zip": "/home/george/Descargas/Octocoptero_DSM_Proyecto_Actualizado.zip",
+      "sha256_zip": "d556e2ec2548e5e952ee8a6729cea84fc559649f265a3a76f565660e9b067d13",
+      "evidencia": "/home/george/Descargas/evidencia_control_angulo_sin_camara_DSM.txt",
+      "sha256_evidencia": "465f19f999edfb300c264e7e1ebfa573eae4a1be98d31dbfb57dfac795c30a37",
+      "ball_plate": {
+        "pi_control/ajustes.json": "77e3f064120d66b9f0cfa85f945f108f6b2145839f07e48f5221f0c26edc3340",
+        "pi_control/config_pi.json": "dded61bee99353539f3fa9643450e9e5c398463d6d492ba9d730ea16f70e6991",
+        "esp32_cam_visor/src/main.cpp": "f936cd9fce913b546004df1e15fa35a2e1753ba4b5962dd46cceb01596dc3db4"
+      }
+    },
+    "masa_rotatoria_kg": 2.999524,
+    "masa_carro_vertical_kg": 0.400476,
+    "nota_masas": "Dron 2.8 kg + junta completa 0.6 kg; reparto por volumen CAD supuesto. Sin masa adicional de guias identificada.",
+    "cg_m": [
+      -0.0004939,
+      0.0008,
+      0.0691663
+    ],
+    "inercia_cg": [
+      [
+        0.096064789,
+        9.8533e-05,
+        0.00031072
+      ],
+      [
+        9.8533e-05,
+        0.095123241,
+        0.003873924
+      ],
+      [
+        0.00031072,
+        0.003873924,
+        0.128105954
+      ]
+    ],
+    "radio_m": 0.35,
+    "recorrido_m": 0.07662945938110287,
+    "pivot_altura_m": 0.4945153309882569,
+    "motores_flu_m": [
+      [
+        0.35,
+        0,
+        0.0955
+      ],
+      [
+        0,
+        -0.35,
+        0.0955
+      ],
+      [
+        -0.35,
+        0,
+        0.0955
+      ],
+      [
+        0,
+        0.35,
+        0.0955
+      ],
+      [
+        0.24748737,
+        -0.24748737,
+        0.0955
+      ],
+      [
+        -0.24748737,
+        -0.24748737,
+        0.0955
+      ],
+      [
+        -0.24748737,
+        0.24748737,
+        0.0955
+      ],
+      [
+        0.24748737,
+        0.24748737,
+        0.0955
+      ]
+    ],
+    "sensores": {
+      "tof_modelo": "VL53L0X segun firmware previo, etiqueta pendiente de confirmar",
+      "tof_brazo": 1,
+      "tof_pos_m": [
+        0.35,
+        0,
+        0.0955
+      ],
+      "tof_direccion": [
+        0,
+        0,
+        -1
+      ],
+      "tof_periodo_s": 0.05,
+      "tof_ruido_m": 0.002,
+      "tof_rango_m": [
+        0.03,
+        2.0
+      ],
+      "imu_brazo": 8,
+      "imu_pos_m": [
+        0.24748737,
+        0.24748737,
+        0.1055
+      ],
+      "imu_ubicacion_confirmada": false,
+      "nota": "Brazos comunicados por usuario; coordenadas exactas y orientacion de montaje supuestas en FLU. Ruido ToF supuesto; 2 m es alcance, no recorrido mecanico.",
+      "accel_sd_g": [
+        0.002085,
+        0.001884,
+        0.002355
+      ],
+      "gyro_sd_dps": [
+        0.035827,
+        0.040639,
+        0.034989
+      ],
+      "accel_scale": 1.059766,
+      "tof_vel_tau_s": 0.05
+    },
+    "control": {
+      "kp_angulo": [
+        5.0,
+        5.03
+      ],
+      "kp_velocidad": [
+        0.76,
+        0.753
+      ],
+      "ki_velocidad": [
+        0.1,
+        0.1
+      ],
+      "yaw_activo": false,
+      "periodo_s": 0.005,
+      "esc_periodo_s": 0.02,
+      "base_us": 1300,
+      "min_us": 1180,
+      "max_us": 1500,
+      "inicio_giro_us": 1140,
+      "limite_tilt_deg": 12,
+      "limite_yaw_deg": 20,
+      "limite_r_dps": 35,
+      "limite_accel_g": [
+        0.55,
+        1.55
+      ]
+    },
+    "actuadores": {
+      "fmax_nominal_N": 5.3955,
+      "exponente": 1.6,
+      "tau_s": 0.08,
+      "pwm_max_modelo": 2000,
+      "par_empuje_m": 0.02,
+      "curva_medida": false
+    },
+    "altura": {
+      "kp_N_m": 50.0,
+      "kd_N_s_m": 20.0,
+      "ki_N_ms": 5.0,
+      "objetivo_m": 0.03831472969,
+      "rampa_referencia_m_s": 0.005,
+      "altura_inicial_ideal_m": 0.015
+    },
+    "advertencia": "Simulacion provisional. Datos angulares no identifican empuje, inercia, friccion ni altura. Sin conexion a hardware.",
+    "ball_plate": {
+      "perfil_confirmado": "PID Raspberry Pi + PS3 Eye, confirmado por usuario",
+      "ajustes": "datos/ball_plate_ajustes_originales.json",
+      "placa_m": [
+        0.22,
+        0.25
+      ],
+      "diametro_bola_m": 0.027,
+      "mm_por_unidad": 3.0,
+      "altura_placa_m": 0.126,
+      "masa_bola_kg": 0.02,
+      "masa_placa_kg": 0.15,
+      "ganancia_rad_us": 0.0006848671984825749,
+      "servo_tau_s": 0.06,
+      "camara_periodo_s": 0.01,
+      "camara_retardo_s": 0.04,
+      "camara_ruido_m": 0.0005,
+      "vel_ventana_s": 0.06,
+      "amortiguamiento_bola_s": 0.15,
+      "nota": "PID/holgura/neutros originales; masa bola/placa, ejes camara-FLU, servo, FPS efectivos, retardo y ruido son supuestos. Modelo reducido de rodadura, no deteccion de imagen ni contactos de malla. Placa/bola ya incluidas en masa total; solo se agrega variacion de par por desplazamiento."
+    }
+  },
+  "checkpoint_sha256": "cf8b75b6146f43d584c8b6e1417793a571aa135326f2c164ea7e895621cb63ed"
+}

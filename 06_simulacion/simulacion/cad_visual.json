@@ -1,0 +1,313 @@
+{
+  "estado": "CAD_visual_sobre_mecanismo_provisional",
+  "malla_glb": "/home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/uav_camara_visual.glb",
+  "modelo": "/home/george/DSM/simulacion/aerotray_cad_visual.xml",
+  "triangulos_originales": 2018598,
+  "triangulos_visuales_ligeros": 267825,
+  "piezas": [
+    {
+      "pieza": "M6 - diagonal 135 grados:1",
+      "original": 238863,
+      "ligera": 19999
+    },
+    {
+      "pieza": "M7 - diagonal 225 grados:1",
+      "original": 238879,
+      "ligera": 19997
+    },
+    {
+      "pieza": "M8 - diagonal 315 grados:1",
+      "original": 238836,
+      "ligera": 20000
+    },
+    {
+      "pieza": "M5 - diagonal 45 grados:1",
+      "original": 238829,
+      "ligera": 19999
+    },
+    {
+      "pieza": "M6 - diagonal 135 grados (1):1",
+      "original": 238852,
+      "ligera": 20000
+    },
+    {
+      "pieza": "M7 - diagonal 225 grados (1):1",
+      "original": 238833,
+      "ligera": 20000
+    },
+    {
+      "pieza": "M8 - diagonal 315 grados (1):1",
+      "original": 238831,
+      "ligera": 19999
+    },
+    {
+      "pieza": "M5 - diagonal 45 grados (1):1",
+      "original": 238843,
+      "ligera": 19999
+    },
+    {
+      "pieza": "IMPRIMIBLE tapa_central:1",
+      "original": 4152,
+      "ligera": 4152
+    },
+    {
+      "pieza": "IMPRIMIBLE base_Q1:1",
+      "original": 1800,
+      "ligera": 1800
+    },
+    {
+      "pieza": "IMPRIMIBLE base_Q2:1",
+      "original": 1800,
+      "ligera": 1800
+    },
+    {
+      "pieza": "IMPRIMIBLE base_Q3:1",
+      "original": 1800,
+      "ligera": 1800
+    },
+    {
+      "pieza": "IMPRIMIBLE base_Q4:1",
+      "original": 1800,
+      "ligera": 1800
+    },
+    {
+      "pieza": "SEPARADOR 1:1",
+      "original": 820,
+      "ligera": 820
+    },
+    {
+      "pieza": "SEPARADOR 2:1",
+      "original": 820,
+      "ligera": 820
+    },
+    {
+      "pieza": "SEPARADOR 3:1",
+      "original": 820,
+      "ligera": 820
+    },
+    {
+      "pieza": "SEPARADOR 4:1",
+      "original": 820,
+      "ligera": 820
+    },
+    {
+      "pieza": "PISO2 Q3:1",
+      "original": 1968,
+      "ligera": 1968
+    },
+    {
+      "pieza": "PISO2 Q4:1",
+      "original": 1968,
+      "ligera": 1968
+    },
+    {
+      "pieza": "BANDEJA cruceta:1",
+      "original": 460,
+      "ligera": 460
+    },
+    {
+      "pieza": "PISO2 Q1:1",
+      "original": 2316,
+      "ligera": 2316
+    },
+    {
+      "pieza": "PISO2 Q2:1",
+      "original": 2208,
+      "ligera": 2208
+    },
+    {
+      "pieza": "BANDEJA pilar y soportes de servo:1",
+      "original": 3678,
+      "ligera": 3678
+    },
+    {
+      "pieza": "BANDEJA yugo superior:1",
+      "original": 3510,
+      "ligera": 3510
+    },
+    {
+      "pieza": "BANDEJA mesa mitad A:1",
+      "original": 2924,
+      "ligera": 2924
+    },
+    {
+      "pieza": "BANDEJA mesa mitad B:1",
+      "original": 2632,
+      "ligera": 2632
+    },
+    {
+      "pieza": "Open CASCADE STEP translator 7.9 6.1:1",
+      "original": 924,
+      "ligera": 924
+    },
+    {
+      "pieza": "Open CASCADE STEP translator 7.9 6.2:1",
+      "original": 400,
+      "ligera": 400
+    },
+    {
+      "pieza": "Open CASCADE STEP translator 7.9 6.3:1",
+      "original": 400,
+      "ligera": 400
+    },
+    {
+      "pieza": "Open CASCADE STEP translator 7.9 7.1:1",
+      "original": 924,
+      "ligera": 924
+    },
+    {
+      "pieza": "Open CASCADE STEP translator 7.9 7.2:1",
+      "original": 400,
+      "ligera": 400
+    },
+    {
+      "pieza": "Open CASCADE STEP translator 7.9 7.3:1",
+      "original": 400,
+      "ligera": 400
+    },
+    {
+      "pieza": "Open CASCADE STEP translator 7.9 8.1:1",
+      "original": 10664,
+      "ligera": 10664
+    },
+    {
+      "pieza": "Open CASCADE STEP translator 7.9 8.2:1",
+      "original": 2472,
+      "ligera": 2472
+    },
+    {
+      "pieza": "Open CASCADE STEP translator 7.9 9.1:1",
+      "original": 10730,
+      "ligera": 10730
+    },
+    {
+      "pieza": "Open CASCADE STEP translator 7.9 9.2:1",
+      "original": 2472,
+      "ligera": 2472
+    },
+    {
+      "pieza": "REF brazo 25T X:1",
+      "original": 15672,
+      "ligera": 15672
+    },
+    {
+      "pieza": "REF brazo 25T Y:1",
+      "original": 15658,
+      "ligera": 15658
+    },
+    {
+      "pieza": "Open CASCADE STEP translator 7.9 12.1:1",
+      "original": 608,
+      "ligera": 608
+    },
+    {
+      "pieza": "Open CASCADE STEP translator 7.9 12.2:1",
+      "original": 100,
+      "ligera": 100
+    },
+    {
+      "pieza": "Open CASCADE STEP translator 7.9 12.3:1",
+      "original": 100,
+      "ligera": 100
+    },
+    {
+      "pieza": "Open CASCADE STEP translator 7.9 12.4:1",
+      "original": 608,
+      "ligera": 608
+    },
+    {
+      "pieza": "Open CASCADE STEP translator 7.9 12.5:1",
+      "original": 100,
+      "ligera": 100
+    },
+    {
+      "pieza": "Open CASCADE STEP translator 7.9 12.6:1",
+      "original": 100,
+      "ligera": 100
+    },
+    {
+      "pieza": "REF pantalla:1",
+      "original": 12,
+      "ligera": 12
+    },
+    {
+      "pieza": "REF bola 25 mm:1",
+      "original": 304,
+      "ligera": 304
+    },
+    {
+      "pieza": "BANDEJA bujes cruceta x4 (PLA):1",
+      "original": 832,
+      "ligera": 832
+    },
+    {
+      "pieza": "CAM torre +X (1):1",
+      "original": 588,
+      "ligera": 588
+    },
+    {
+      "pieza": "CAM pata +X:1",
+      "original": 556,
+      "ligera": 556
+    },
+    {
+      "pieza": "CAM torre +Y (1):1",
+      "original": 584,
+      "ligera": 584
+    },
+    {
+      "pieza": "CAM pata +Y:1",
+      "original": 544,
+      "ligera": 544
+    },
+    {
+      "pieza": "CAM torre -X (1):1",
+      "original": 588,
+      "ligera": 588
+    },
+    {
+      "pieza": "CAM pata -X:1",
+      "original": 556,
+      "ligera": 556
+    },
+    {
+      "pieza": "CAM torre -Y (1):1",
+      "original": 584,
+      "ligera": 584
+    },
+    {
+      "pieza": "CAM pata -Y:1",
+      "original": 544,
+      "ligera": 544
+    },
+    {
+      "pieza": "CAM contraplaca x4 (1):1",
+      "original": 1104,
+      "ligera": 1104
+    },
+    {
+      "pieza": "CAM nucleo v7:1",
+      "original": 1632,
+      "ligera": 1632
+    },
+    {
+      "pieza": "CAM bandeja camara v5:1",
+      "original": 376,
+      "ligera": 376
+    }
+  ],
+  "supuestos_no_identificados": [
+    "posición del pivote respecto al UAV",
+    "reparto de masa e inercias",
+    "posiciones y numeración de actuadores",
+    "límite de empuje y relación de par",
+    "base y guías simplificadas"
+  ],
+  "limitaciones": [
+    "bola y bandeja rígidas en esta prueba",
+    "sin cámara simulada",
+    "sin hélices visuales exportadas en el CAD recibido",
+    "sin colisiones de las mallas",
+    "no entrenamiento ni validación de control del prototipo"
+  ]
+}

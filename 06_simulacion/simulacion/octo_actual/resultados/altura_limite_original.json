@@ -1,0 +1,30 @@
+{
+  "motor_fisico": "Gazebo Harmonic 8 / DART",
+  "pasos_ejecutados": true,
+  "modo": "altura",
+  "control_activo": true,
+  "ganancia_angulo_factor": 1,
+  "seed": 73021,
+  "duracion_s": 7.981,
+  "muestras": 400,
+  "inclinacion_max_deg": 179.7335055844329,
+  "rms_tilt_ultimos_2s_deg": 148.30451011793315,
+  "altura_final_m": -9.936496070395151e-15,
+  "altura_objetivo_m": 0.03831472969,
+  "cortes": [
+    "INCLINACION"
+  ],
+  "escala_RP_min": 0.0,
+  "ball_plate_pid": [
+    1.875,
+    0.5,
+    1.5625
+  ],
+  "ball_plate_activo": true,
+  "bola_fuera_placa": true,
+  "rms_bola_mm": 112.42699223292574,
+  "rms_bola_ultimos_2s_mm": 120.5767618573771,
+  "empuje_max_1500us_N": 10.71539445962828,
+  "peso_movil_modelado_N": 33.354,
+  "limite": "Modelo provisional; no es validacion del prototipo ni identificacion desde el TXT."
+}

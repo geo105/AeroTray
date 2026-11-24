@@ -1,0 +1,66 @@
+Panels:
+  - Class: rviz_common/Displays
+    Help Height: 78
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Global Options1
+        - /Bandeja3D1
+        - /Camara1
+      Splitter Ratio: 0.5
+    Tree Height: 557
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Piso
+      Enabled: true
+      Cell Size: 0.05
+      Plane Cell Count: 20
+      Reference Frame: mundo
+      Color: 120; 120; 140
+    - Class: rviz_default_plugins/TF
+      Name: TF
+      Enabled: true
+      Marker Scale: 0.08
+      Show Arrows: true
+      Show Axes: true
+      Show Names: true
+    - Class: rviz_default_plugins/MarkerArray
+      Name: Bandeja3D
+      Enabled: true
+      Topic:
+        Value: /ball_plate/marcadores
+        Depth: 5
+        Durability Policy: Volatile
+        Reliability Policy: Reliable
+    - Class: rviz_default_plugins/Image
+      Name: Camara
+      Enabled: true
+      Topic:
+        Value: /ball_plate/imagen
+        Depth: 5
+        Durability Policy: Volatile
+        Reliability Policy: Reliable
+  Enabled: true
+  Global Options:
+    Background Color: 28; 32; 42
+    Fixed Frame: mundo
+    Frame Rate: 30
+  Tools:
+    - Class: rviz_default_plugins/Interact
+    - Class: rviz_default_plugins/MoveCamera
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 0.65
+      Focal Point:
+        X: 0.0
+        Y: 0.0
+        Z: 0.02
+      Pitch: 0.65
+      Yaw: 2.35
+      Target Frame: mundo
+Window Geometry:
+  Width: 1280
+  Height: 850

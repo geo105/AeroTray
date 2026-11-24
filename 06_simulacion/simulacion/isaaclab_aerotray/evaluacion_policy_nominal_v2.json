@@ -1,0 +1,25 @@
+{
+  "modo": "policy",
+  "checkpoint": "/home/george/DSM/herramientas/IsaacLab/logs/rsl_rl/aerotray_cad/2026-10-31_01-05-14_multi_altura_perturbaciones/model_999.pt",
+  "entornos": 64,
+  "duracion_s": 8.0,
+  "supervivencia_episodio": 1.0,
+  "masa_movil_kg": [
+    0.30000001192092896,
+    3.299999952316284
+  ],
+  "joints": [
+    "elevacion",
+    "rotula:0",
+    "rotula:1",
+    "rotula:2"
+  ],
+  "rango_elevacion_m": [
+    0,
+    0.0766294593811
+  ],
+  "rms_altura_ultimos_2s_mm": 0.10441826283931732,
+  "rms_inclinacion_ultimos_2s_deg": 0.02002299763262272,
+  "max_error_altura_m": 0.01496143452823162,
+  "nota": "Los RMS solo incluyen muestras aún vivas; se informa supervivencia para evitar ocultar fallos."
+}

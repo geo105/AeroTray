@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="AeroTray_CAD_IsaacLab_PROVISIONAL">
+  <compiler angle="radian" inertiafromgeom="false" />
+  <option timestep=".002" gravity="0 0 -9.80665" integrator="implicitfast" />
+  <default>
+    <geom contype="0" conaffinity="0" density="0" />
+  </default>
+  <asset>
+    <mesh name="cad_00_carrito_fijo" file="/home/george/DSM/simulacion/mallas_conjunto_cad/00_carrito_fijo.stl" inertia="shell" />
+    <mesh name="cad_01_carrito_fijo" file="/home/george/DSM/simulacion/mallas_conjunto_cad/01_carrito_fijo.stl" inertia="shell" />
+    <mesh name="cad_02_carrito_fijo" file="/home/george/DSM/simulacion/mallas_conjunto_cad/02_carrito_fijo.stl" inertia="shell" />
+    <mesh name="cad_03_carro_vertical" file="/home/george/DSM/simulacion/mallas_conjunto_cad/03_carro_vertical.stl" inertia="shell" />
+    <mesh name="cad_04_conjunto_rotatorio" file="/home/george/DSM/simulacion/mallas_conjunto_cad/04_conjunto_rotatorio.stl" inertia="shell" />
+    <mesh name="cad_05_conjunto_rotatorio" file="/home/george/DSM/simulacion/mallas_conjunto_cad/05_conjunto_rotatorio.stl" inertia="shell" />
+    <mesh name="cad_06_conjunto_rotatorio" file="/home/george/DSM/simulacion/mallas_conjunto_cad/06_conjunto_rotatorio.stl" inertia="shell" />
+    <mesh name="cad_07_conjunto_rotatorio" file="/home/george/DSM/simulacion/mallas_conjunto_cad/07_conjunto_rotatorio.stl" inertia="shell" />
+    <mesh name="cad_08_conjunto_rotatorio" file="/home/george/DSM/simulacion/mallas_conjunto_cad/08_conjunto_rotatorio.stl" inertia="shell" />
+    <mesh name="cad_09_conjunto_rotatorio" file="/home/george/DSM/simulacion/mallas_conjunto_cad/09_conjunto_rotatorio.stl" inertia="shell" />
+    <mesh name="cad_10_conjunto_rotatorio" file="/home/george/DSM/simulacion/mallas_conjunto_cad/10_conjunto_rotatorio.stl" inertia="shell" />
+    <mesh name="cad_11_conjunto_rotatorio" file="/home/george/DSM/simulacion/mallas_conjunto_cad/11_conjunto_rotatorio.stl" inertia="shell" />
+    <mesh name="cad_12_conjunto_rotatorio" file="/home/george/DSM/simulacion/mallas_conjunto_cad/12_conjunto_rotatorio.stl" inertia="shell" />
+  </asset>
+  <worldbody>
+    <body name="carro_vertical" pos="0 0 0.494515331">
+      <joint name="elevacion" type="slide" axis="0 0 1" limited="true" range="0 0.07662945938" damping=".5" solreflimit=".005 1" />
+      <inertial mass=".3" pos="0 0 -.1" diaginertia=".002 .002 .002" />
+      <body name="conjunto_rotatorio">
+        <joint name="rotula" type="ball" damping=".02" />
+        <inertial mass="3.3" pos="0 0 .1" diaginertia=".12 .12 .20" />
+        <geom name="cad_04_conjunto_rotatorio" type="mesh" mesh="cad_04_conjunto_rotatorio" rgba="0.23 0.27 0.32 1" group="2" />
+        <geom name="cad_05_conjunto_rotatorio" type="mesh" mesh="cad_05_conjunto_rotatorio" rgba="0.23 0.27 0.32 1" group="2" />
+        <geom name="cad_06_conjunto_rotatorio" type="mesh" mesh="cad_06_conjunto_rotatorio" rgba="0.23 0.27 0.32 1" group="2" />
+        <geom name="cad_07_conjunto_rotatorio" type="mesh" mesh="cad_07_conjunto_rotatorio" rgba="0.23 0.27 0.32 1" group="2" />
+        <geom name="cad_08_conjunto_rotatorio" type="mesh" mesh="cad_08_conjunto_rotatorio" rgba="0.46 0.56 0.65 1" group="2" />
+        <geom name="cad_09_conjunto_rotatorio" type="mesh" mesh="cad_09_conjunto_rotatorio" rgba="0.12 0.35 0.65 1" group="2" />
+        <geom name="cad_10_conjunto_rotatorio" type="mesh" mesh="cad_10_conjunto_rotatorio" rgba="0.25 0.58 0.39 1" group="2" />
+        <geom name="cad_11_conjunto_rotatorio" type="mesh" mesh="cad_11_conjunto_rotatorio" rgba="0.83 0.12 0.13 1" group="2" />
+        <geom name="cad_12_conjunto_rotatorio" type="mesh" mesh="cad_12_conjunto_rotatorio" rgba="0.84 0.42 0.12 1" group="2" />
+        <site name="empuje_M1" pos="-0.3500039556 -0.0001186118893 0.09550744523" size=".004" rgba="1 .8 .1 1" />
+        <site name="empuje_M2" pos="0.3499960444 -0.0001186118893 0.09550262134" size=".004" rgba="1 .8 .1 1" />
+        <site name="empuje_M3" pos="-3.955582093e-06 0.3498813881 0.09550289931" size=".004" rgba="1 .8 .1 1" />
+        <site name="empuje_M4" pos="-3.955582084e-06 -0.3501186119 0.09550383974" size=".004" rgba="1 .8 .1 1" />
+        <site name="empuje_M5" pos="0.2474834178 0.2473687615 0.09550063893" size=".004" rgba="1 .8 .1 1" />
+        <site name="empuje_M6" pos="-0.247491329 0.2473687615 0.09550063893" size=".004" rgba="1 .8 .1 1" />
+        <site name="empuje_M7" pos="-0.247491329 -0.2476059853 0.09550063893" size=".004" rgba="1 .8 .1 1" />
+        <site name="empuje_M8" pos="0.2474834178 -0.2476059853 0.09550383974" size=".004" rgba="1 .8 .1 1" />
+      </body>
+      <geom name="cad_03_carro_vertical" type="mesh" mesh="cad_03_carro_vertical" rgba="0.22 0.48 0.68 1" group="2" />
+    </body>
+    <geom name="cad_00_carrito_fijo" type="mesh" mesh="cad_00_carrito_fijo" rgba="0.48 0.52 0.56 1" group="2" />
+    <geom name="cad_01_carrito_fijo" type="mesh" mesh="cad_01_carrito_fijo" rgba="0.48 0.52 0.56 1" group="2" />
+    <geom name="cad_02_carrito_fijo" type="mesh" mesh="cad_02_carrito_fijo" rgba="0.48 0.52 0.56 1" group="2" />
+  </worldbody>
+</mujoco>

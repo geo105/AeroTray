@@ -1,0 +1,18 @@
+CAD con masas SUPUESTAS por grupo. Pesos medidos: dron 2.8 kg, junta completa 0.6 kg.
+Fraccion rotatoria junta por volumen uniforme: 0.332540
+Masa rotatoria total 2.999524 kg; junta rotatoria 0.199524 kg
+CG desde pivote [m]: -0.0004939 0.0008000 0.0691663
+Inercia respecto pivote [kg*m^2], filas:
+0.110416353 0.000099718 0.000413192
+0.000099718 0.109473617 0.003707958
+0.000413192 0.003707958 0.128108605
+Inercia respecto CG [kg*m^2], filas:
+0.096064789 0.000098533 0.000310720
+0.000098533 0.095123241 0.003873924
+0.000310720 0.003873924 0.128105954
+P angulo roll/pitch: 5.002518 5.027573
+P velocidad roll/pitch: 0.759998 0.753210
+I velocidad roll/pitch: 0.100000 0.100000
+PI velocidad yaw: 0.378326 0.288244
+Trim roll/pitch/yaw [Nm]: 0.023539 0.014534 0.000000
+Empuje maximo NOMINAL supuesto por motor 5.3955 N. No es medicion.

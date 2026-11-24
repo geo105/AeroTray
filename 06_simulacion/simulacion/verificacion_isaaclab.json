@@ -1,0 +1,18 @@
+{
+  "fecha": "2026-10-30",
+  "estado": "completo",
+  "tipo": "prueba_de_herramientas_no_dron",
+  "tarea": "Isaac-Cartpole-Direct",
+  "backend": "newton_mjwarp",
+  "dispositivo": "cuda:0",
+  "entornos": 16,
+  "iteraciones": 5,
+  "pasos": 1280,
+  "salida_proceso": 0,
+  "registro": "/home/george/DSM/instalacion/isaaclab_prueba.log",
+  "checkpoints": [
+    "/home/george/DSM/herramientas/IsaacLab/logs/rsl_rl/cartpole_direct/2026-10-30_08-03-34/model_0.pt",
+    "/home/george/DSM/herramientas/IsaacLab/logs/rsl_rl/cartpole_direct/2026-10-30_08-03-34/model_4.pt"
+  ],
+  "nota": "Prueba corta de ejecucion; no demuestra convergencia ni entrenamiento del dron"
+}

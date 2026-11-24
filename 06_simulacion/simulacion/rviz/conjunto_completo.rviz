@@ -1,0 +1,55 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Piso (metros)
+      Enabled: true
+      Cell Size: 0.1
+      Plane Cell Count: 20
+      Reference Frame: cad_mundo
+    - Class: rviz_default_plugins/RobotModel
+      Name: Conjunto CAD completo - 383 piezas
+      Enabled: true
+      Alpha: 1
+      Visual Enabled: true
+      Collision Enabled: false
+      Description Source: Topic
+      Description Topic:
+        Value: /cad_completo/robot_description
+        Depth: 1
+        Durability Policy: Transient Local
+        Reliability Policy: Reliable
+      TF Prefix: ""
+      Update Interval: 0
+    - Class: rviz_default_plugins/Axes
+      Name: Origen del CAD
+      Enabled: true
+      Reference Frame: cad_mundo
+      Length: 0.15
+      Radius: 0.004
+  Enabled: true
+  Global Options:
+    Background Color: 42; 46; 54
+    Fixed Frame: cad_mundo
+    Frame Rate: 30
+  Tools:
+    - Class: rviz_default_plugins/Interact
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/FocusCamera
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 1.9
+      Focal Point:
+        X: 0
+        Y: 0
+        Z: 0.4
+      Pitch: 0.35
+      Yaw: 0.8
+      Target Frame: cad_mundo
+Window Geometry:
+  Width: 1280
+  Height: 850

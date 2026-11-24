@@ -1,0 +1,16 @@
+{
+  "motor_fisico": "Isaac Lab / Newton MJWarp CUDA",
+  "modo": "residual",
+  "checkpoint": "/home/george/DSM/simulacion/octo_actual/modelos/residual_100_iteraciones.pt",
+  "seed_reserva": 81243,
+  "entornos": 8,
+  "duracion_s": 6.0,
+  "episodios_completos": 8,
+  "supervivencia": 1.0,
+  "rms_tilt_deg": 0.6841010451316833,
+  "rms_bola_mm": 26.53175108502874,
+  "rms_tilt_ultimos_2s_deg": 0.4854687452316284,
+  "rms_bola_ultimos_2s_mm": 23.94213202371123,
+  "rms_residuo_normalizado": 0.2695465087890625,
+  "nota": "Junta fija vertical. Controles originales + 4 residuos acotados. Pelota reducida, sensores/actuadores provisionales. RMS incluye solo muestras de episodios vivos; supervivencia se informa por separado."
+}

@@ -1,0 +1,25 @@
+{
+  "modo": "policy",
+  "checkpoint": "/home/george/DSM/herramientas/IsaacLab/logs/rsl_rl/aerotray_cad/2026-10-30_14-45-15_primer_entrenamiento/model_999.pt",
+  "entornos": 64,
+  "duracion_s": 8.0,
+  "supervivencia_episodio": 1.0,
+  "masa_movil_kg": [
+    0.30000001192092896,
+    3.299999952316284
+  ],
+  "joints": [
+    "elevacion",
+    "rotula:0",
+    "rotula:1",
+    "rotula:2"
+  ],
+  "rango_elevacion_m": [
+    0,
+    0.0766294593811
+  ],
+  "rms_altura_ultimos_2s_mm": 0.04027296602725983,
+  "rms_inclinacion_ultimos_2s_deg": 1.0768370628356934,
+  "max_error_altura_m": 0.009641977027058601,
+  "nota": "Los RMS solo incluyen muestras aún vivas; se informa supervivencia para evitar ocultar fallos."
+}

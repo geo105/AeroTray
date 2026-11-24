@@ -1,0 +1,29 @@
+{
+  "origen": "/home/george/DSM/cad/junta_nuevo_de_8_motores_con_camara/conjunto_completo/ensamblaje_completo.json",
+  "urdf": "/home/george/DSM/simulacion/rviz/conjunto_completo.urdf",
+  "piezas": 383,
+  "escala": "metros, 1:1",
+  "grupos": {
+    "carrito_fijo": 116,
+    "carro_vertical": 11,
+    "conjunto_rotatorio": 256
+  },
+  "limites_m": [
+    [
+      -0.3790156549625833,
+      -0.4694986091427445,
+      6.264687343188191e-08
+    ],
+    [
+      0.3790077556669502,
+      0.4692613853640932,
+      0.850179078772162
+    ]
+  ],
+  "modo": "pose CAD fija; no física, no telemetría, sin control de hardware",
+  "materiales": "colores de identificación de la exportación local, no materiales nativos de Fusion",
+  "mallas_leidas": 383,
+  "triangulos": 956780,
+  "error_max_limites_m": 7.3142427114980535e-09,
+  "verificacion_geometria": "383 mallas presentes, finitas, unidades y límites coincidentes"
+}

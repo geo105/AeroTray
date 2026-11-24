@@ -1,0 +1,62 @@
+{
+  "fecha": "2026-10-30",
+  "estado": "datos_para_modelo_no_es_configuracion_ejecutable",
+  "masas": {
+    "dron_solo_kg": 2.3,
+    "conjunto_movible_total_kg": 3.6,
+    "origen_total": "Usuario: pesado en balanza; incluye el dron, no sumar masas",
+    "desglose_por_cuerpos": null,
+    "centros_de_masa_m": null,
+    "tensores_inercia_kg_m2": null
+  },
+  "mecanismo": {
+    "traslacion": "guias_verticales",
+    "recorrido_m": 0.2,
+    "articulacion": "junta_esferica_sube_con_el_dron",
+    "limites_angulares_rad": null,
+    "friccion_guias_N": null,
+    "friccion_junta_Nm": null
+  },
+  "propulsion": {
+    "numero_motores": 8,
+    "fabricante_declarado": "DJI",
+    "kv_rpm_por_V": 920,
+    "referencia_exacta_motor": null,
+    "helice_declarada": "9450",
+    "referencia_esc": null,
+    "radio_m_documento_no_verificado": 0.35,
+    "posiciones_y_direcciones_verificadas": null,
+    "curva_pwm_tension_empuje_corriente": null,
+    "retardo_motor_esc_s": null
+  },
+  "alimentacion": {
+    "topologia": "dos_baterias_independientes_una_por_grupo_de_cuatro_motores",
+    "cantidad": 2,
+    "por_bateria": {
+      "celdas_serie": 3,
+      "tension_nominal_V": 11.1,
+      "capacidad_Ah": 3.3,
+      "descarga_C_etiqueta": 25,
+      "resistencia_interna_ohm": null,
+      "resistencia_arnes_ohm": null
+    }
+  },
+  "ensayo_historico": {
+    "configuracion": "cuatro_motores_con_ball_and_plate",
+    "inicio_elevacion_us_aproximado": 1850,
+    "masa_movible_kg": null,
+    "tension_en_esc_V": null,
+    "nota": "No usar como curva de empuje del octo actual"
+  },
+  "entorno": {
+    "driver_cargado_verificado": "595.99.02",
+    "isaaclab_codigo_descargado": true,
+    "entorno_python_isaaclab_instalado": true,
+    "entrenamiento_ejecutado": false,
+    "prueba_cartpole_completada": true,
+    "nota_entrenamiento": "Cartpole completado como prueba de herramientas; el dron aun no esta entrenado"
+  },
+  "modelo_actual": "aerotray_conjunto_cad.xml",
+  "precedencia_dimensiones": "CAD, según instrucción del usuario de 30 de octubre; recorrido_m antiguo pertenece al primer modelo provisional.",
+  "subida_desde_pose_cad_m": 0.07662945938110287
+}

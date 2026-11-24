@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="AeroTray_provisional_NO_IDENTIFICADO">
+  <compiler angle="radian" inertiafromgeom="false" />
+  <option timestep="0.002" gravity="0 0 -9.80665" integrator="implicitfast" />
+  <visual>
+    <global offwidth="1000" offheight="750" />
+  </visual>
+  <default>
+    <geom contype="0" conaffinity="0" density="0" />
+  </default>
+  <worldbody>
+    <light pos="1 -1 3" dir="-0.3 0.3 -1" />
+    <geom name="suelo_visual" type="plane" size="2 2 0.1" rgba="0.15 0.18 0.22 1" />
+    <camera name="vista" pos="1.25 -1.5 1.55" xyaxes="0.768 0.640 0 -0.230 0.276 0.934" />
+    <geom name="base_fija_visual" type="box" pos="0 0 0.08" size="0.20 0.20 0.03" rgba="0.25 0.27 0.30 1" />
+    <geom type="capsule" fromto="0 -0.065 0.1 0 -0.065 1.03" size="0.012" rgba="0.65 0.68 0.7 1" />
+    <geom type="capsule" fromto="0 0.065 0.1 0 0.065 1.03" size="0.012" rgba="0.65 0.68 0.7 1" />
+    <body name="carro_deslizante" pos="0 0 0.8">
+      <joint name="elevacion" type="slide" axis="0 0 1" limited="true" range="0 0.2" damping="0.5" solreflimit="0.005 1" />
+      <inertial pos="0 0 -0.04" mass="0.3" diaginertia="0.002 0.002 0.002" />
+      <geom type="box" pos="0 0 -0.04" size="0.045 0.09 0.04" rgba="0.3 0.6 0.85 1" />
+      <body name="conjunto_rotatorio">
+        <joint name="rotula" type="ball" damping="0.02" />
+        <inertial pos="0 0 0.10" mass="3.3000000000000003" diaginertia="0.12 0.12 0.20" />
+        <geom name="junta_visual" type="sphere" size="0.026" rgba="0.95 0.6 0.1 1" />
+        <geom name="centro_visual" type="box" pos="0 0 0.04" size="0.12 0.12 0.012" rgba="0.65 0.15 0.13 1" />
+        <geom name="bandeja_rigida_provisional" type="box" pos="0 0 0.20" size="0.14 0.14 0.008" rgba="0.4 0.7 0.5 1" />
+        <geom name="brazo_M1" type="capsule" fromto="0 0 0.04 0.350000000 -0.000000000 0.04" size="0.009" rgba="0.65 0.15 0.13 1" />
+        <geom name="helice_visual_M1" type="cylinder" pos="0.350000000 -0.000000000 0.04" size="0.12 0.002" rgba="0.3 0.65 0.9 0.4" />
+        <site name="empuje_M1" pos="0.350000000 -0.000000000 0.04" size="0.007" rgba="1 0.8 0.1 1" />
+        <geom name="brazo_M5" type="capsule" fromto="0 0 0.04 0.247487373 -0.247487373 0.04" size="0.009" rgba="0.65 0.15 0.13 1" />
+        <geom name="helice_visual_M5" type="cylinder" pos="0.247487373 -0.247487373 0.04" size="0.12 0.002" rgba="0.3 0.65 0.9 0.4" />
+        <site name="empuje_M5" pos="0.247487373 -0.247487373 0.04" size="0.007" rgba="1 0.8 0.1 1" />
+        <geom name="brazo_M2" type="capsule" fromto="0 0 0.04 0.000000000 -0.350000000 0.04" size="0.009" rgba="0.65 0.15 0.13 1" />
+        <geom name="helice_visual_M2" type="cylinder" pos="0.000000000 -0.350000000 0.04" size="0.12 0.002" rgba="0.3 0.65 0.9 0.4" />
+        <site name="empuje_M2" pos="0.000000000 -0.350000000 0.04" size="0.007" rgba="1 0.8 0.1 1" />
+        <geom name="brazo_M6" type="capsule" fromto="0 0 0.04 -0.247487373 -0.247487373 0.04" size="0.009" rgba="0.65 0.15 0.13 1" />
+        <geom name="helice_visual_M6" type="cylinder" pos="-0.247487373 -0.247487373 0.04" size="0.12 0.002" rgba="0.3 0.65 0.9 0.4" />
+        <site name="empuje_M6" pos="-0.247487373 -0.247487373 0.04" size="0.007" rgba="1 0.8 0.1 1" />
+        <geom name="brazo_M3" type="capsule" fromto="0 0 0.04 -0.350000000 -0.000000000 0.04" size="0.009" rgba="0.65 0.15 0.13 1" />
+        <geom name="helice_visual_M3" type="cylinder" pos="-0.350000000 -0.000000000 0.04" size="0.12 0.002" rgba="0.3 0.65 0.9 0.4" />
+        <site name="empuje_M3" pos="-0.350000000 -0.000000000 0.04" size="0.007" rgba="1 0.8 0.1 1" />
+        <geom name="brazo_M7" type="capsule" fromto="0 0 0.04 -0.247487373 0.247487373 0.04" size="0.009" rgba="0.65 0.15 0.13 1" />
+        <geom name="helice_visual_M7" type="cylinder" pos="-0.247487373 0.247487373 0.04" size="0.12 0.002" rgba="0.3 0.65 0.9 0.4" />
+        <site name="empuje_M7" pos="-0.247487373 0.247487373 0.04" size="0.007" rgba="1 0.8 0.1 1" />
+        <geom name="brazo_M4" type="capsule" fromto="0 0 0.04 -0.000000000 0.350000000 0.04" size="0.009" rgba="0.65 0.15 0.13 1" />
+        <geom name="helice_visual_M4" type="cylinder" pos="-0.000000000 0.350000000 0.04" size="0.12 0.002" rgba="0.3 0.65 0.9 0.4" />
+        <site name="empuje_M4" pos="-0.000000000 0.350000000 0.04" size="0.007" rgba="1 0.8 0.1 1" />
+        <geom name="brazo_M8" type="capsule" fromto="0 0 0.04 0.247487373 0.247487373 0.04" size="0.009" rgba="0.65 0.15 0.13 1" />
+        <geom name="helice_visual_M8" type="cylinder" pos="0.247487373 0.247487373 0.04" size="0.12 0.002" rgba="0.3 0.65 0.9 0.4" />
+        <site name="empuje_M8" pos="0.247487373 0.247487373 0.04" size="0.007" rgba="1 0.8 0.1 1" />
+      </body>
+    </body>
+  </worldbody>
+  <actuator>
+    <motor name="fuerza_M1" site="empuje_M1" gear="0 0 1 0 0 0.015" ctrllimited="true" ctrlrange="0 6" />
+    <motor name="fuerza_M5" site="empuje_M5" gear="0 0 1 0 0 -0.015" ctrllimited="true" ctrlrange="0 6" />
+    <motor name="fuerza_M2" site="empuje_M2" gear="0 0 1 0 0 0.015" ctrllimited="true" ctrlrange="0 6" />
+    <motor name="fuerza_M6" site="empuje_M6" gear="0 0 1 0 0 -0.015" ctrllimited="true" ctrlrange="0 6" />
+    <motor name="fuerza_M3" site="empuje_M3" gear="0 0 1 0 0 0.015" ctrllimited="true" ctrlrange="0 6" />
+    <motor name="fuerza_M7" site="empuje_M7" gear="0 0 1 0 0 -0.015" ctrllimited="true" ctrlrange="0 6" />
+    <motor name="fuerza_M4" site="empuje_M4" gear="0 0 1 0 0 0.015" ctrllimited="true" ctrlrange="0 6" />
+    <motor name="fuerza_M8" site="empuje_M8" gear="0 0 1 0 0 -0.015" ctrllimited="true" ctrlrange="0 6" />
+  </actuator>
+</mujoco>

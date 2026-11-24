@@ -1,0 +1,30 @@
+{
+  "modelo": "PROVISIONAL",
+  "motor": "MuJoCo",
+  "masa_total_kg": 3.6,
+  "actuadores": 8,
+  "grados_libertad": 4,
+  "casos": {
+    "sin_empuje": {
+      "tiempo_s": 2.0000000000000013,
+      "empuje_por_motor_N": 0.0,
+      "altura_final_m": -2.7291499677862794e-05,
+      "minimo_m": -0.002565079463051958,
+      "maximo_m": 0.09996078429325188
+    },
+    "equilibrio_ideal": {
+      "tiempo_s": 2.0000000000000013,
+      "empuje_por_motor_N": 4.4129925,
+      "altura_final_m": 0.10000000000000168,
+      "minimo_m": 0.1,
+      "maximo_m": 0.10000000000000168
+    },
+    "tope_superior": {
+      "tiempo_s": 2.0000000000000013,
+      "empuje_por_motor_N": 6.0,
+      "altura_final_m": 0.2000098223962348,
+      "minimo_m": 0.10001410281588448,
+      "maximo_m": 0.2013989868668358
+    }
+  }
+}
